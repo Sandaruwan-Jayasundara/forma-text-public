@@ -1,22 +1,9 @@
-import Fe, { useState as T, useRef as Y, useEffect as Q, useCallback as V } from "react";
-import n from "prop-types";
-import Fr from "mammoth";
-import { diff_match_patch as Or, DIFF_EQUAL as zr, DIFF_DELETE as Lr, DIFF_INSERT as Ir } from "diff-match-patch";
-import { Palette as gt, Highlighter as vt, Smile as jt, Undo as Ct, Redo as wt, Pilcrow as et, Type as kt, ArrowDownUp as yt, Bold as Rt, Italic as Nt, Underline as Tt, Strikethrough as Et, Superscript as Ft, Subscript as Ot, AlignLeft as zt, AlignCenter as Lt, AlignRight as It, ListOrdered as At, List as St, Outdent as _t, Indent as Mt, Quote as Dt, Code as qt, Link as He, Minus as Ht, Eraser as Pt, Image as Ut, Video as tt, Table as rt, Columns as $t, FileUp as Bt, Sparkles as Pe, ChevronDown as tr, GripVertical as Ar, ExternalLink as Sr, ChevronsDownUp as _r, Minimize as nt, CodeXml as Vt, Maximize as Yt, Sigma as Mr, Binary as Dr, AlignStartVertical as qr, AlignCenterVertical as Hr, AlignEndVertical as Pr, Trash2 as Zt } from "lucide-react";
-function Ur() {
-  if (typeof document < "u") {
-    const r = "bootstrap-css-cdn-link", s = "bootstrap-js-cdn-script";
-    if (!document.getElementById(r)) {
-      const i = document.createElement("link");
-      i.id = r, i.rel = "stylesheet", i.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css", i.crossOrigin = "anonymous", document.head.appendChild(i);
-    }
-    if (!document.getElementById(s)) {
-      const i = document.createElement("script");
-      i.id = s, i.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js", i.crossOrigin = "anonymous", i.defer = !0, document.body.appendChild(i);
-    }
-  }
-}
-var ft = { exports: {} }, De = {};
+import ze, { useState as w, useRef as K, useEffect as se, useCallback as Y } from "react";
+import o from "prop-types";
+import Rr from "mammoth";
+import { diff_match_patch as Fr, DIFF_EQUAL as Nr, DIFF_DELETE as Tr, DIFF_INSERT as Er } from "diff-match-patch";
+import { Palette as bt, Highlighter as gt, Smile as ht, Undo as jt, Redo as vt, Pilcrow as Qe, Type as Be, ArrowDownUp as Ct, Bold as kt, Italic as yt, Underline as wt, Strikethrough as Rt, Superscript as Ft, Subscript as Nt, AlignLeft as Tt, AlignCenter as Et, AlignRight as zt, ListOrdered as Ot, List as St, Outdent as It, Indent as Lt, Quote as At, Code as _t, Link as Pe, Minus as Dt, Eraser as qt, Image as Mt, Video as et, Table as tt, FileUp as Bt, Sparkles as He, ChevronDown as Jt, GripVertical as zr, ExternalLink as Or, ChevronsDownUp as Sr, Minimize as rt, CodeXml as Pt, Maximize as Ht, Sigma as Ir, Binary as Lr, AlignStartVertical as Ar, AlignCenterVertical as _r, AlignEndVertical as Dr, Trash2 as Gt } from "lucide-react";
+var mt = { exports: {} }, qe = {};
 /**
  * @license React
  * react-jsx-runtime.production.min.js
@@ -26,21 +13,21 @@ var ft = { exports: {} }, De = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var Qt;
-function $r() {
-  if (Qt) return De;
-  Qt = 1;
-  var r = Fe, s = Symbol.for("react.element"), i = Symbol.for("react.fragment"), c = Object.prototype.hasOwnProperty, u = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, p = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function b(f, E, _) {
-    var F, H = {}, L = null, $ = null;
-    _ !== void 0 && (L = "" + _), E.key !== void 0 && (L = "" + E.key), E.ref !== void 0 && ($ = E.ref);
-    for (F in E) c.call(E, F) && !p.hasOwnProperty(F) && (H[F] = E[F]);
-    if (f && f.defaultProps) for (F in E = f.defaultProps, E) H[F] === void 0 && (H[F] = E[F]);
-    return { $$typeof: s, type: f, key: L, ref: $, props: H, _owner: u.current };
+var Kt;
+function qr() {
+  if (Kt) return qe;
+  Kt = 1;
+  var r = ze, a = Symbol.for("react.element"), s = Symbol.for("react.fragment"), d = Object.prototype.hasOwnProperty, m = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, x = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function f(c, h, E) {
+    var k, L = {}, A = null, q = null;
+    E !== void 0 && (A = "" + E), h.key !== void 0 && (A = "" + h.key), h.ref !== void 0 && (q = h.ref);
+    for (k in h) d.call(h, k) && !x.hasOwnProperty(k) && (L[k] = h[k]);
+    if (c && c.defaultProps) for (k in h = c.defaultProps, h) L[k] === void 0 && (L[k] = h[k]);
+    return { $$typeof: a, type: c, key: A, ref: q, props: L, _owner: m.current };
   }
-  return De.Fragment = i, De.jsx = b, De.jsxs = b, De;
+  return qe.Fragment = s, qe.jsx = f, qe.jsxs = f, qe;
 }
-var qe = {};
+var Me = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -50,91 +37,91 @@ var qe = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var er;
-function Br() {
-  return er || (er = 1, process.env.NODE_ENV !== "production" && function() {
-    var r = Fe, s = Symbol.for("react.element"), i = Symbol.for("react.portal"), c = Symbol.for("react.fragment"), u = Symbol.for("react.strict_mode"), p = Symbol.for("react.profiler"), b = Symbol.for("react.provider"), f = Symbol.for("react.context"), E = Symbol.for("react.forward_ref"), _ = Symbol.for("react.suspense"), F = Symbol.for("react.suspense_list"), H = Symbol.for("react.memo"), L = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), g = Symbol.iterator, x = "@@iterator";
-    function M(t) {
+var Xt;
+function Mr() {
+  return Xt || (Xt = 1, process.env.NODE_ENV !== "production" && function() {
+    var r = ze, a = Symbol.for("react.element"), s = Symbol.for("react.portal"), d = Symbol.for("react.fragment"), m = Symbol.for("react.strict_mode"), x = Symbol.for("react.profiler"), f = Symbol.for("react.provider"), c = Symbol.for("react.context"), h = Symbol.for("react.forward_ref"), E = Symbol.for("react.suspense"), k = Symbol.for("react.suspense_list"), L = Symbol.for("react.memo"), A = Symbol.for("react.lazy"), q = Symbol.for("react.offscreen"), p = Symbol.iterator, z = "@@iterator";
+    function B(t) {
       if (t === null || typeof t != "object")
         return null;
-      var o = g && t[g] || t[x];
-      return typeof o == "function" ? o : null;
+      var n = p && t[p] || t[z];
+      return typeof n == "function" ? n : null;
     }
-    var D = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
-    function I(t) {
+    var $ = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    function O(t) {
       {
-        for (var o = arguments.length, d = new Array(o > 1 ? o - 1 : 0), h = 1; h < o; h++)
-          d[h - 1] = arguments[h];
-        oe("error", t, d);
+        for (var n = arguments.length, u = new Array(n > 1 ? n - 1 : 0), g = 1; g < n; g++)
+          u[g - 1] = arguments[g];
+        J("error", t, u);
       }
     }
-    function oe(t, o, d) {
+    function J(t, n, u) {
       {
-        var h = D.ReactDebugCurrentFrame, w = h.getStackAddendum();
-        w !== "" && (o += "%s", d = d.concat([w]));
-        var k = d.map(function(j) {
-          return String(j);
+        var g = $.ReactDebugCurrentFrame, y = g.getStackAddendum();
+        y !== "" && (n += "%s", u = u.concat([y]));
+        var R = u.map(function(C) {
+          return String(C);
         });
-        k.unshift("Warning: " + o), Function.prototype.apply.call(console[t], console, k);
+        R.unshift("Warning: " + n), Function.prototype.apply.call(console[t], console, R);
       }
     }
-    var Oe = !1, C = !1, P = !1, se = !1, ot = !1, ve;
+    var le = !1, v = !1, H = !1, de = !1, ot = !1, ve;
     ve = Symbol.for("react.module.reference");
-    function it(t) {
-      return !!(typeof t == "string" || typeof t == "function" || t === c || t === p || ot || t === u || t === _ || t === F || se || t === $ || Oe || C || P || typeof t == "object" && t !== null && (t.$$typeof === L || t.$$typeof === H || t.$$typeof === b || t.$$typeof === f || t.$$typeof === E || // This needs to include all possible module reference object
+    function nt(t) {
+      return !!(typeof t == "string" || typeof t == "function" || t === d || t === x || ot || t === m || t === E || t === k || de || t === q || le || v || H || typeof t == "object" && t !== null && (t.$$typeof === A || t.$$typeof === L || t.$$typeof === f || t.$$typeof === c || t.$$typeof === h || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
       t.$$typeof === ve || t.getModuleId !== void 0));
     }
-    function ze(t, o, d) {
-      var h = t.displayName;
-      if (h)
-        return h;
-      var w = o.displayName || o.name || "";
-      return w !== "" ? d + "(" + w + ")" : d;
+    function Oe(t, n, u) {
+      var g = t.displayName;
+      if (g)
+        return g;
+      var y = n.displayName || n.name || "";
+      return y !== "" ? u + "(" + y + ")" : u;
     }
     function $e(t) {
       return t.displayName || "Context";
     }
-    function G(t) {
+    function X(t) {
       if (t == null)
         return null;
-      if (typeof t.tag == "number" && I("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof t == "function")
+      if (typeof t.tag == "number" && O("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), typeof t == "function")
         return t.displayName || t.name || null;
       if (typeof t == "string")
         return t;
       switch (t) {
-        case c:
+        case d:
           return "Fragment";
-        case i:
+        case s:
           return "Portal";
-        case p:
+        case x:
           return "Profiler";
-        case u:
+        case m:
           return "StrictMode";
-        case _:
+        case E:
           return "Suspense";
-        case F:
+        case k:
           return "SuspenseList";
       }
       if (typeof t == "object")
         switch (t.$$typeof) {
+          case c:
+            var n = t;
+            return $e(n) + ".Consumer";
           case f:
-            var o = t;
-            return $e(o) + ".Consumer";
-          case b:
-            var d = t;
-            return $e(d._context) + ".Provider";
-          case E:
-            return ze(t, t.render, "ForwardRef");
-          case H:
-            var h = t.displayName || null;
-            return h !== null ? h : G(t.type) || "Memo";
-          case L: {
-            var w = t, k = w._payload, j = w._init;
+            var u = t;
+            return $e(u._context) + ".Provider";
+          case h:
+            return Oe(t, t.render, "ForwardRef");
+          case L:
+            var g = t.displayName || null;
+            return g !== null ? g : X(t.type) || "Memo";
+          case A: {
+            var y = t, R = y._payload, C = y._init;
             try {
-              return G(j(k));
+              return X(C(R));
             } catch {
               return null;
             }
@@ -142,14 +129,14 @@ function Br() {
         }
       return null;
     }
-    var ee = Object.assign, te = 0, Be, je, Ce, Le, Ve, we, ke;
+    var re = Object.assign, oe = 0, Ve, Ce, ke, Se, We, ye, we;
     function Ie() {
     }
     Ie.__reactDisabledLog = !0;
-    function ae() {
+    function ce() {
       {
-        if (te === 0) {
-          Be = console.log, je = console.info, Ce = console.warn, Le = console.error, Ve = console.group, we = console.groupCollapsed, ke = console.groupEnd;
+        if (oe === 0) {
+          Ve = console.log, Ce = console.info, ke = console.warn, Se = console.error, We = console.group, ye = console.groupCollapsed, we = console.groupEnd;
           var t = {
             configurable: !0,
             enumerable: !0,
@@ -166,332 +153,332 @@ function Br() {
             groupEnd: t
           });
         }
-        te++;
+        oe++;
       }
     }
-    function Ae() {
+    function Le() {
       {
-        if (te--, te === 0) {
+        if (oe--, oe === 0) {
           var t = {
             configurable: !0,
             enumerable: !0,
             writable: !0
           };
           Object.defineProperties(console, {
-            log: ee({}, t, {
-              value: Be
-            }),
-            info: ee({}, t, {
-              value: je
-            }),
-            warn: ee({}, t, {
-              value: Ce
-            }),
-            error: ee({}, t, {
-              value: Le
-            }),
-            group: ee({}, t, {
+            log: re({}, t, {
               value: Ve
             }),
-            groupCollapsed: ee({}, t, {
-              value: we
+            info: re({}, t, {
+              value: Ce
             }),
-            groupEnd: ee({}, t, {
+            warn: re({}, t, {
               value: ke
+            }),
+            error: re({}, t, {
+              value: Se
+            }),
+            group: re({}, t, {
+              value: We
+            }),
+            groupCollapsed: re({}, t, {
+              value: ye
+            }),
+            groupEnd: re({}, t, {
+              value: we
             })
           });
         }
-        te < 0 && I("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
+        oe < 0 && O("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var ue = D.ReactCurrentDispatcher, pe;
-    function Se(t, o, d) {
+    var ue = $.ReactCurrentDispatcher, me;
+    function Ae(t, n, u) {
       {
-        if (pe === void 0)
+        if (me === void 0)
           try {
             throw Error();
-          } catch (w) {
-            var h = w.stack.trim().match(/\n( *(at )?)/);
-            pe = h && h[1] || "";
+          } catch (y) {
+            var g = y.stack.trim().match(/\n( *(at )?)/);
+            me = g && g[1] || "";
           }
         return `
-` + pe + t;
+` + me + t;
       }
     }
-    var _e = !1, J;
+    var _e = !1, ee;
     {
-      var re = typeof WeakMap == "function" ? WeakMap : Map;
-      J = new re();
+      var ne = typeof WeakMap == "function" ? WeakMap : Map;
+      ee = new ne();
     }
-    function q(t, o) {
+    function P(t, n) {
       if (!t || _e)
         return "";
       {
-        var d = J.get(t);
-        if (d !== void 0)
-          return d;
+        var u = ee.get(t);
+        if (u !== void 0)
+          return u;
       }
-      var h;
+      var g;
       _e = !0;
-      var w = Error.prepareStackTrace;
+      var y = Error.prepareStackTrace;
       Error.prepareStackTrace = void 0;
-      var k;
-      k = ue.current, ue.current = null, ae();
+      var R;
+      R = ue.current, ue.current = null, ce();
       try {
-        if (o) {
-          var j = function() {
+        if (n) {
+          var C = function() {
             throw Error();
           };
-          if (Object.defineProperty(j.prototype, "props", {
+          if (Object.defineProperty(C.prototype, "props", {
             set: function() {
               throw Error();
             }
           }), typeof Reflect == "object" && Reflect.construct) {
             try {
-              Reflect.construct(j, []);
-            } catch (W) {
-              h = W;
+              Reflect.construct(C, []);
+            } catch (G) {
+              g = G;
             }
-            Reflect.construct(t, [], j);
+            Reflect.construct(t, [], C);
           } else {
             try {
-              j.call();
-            } catch (W) {
-              h = W;
+              C.call();
+            } catch (G) {
+              g = G;
             }
-            t.call(j.prototype);
+            t.call(C.prototype);
           }
         } else {
           try {
             throw Error();
-          } catch (W) {
-            h = W;
+          } catch (G) {
+            g = G;
           }
           t();
         }
-      } catch (W) {
-        if (W && h && typeof W.stack == "string") {
-          for (var v = W.stack.split(`
-`), B = h.stack.split(`
-`), z = v.length - 1, S = B.length - 1; z >= 1 && S >= 0 && v[z] !== B[S]; )
-            S--;
-          for (; z >= 1 && S >= 0; z--, S--)
-            if (v[z] !== B[S]) {
-              if (z !== 1 || S !== 1)
+      } catch (G) {
+        if (G && g && typeof G.stack == "string") {
+          for (var j = G.stack.split(`
+`), W = g.stack.split(`
+`), D = j.length - 1, M = W.length - 1; D >= 1 && M >= 0 && j[D] !== W[M]; )
+            M--;
+          for (; D >= 1 && M >= 0; D--, M--)
+            if (j[D] !== W[M]) {
+              if (D !== 1 || M !== 1)
                 do
-                  if (z--, S--, S < 0 || v[z] !== B[S]) {
-                    var K = `
-` + v[z].replace(" at new ", " at ");
-                    return t.displayName && K.includes("<anonymous>") && (K = K.replace("<anonymous>", t.displayName)), typeof t == "function" && J.set(t, K), K;
+                  if (D--, M--, M < 0 || j[D] !== W[M]) {
+                    var Q = `
+` + j[D].replace(" at new ", " at ");
+                    return t.displayName && Q.includes("<anonymous>") && (Q = Q.replace("<anonymous>", t.displayName)), typeof t == "function" && ee.set(t, Q), Q;
                   }
-                while (z >= 1 && S >= 0);
+                while (D >= 1 && M >= 0);
               break;
             }
         }
       } finally {
-        _e = !1, ue.current = k, Ae(), Error.prepareStackTrace = w;
+        _e = !1, ue.current = R, Le(), Error.prepareStackTrace = y;
       }
-      var Ee = t ? t.displayName || t.name : "", he = Ee ? Se(Ee) : "";
-      return typeof t == "function" && J.set(t, he), he;
+      var Ee = t ? t.displayName || t.name : "", be = Ee ? Ae(Ee) : "";
+      return typeof t == "function" && ee.set(t, be), be;
     }
-    function st(t, o, d) {
-      return q(t, !1);
+    function it(t, n, u) {
+      return P(t, !1);
     }
-    function ye(t) {
-      var o = t.prototype;
-      return !!(o && o.isReactComponent);
+    function Re(t) {
+      var n = t.prototype;
+      return !!(n && n.isReactComponent);
     }
-    function U(t, o, d) {
+    function U(t, n, u) {
       if (t == null)
         return "";
       if (typeof t == "function")
-        return q(t, ye(t));
+        return P(t, Re(t));
       if (typeof t == "string")
-        return Se(t);
+        return Ae(t);
       switch (t) {
-        case _:
-          return Se("Suspense");
-        case F:
-          return Se("SuspenseList");
+        case E:
+          return Ae("Suspense");
+        case k:
+          return Ae("SuspenseList");
       }
       if (typeof t == "object")
         switch (t.$$typeof) {
-          case E:
-            return st(t.render);
-          case H:
-            return U(t.type, o, d);
-          case L: {
-            var h = t, w = h._payload, k = h._init;
+          case h:
+            return it(t.render);
+          case L:
+            return U(t.type, n, u);
+          case A: {
+            var g = t, y = g._payload, R = g._init;
             try {
-              return U(k(w), o, d);
+              return U(R(y), n, u);
             } catch {
             }
           }
         }
       return "";
     }
-    var me = Object.prototype.hasOwnProperty, Re = {}, Ye = D.ReactDebugCurrentFrame;
-    function fe(t) {
+    var fe = Object.prototype.hasOwnProperty, Fe = {}, Ye = $.ReactDebugCurrentFrame;
+    function pe(t) {
       if (t) {
-        var o = t._owner, d = U(t.type, t._source, o ? o.type : null);
-        Ye.setExtraStackFrame(d);
+        var n = t._owner, u = U(t.type, t._source, n ? n.type : null);
+        Ye.setExtraStackFrame(u);
       } else
         Ye.setExtraStackFrame(null);
     }
-    function at(t, o, d, h, w) {
+    function at(t, n, u, g, y) {
       {
-        var k = Function.call.bind(me);
-        for (var j in t)
-          if (k(t, j)) {
-            var v = void 0;
+        var R = Function.call.bind(fe);
+        for (var C in t)
+          if (R(t, C)) {
+            var j = void 0;
             try {
-              if (typeof t[j] != "function") {
-                var B = Error((h || "React class") + ": " + d + " type `" + j + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof t[j] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
-                throw B.name = "Invariant Violation", B;
+              if (typeof t[C] != "function") {
+                var W = Error((g || "React class") + ": " + u + " type `" + C + "` is invalid; it must be a function, usually from the `prop-types` package, but received `" + typeof t[C] + "`.This often happens because of typos such as `PropTypes.function` instead of `PropTypes.func`.");
+                throw W.name = "Invariant Violation", W;
               }
-              v = t[j](o, j, h, d, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
-            } catch (z) {
-              v = z;
+              j = t[C](n, C, g, u, null, "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED");
+            } catch (D) {
+              j = D;
             }
-            v && !(v instanceof Error) && (fe(w), I("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", h || "React class", d, j, typeof v), fe(null)), v instanceof Error && !(v.message in Re) && (Re[v.message] = !0, fe(w), I("Failed %s type: %s", d, v.message), fe(null));
+            j && !(j instanceof Error) && (pe(y), O("%s: type specification of %s `%s` is invalid; the type checker function must return `null` or an `Error` but returned a %s. You may have forgotten to pass an argument to the type checker creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and shape all require an argument).", g || "React class", u, C, typeof j), pe(null)), j instanceof Error && !(j.message in Fe) && (Fe[j.message] = !0, pe(y), O("Failed %s type: %s", u, j.message), pe(null));
           }
       }
     }
-    var lt = Array.isArray;
-    function Me(t) {
-      return lt(t);
+    var st = Array.isArray;
+    function De(t) {
+      return st(t);
     }
-    function ct(t) {
+    function lt(t) {
       {
-        var o = typeof Symbol == "function" && Symbol.toStringTag, d = o && t[Symbol.toStringTag] || t.constructor.name || "Object";
-        return d;
+        var n = typeof Symbol == "function" && Symbol.toStringTag, u = n && t[Symbol.toStringTag] || t.constructor.name || "Object";
+        return u;
       }
     }
     function dt(t) {
       try {
-        return We(t), !1;
+        return Ge(t), !1;
       } catch {
         return !0;
       }
     }
-    function We(t) {
+    function Ge(t) {
       return "" + t;
     }
-    function Ge(t) {
+    function Ke(t) {
       if (dt(t))
-        return I("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", ct(t)), We(t);
+        return O("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", lt(t)), Ge(t);
     }
-    var Ke = D.ReactCurrentOwner, ut = {
+    var Xe = $.ReactCurrentOwner, ct = {
       key: !0,
       ref: !0,
       __self: !0,
       __source: !0
-    }, Ne, a;
+    }, Ne, i;
     function l(t) {
-      if (me.call(t, "ref")) {
-        var o = Object.getOwnPropertyDescriptor(t, "ref").get;
-        if (o && o.isReactWarning)
+      if (fe.call(t, "ref")) {
+        var n = Object.getOwnPropertyDescriptor(t, "ref").get;
+        if (n && n.isReactWarning)
           return !1;
       }
       return t.ref !== void 0;
     }
-    function m(t) {
-      if (me.call(t, "key")) {
-        var o = Object.getOwnPropertyDescriptor(t, "key").get;
-        if (o && o.isReactWarning)
+    function b(t) {
+      if (fe.call(t, "key")) {
+        var n = Object.getOwnPropertyDescriptor(t, "key").get;
+        if (n && n.isReactWarning)
           return !1;
       }
       return t.key !== void 0;
     }
-    function O(t, o) {
-      typeof t.ref == "string" && Ke.current;
+    function I(t, n) {
+      typeof t.ref == "string" && Xe.current;
     }
-    function A(t, o) {
+    function S(t, n) {
       {
-        var d = function() {
-          Ne || (Ne = !0, I("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", o));
+        var u = function() {
+          Ne || (Ne = !0, O("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
         };
-        d.isReactWarning = !0, Object.defineProperty(t, "key", {
-          get: d,
+        u.isReactWarning = !0, Object.defineProperty(t, "key", {
+          get: u,
           configurable: !0
         });
       }
     }
-    function le(t, o) {
+    function ie(t, n) {
       {
-        var d = function() {
-          a || (a = !0, I("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", o));
+        var u = function() {
+          i || (i = !0, O("%s: `ref` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://reactjs.org/link/special-props)", n));
         };
-        d.isReactWarning = !0, Object.defineProperty(t, "ref", {
-          get: d,
+        u.isReactWarning = !0, Object.defineProperty(t, "ref", {
+          get: u,
           configurable: !0
         });
       }
     }
-    var ie = function(t, o, d, h, w, k, j) {
-      var v = {
+    var Z = function(t, n, u, g, y, R, C) {
+      var j = {
         // This tag allows us to uniquely identify this as a React Element
-        $$typeof: s,
+        $$typeof: a,
         // Built-in properties that belong on the element
         type: t,
-        key: o,
-        ref: d,
-        props: j,
+        key: n,
+        ref: u,
+        props: C,
         // Record the component responsible for creating this element.
-        _owner: k
+        _owner: R
       };
-      return v._store = {}, Object.defineProperty(v._store, "validated", {
+      return j._store = {}, Object.defineProperty(j._store, "validated", {
         configurable: !1,
         enumerable: !1,
         writable: !0,
         value: !1
-      }), Object.defineProperty(v, "_self", {
+      }), Object.defineProperty(j, "_self", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: h
-      }), Object.defineProperty(v, "_source", {
+        value: g
+      }), Object.defineProperty(j, "_source", {
         configurable: !1,
         enumerable: !1,
         writable: !1,
-        value: w
-      }), Object.freeze && (Object.freeze(v.props), Object.freeze(v)), v;
+        value: y
+      }), Object.freeze && (Object.freeze(j.props), Object.freeze(j)), j;
     };
-    function X(t, o, d, h, w) {
+    function _(t, n, u, g, y) {
       {
-        var k, j = {}, v = null, B = null;
-        d !== void 0 && (Ge(d), v = "" + d), m(o) && (Ge(o.key), v = "" + o.key), l(o) && (B = o.ref, O(o, w));
-        for (k in o)
-          me.call(o, k) && !ut.hasOwnProperty(k) && (j[k] = o[k]);
+        var R, C = {}, j = null, W = null;
+        u !== void 0 && (Ke(u), j = "" + u), b(n) && (Ke(n.key), j = "" + n.key), l(n) && (W = n.ref, I(n, y));
+        for (R in n)
+          fe.call(n, R) && !ct.hasOwnProperty(R) && (C[R] = n[R]);
         if (t && t.defaultProps) {
-          var z = t.defaultProps;
-          for (k in z)
-            j[k] === void 0 && (j[k] = z[k]);
+          var D = t.defaultProps;
+          for (R in D)
+            C[R] === void 0 && (C[R] = D[R]);
         }
-        if (v || B) {
-          var S = typeof t == "function" ? t.displayName || t.name || "Unknown" : t;
-          v && A(j, S), B && le(j, S);
+        if (j || W) {
+          var M = typeof t == "function" ? t.displayName || t.name || "Unknown" : t;
+          j && S(C, M), W && ie(C, M);
         }
-        return ie(t, v, B, w, h, Ke.current, j);
+        return Z(t, j, W, y, g, Xe.current, C);
       }
     }
-    var ce = D.ReactCurrentOwner, Z = D.ReactDebugCurrentFrame;
-    function ne(t) {
+    var V = $.ReactCurrentOwner, te = $.ReactDebugCurrentFrame;
+    function ae(t) {
       if (t) {
-        var o = t._owner, d = U(t.type, t._source, o ? o.type : null);
-        Z.setExtraStackFrame(d);
+        var n = t._owner, u = U(t.type, t._source, n ? n.type : null);
+        te.setExtraStackFrame(u);
       } else
-        Z.setExtraStackFrame(null);
+        te.setExtraStackFrame(null);
     }
-    var be;
-    be = !1;
+    var xe;
+    xe = !1;
     function Je(t) {
-      return typeof t == "object" && t !== null && t.$$typeof === s;
+      return typeof t == "object" && t !== null && t.$$typeof === a;
     }
     function Te() {
       {
-        if (ce.current) {
-          var t = G(ce.current.type);
+        if (V.current) {
+          var t = X(V.current.type);
           if (t)
             return `
 
@@ -500,211 +487,400 @@ Check the render method of \`` + t + "`.";
         return "";
       }
     }
-    function vr(t) {
+    function xr(t) {
       return "";
     }
-    var Wt = {};
-    function jr(t) {
+    var Ut = {};
+    function br(t) {
       {
-        var o = Te();
-        if (!o) {
-          var d = typeof t == "string" ? t : t.displayName || t.name;
-          d && (o = `
+        var n = Te();
+        if (!n) {
+          var u = typeof t == "string" ? t : t.displayName || t.name;
+          u && (n = `
 
-Check the top-level render call using <` + d + ">.");
+Check the top-level render call using <` + u + ">.");
         }
-        return o;
+        return n;
       }
     }
-    function Gt(t, o) {
+    function $t(t, n) {
       {
         if (!t._store || t._store.validated || t.key != null)
           return;
         t._store.validated = !0;
-        var d = jr(o);
-        if (Wt[d])
+        var u = br(n);
+        if (Ut[u])
           return;
-        Wt[d] = !0;
-        var h = "";
-        t && t._owner && t._owner !== ce.current && (h = " It was passed a child from " + G(t._owner.type) + "."), ne(t), I('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', d, h), ne(null);
+        Ut[u] = !0;
+        var g = "";
+        t && t._owner && t._owner !== V.current && (g = " It was passed a child from " + X(t._owner.type) + "."), ae(t), O('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', u, g), ae(null);
       }
     }
-    function Kt(t, o) {
+    function Vt(t, n) {
       {
         if (typeof t != "object")
           return;
-        if (Me(t))
-          for (var d = 0; d < t.length; d++) {
-            var h = t[d];
-            Je(h) && Gt(h, o);
+        if (De(t))
+          for (var u = 0; u < t.length; u++) {
+            var g = t[u];
+            Je(g) && $t(g, n);
           }
         else if (Je(t))
           t._store && (t._store.validated = !0);
         else if (t) {
-          var w = M(t);
-          if (typeof w == "function" && w !== t.entries)
-            for (var k = w.call(t), j; !(j = k.next()).done; )
-              Je(j.value) && Gt(j.value, o);
+          var y = B(t);
+          if (typeof y == "function" && y !== t.entries)
+            for (var R = y.call(t), C; !(C = R.next()).done; )
+              Je(C.value) && $t(C.value, n);
         }
       }
     }
-    function Cr(t) {
+    function gr(t) {
       {
-        var o = t.type;
-        if (o == null || typeof o == "string")
+        var n = t.type;
+        if (n == null || typeof n == "string")
           return;
-        var d;
-        if (typeof o == "function")
-          d = o.propTypes;
-        else if (typeof o == "object" && (o.$$typeof === E || // Note: Memo only checks outer props here.
+        var u;
+        if (typeof n == "function")
+          u = n.propTypes;
+        else if (typeof n == "object" && (n.$$typeof === h || // Note: Memo only checks outer props here.
         // Inner props are checked in the reconciler.
-        o.$$typeof === H))
-          d = o.propTypes;
+        n.$$typeof === L))
+          u = n.propTypes;
         else
           return;
-        if (d) {
-          var h = G(o);
-          at(d, t.props, "prop", h, t);
-        } else if (o.PropTypes !== void 0 && !be) {
-          be = !0;
-          var w = G(o);
-          I("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", w || "Unknown");
+        if (u) {
+          var g = X(n);
+          at(u, t.props, "prop", g, t);
+        } else if (n.PropTypes !== void 0 && !xe) {
+          xe = !0;
+          var y = X(n);
+          O("Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?", y || "Unknown");
         }
-        typeof o.getDefaultProps == "function" && !o.getDefaultProps.isReactClassApproved && I("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
+        typeof n.getDefaultProps == "function" && !n.getDefaultProps.isReactClassApproved && O("getDefaultProps is only used on classic React.createClass definitions. Use a static property named `defaultProps` instead.");
       }
     }
-    function wr(t) {
+    function hr(t) {
       {
-        for (var o = Object.keys(t.props), d = 0; d < o.length; d++) {
-          var h = o[d];
-          if (h !== "children" && h !== "key") {
-            ne(t), I("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", h), ne(null);
+        for (var n = Object.keys(t.props), u = 0; u < n.length; u++) {
+          var g = n[u];
+          if (g !== "children" && g !== "key") {
+            ae(t), O("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", g), ae(null);
             break;
           }
         }
-        t.ref !== null && (ne(t), I("Invalid attribute `ref` supplied to `React.Fragment`."), ne(null));
+        t.ref !== null && (ae(t), O("Invalid attribute `ref` supplied to `React.Fragment`."), ae(null));
       }
     }
-    var Jt = {};
-    function Xt(t, o, d, h, w, k) {
+    var Wt = {};
+    function Yt(t, n, u, g, y, R) {
       {
-        var j = it(t);
-        if (!j) {
-          var v = "";
-          (t === void 0 || typeof t == "object" && t !== null && Object.keys(t).length === 0) && (v += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
-          var B = vr();
-          B ? v += B : v += Te();
-          var z;
-          t === null ? z = "null" : Me(t) ? z = "array" : t !== void 0 && t.$$typeof === s ? (z = "<" + (G(t.type) || "Unknown") + " />", v = " Did you accidentally export a JSX literal instead of a component?") : z = typeof t, I("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", z, v);
+        var C = nt(t);
+        if (!C) {
+          var j = "";
+          (t === void 0 || typeof t == "object" && t !== null && Object.keys(t).length === 0) && (j += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
+          var W = xr();
+          W ? j += W : j += Te();
+          var D;
+          t === null ? D = "null" : De(t) ? D = "array" : t !== void 0 && t.$$typeof === a ? (D = "<" + (X(t.type) || "Unknown") + " />", j = " Did you accidentally export a JSX literal instead of a component?") : D = typeof t, O("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", D, j);
         }
-        var S = X(t, o, d, w, k);
-        if (S == null)
-          return S;
-        if (j) {
-          var K = o.children;
-          if (K !== void 0)
-            if (h)
-              if (Me(K)) {
-                for (var Ee = 0; Ee < K.length; Ee++)
-                  Kt(K[Ee], t);
-                Object.freeze && Object.freeze(K);
+        var M = _(t, n, u, y, R);
+        if (M == null)
+          return M;
+        if (C) {
+          var Q = n.children;
+          if (Q !== void 0)
+            if (g)
+              if (De(Q)) {
+                for (var Ee = 0; Ee < Q.length; Ee++)
+                  Vt(Q[Ee], t);
+                Object.freeze && Object.freeze(Q);
               } else
-                I("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
+                O("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
             else
-              Kt(K, t);
+              Vt(Q, t);
         }
-        if (me.call(o, "key")) {
-          var he = G(t), W = Object.keys(o).filter(function(Er) {
-            return Er !== "key";
-          }), pt = W.length > 0 ? "{key: someKey, " + W.join(": ..., ") + ": ...}" : "{key: someKey}";
-          if (!Jt[he + pt]) {
-            var Tr = W.length > 0 ? "{" + W.join(": ..., ") + ": ...}" : "{}";
-            I(`A props object containing a "key" prop is being spread into JSX:
+        if (fe.call(n, "key")) {
+          var be = X(t), G = Object.keys(n).filter(function(wr) {
+            return wr !== "key";
+          }), ut = G.length > 0 ? "{key: someKey, " + G.join(": ..., ") + ": ...}" : "{key: someKey}";
+          if (!Wt[be + ut]) {
+            var yr = G.length > 0 ? "{" + G.join(": ..., ") + ": ...}" : "{}";
+            O(`A props object containing a "key" prop is being spread into JSX:
   let props = %s;
   <%s {...props} />
 React keys must be passed directly to JSX without using spread:
   let props = %s;
-  <%s key={someKey} {...props} />`, pt, he, Tr, he), Jt[he + pt] = !0;
+  <%s key={someKey} {...props} />`, ut, be, yr, be), Wt[be + ut] = !0;
           }
         }
-        return t === c ? wr(S) : Cr(S), S;
+        return t === d ? hr(M) : gr(M), M;
       }
     }
-    function kr(t, o, d) {
-      return Xt(t, o, d, !0);
+    function jr(t, n, u) {
+      return Yt(t, n, u, !0);
     }
-    function yr(t, o, d) {
-      return Xt(t, o, d, !1);
+    function vr(t, n, u) {
+      return Yt(t, n, u, !1);
     }
-    var Rr = yr, Nr = kr;
-    qe.Fragment = c, qe.jsx = Rr, qe.jsxs = Nr;
-  }()), qe;
+    var Cr = vr, kr = jr;
+    Me.Fragment = d, Me.jsx = Cr, Me.jsxs = kr;
+  }()), Me;
 }
-process.env.NODE_ENV === "production" ? ft.exports = $r() : ft.exports = Br();
-var e = ft.exports;
-const y = Fe.memo(
-  ({ onClick: r, title: s, command: i, activeStyles: c, disabled: u = !1, children: p }) => /* @__PURE__ */ e.jsx(
-    "button",
-    {
-      type: "button",
-      onClick: r,
-      onMouseDown: (b) => b.preventDefault(),
-      className: `btn btn-outline-secondary ${c && c.has(i) ? "active" : ""}`,
-      "data-bs-toggle": "tooltip",
-      "data-bs-placement": "bottom",
-      title: s,
-      disabled: u,
-      children: p
-    }
-  )
+process.env.NODE_ENV === "production" ? mt.exports = qr() : mt.exports = Mr();
+var e = mt.exports;
+const Br = () => /* @__PURE__ */ e.jsx("style", { children: `
+          .forma-text-toolbar-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #6c757d;
+            background-color: transparent;
+            border: 1px solid #6c757d;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            user-select: none;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+          }
+
+          .forma-text-toolbar-button:hover {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+          }
+
+          .forma-text-toolbar-button--active {
+            color: #fff;
+            background-color: #5a6268;
+            border-color: #545b62;
+          }
+
+          .forma-text-toolbar-button:disabled {
+            pointer-events: none;
+            opacity: 0.65;
+          }
+
+
+
+
+/* --- Custom Tooltip Styles --- */
+
+/* 1. The container (no changes needed here) */
+.forma-text-tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* 2. The tooltip bubble */
+.forma-text-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  
+  /* --- CHANGED --- */
+  /* Position it BELOW the button */
+  position: absolute;
+  z-index: 10;
+  top: 130%; /* Changed from 'bottom' */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* 3. The small arrow pointing UP to the button */
+.forma-text-tooltip::after {
+  content: "";
+  position: absolute;
+  
+  /* --- CHANGED --- */
+  bottom: 100%; /* Position arrow at the TOP of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  /* Flip the arrow direction to point up */
+  border-color: transparent transparent #212529 transparent;
+}
+
+/* 4. The hover logic (no changes needed here) */
+.forma-text-tooltip-container:hover .forma-text-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+
+        ` }), F = ze.memo(
+  ({ onClick: r, title: a, command: s, activeStyles: d, disabled: m = !1, children: x }) => {
+    const f = [
+      "forma-text-toolbar-button",
+      d && d.has(s) ? "forma-text-toolbar-button--active" : ""
+    ].join(" ").trim();
+    return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+      /* @__PURE__ */ e.jsx(Br, {}),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-tooltip-container", children: [
+        /* @__PURE__ */ e.jsx(
+          "button",
+          {
+            type: "button",
+            onClick: r,
+            onMouseDown: (c) => c.preventDefault(),
+            className: f,
+            disabled: m,
+            "aria-label": a,
+            children: x
+          }
+        ),
+        /* @__PURE__ */ e.jsx("span", { className: "forma-text-tooltip", children: a })
+      ] })
+    ] });
+  }
 );
-y.propTypes = {
-  onClick: n.func.isRequired,
-  title: n.string.isRequired,
-  command: n.string,
-  activeStyles: n.object,
-  disabled: n.bool,
-  children: n.node.isRequired
+F.propTypes = {
+  onClick: o.func.isRequired,
+  title: o.string.isRequired,
+  command: o.string,
+  activeStyles: o.object,
+  disabled: o.bool,
+  children: o.node.isRequired
 };
-y.displayName = "ToolbarButton";
-const de = ({ title: r, icon: s, children: i }) => {
-  const [c, u] = T(!1), p = Y(null);
-  return Q(() => {
-    const b = (f) => {
-      p.current && !p.current.contains(f.target) && u(!1);
+F.displayName = "FormaTextToolbarButton";
+const Pr = () => /* @__PURE__ */ e.jsx("style", { children: `
+        .forma-text-dropdown {
+          position: relative;
+          display: inline-flex;
+        }
+        
+        .forma-text-dropdown-toggle {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.25rem;
+          padding: 0.375rem 0.75rem;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: #6c757d;
+          background-color: transparent;
+          border: 1px solid #6c757d;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+        }
+
+        .forma-text-dropdown-toggle:hover {
+          color: #fff;
+          background-color: #6c757d;
+        }
+
+        /* The little down arrow */
+        .forma-text-dropdown-toggle::after {
+          display: inline-block;
+          margin-left: 0.255em;
+          vertical-align: 0.255em;
+          content: "";
+          border-top: 0.3em solid;
+          border-right: 0.3em solid transparent;
+          border-bottom: 0;
+          border-left: 0.3em solid transparent;
+        }
+
+        .forma-text-dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: 1000;
+          display: none; /* Hidden by default */
+          min-width: 10rem;
+          padding: 0.5rem 0;
+          margin-top: 0.125rem;
+          font-size: 1rem;
+          color: #212529;
+          text-align: left;
+          list-style: none;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          border-radius: 0.25rem;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+        }
+
+        .forma-text-dropdown-menu--show {
+          display: block; /* Shown when the 'show' class is added */
+        }
+      ` }), ge = ({ title: r, icon: a, children: s }) => {
+  const [d, m] = w(!1), x = K(null);
+  return se(() => {
+    const f = (c) => {
+      x.current && !x.current.contains(c.target) && m(!1);
     };
-    return document.addEventListener("mousedown", b), () => document.removeEventListener("mousedown", b);
-  }, []), /* @__PURE__ */ e.jsxs("div", { className: "btn-group", ref: p, children: [
-    /* @__PURE__ */ e.jsx(
-      "button",
-      {
-        type: "button",
-        title: r,
-        onClick: () => u(!c),
-        onMouseDown: (b) => b.preventDefault(),
-        className: "btn btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1",
-        "aria-expanded": c,
-        children: s
-      }
-    ),
-    /* @__PURE__ */ e.jsx(
-      "div",
-      {
-        className: `dropdown-menu ${c ? "show" : ""}`,
-        onClick: (b) => {
-          b.target.closest("button") && u(!1);
-        },
-        children: i
-      }
-    )
+    return document.addEventListener("mousedown", f), () => document.removeEventListener("mousedown", f);
+  }, []), /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(Pr, {}),
+    /* @__PURE__ */ e.jsxs("div", { className: "forma-text-dropdown", ref: x, children: [
+      /* @__PURE__ */ e.jsx(
+        "button",
+        {
+          type: "button",
+          title: r,
+          onClick: () => m(!d),
+          onMouseDown: (f) => f.preventDefault(),
+          className: "forma-text-dropdown-toggle",
+          "aria-expanded": d,
+          children: a
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "div",
+        {
+          className: `forma-text-dropdown-menu ${d ? "forma-text-dropdown-menu--show" : ""}`,
+          onClick: (f) => {
+            f.target.closest("button") && m(!1);
+          },
+          children: s
+        }
+      )
+    ] })
   ] });
 };
-de.propTypes = {
-  title: n.string.isRequired,
-  icon: n.node.isRequired,
-  children: n.node.isRequired
+ge.propTypes = {
+  title: o.string.isRequired,
+  icon: o.node.isRequired,
+  children: o.node.isRequired
 };
-const Vr = [
+const Hr = () => /* @__PURE__ */ e.jsx("style", { children: `
+        .forma-text-color-grid {
+          width: 160px;
+          padding: 0.5rem;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 4px;
+        }
+        .forma-text-color-swatch {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          border: 1px solid #ddd;
+          padding: 0;
+          cursor: pointer;
+          transition: transform 0.1s ease-in-out;
+        }
+        .forma-text-color-swatch:hover {
+          transform: scale(1.1);
+        }
+      ` }), Ur = [
   "#000000",
   "#222222",
   "#444444",
@@ -751,25 +927,54 @@ const Vr = [
   "#CC00CC",
   "#FF66FF",
   "#FF99FF"
-], bt = ({ command: r, applyStyle: s }) => {
-  const i = r === "foreColor" ? "Text Color" : "Highlight Color", c = r === "foreColor" ? /* @__PURE__ */ e.jsx(gt, { size: 16 }) : /* @__PURE__ */ e.jsx(vt, { size: 16 });
-  return /* @__PURE__ */ e.jsx(de, { title: i, icon: c, children: /* @__PURE__ */ e.jsx("div", { className: "p-2 d-flex flex-wrap gap-1", style: { width: "160px" }, children: Vr.map((u) => /* @__PURE__ */ e.jsx(
-    "button",
-    {
-      type: "button",
-      className: "color-swatch",
-      style: { backgroundColor: u },
-      onClick: () => s(r, u),
-      "aria-label": u
-    },
-    u
-  )) }) });
+], ft = ({ command: r, applyStyle: a }) => {
+  const s = r === "foreColor" ? "Text Color" : "Highlight Color", d = r === "foreColor" ? /* @__PURE__ */ e.jsx(bt, { size: 16 }) : /* @__PURE__ */ e.jsx(gt, { size: 16 });
+  return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(Hr, {}),
+    /* @__PURE__ */ e.jsx(ge, { title: s, icon: d, children: /* @__PURE__ */ e.jsx("div", { className: "forma-text-color-grid", children: Ur.map((m) => /* @__PURE__ */ e.jsx(
+      "button",
+      {
+        type: "button",
+        className: "forma-text-color-swatch",
+        style: { backgroundColor: m },
+        onClick: () => a(r, m),
+        "aria-label": m
+      },
+      m
+    )) }) })
+  ] });
 };
-bt.propTypes = {
-  command: n.oneOf(["foreColor", "backColor"]).isRequired,
-  applyStyle: n.func.isRequired
+ft.propTypes = {
+  command: o.oneOf(["foreColor", "backColor"]).isRequired,
+  applyStyle: o.func.isRequired
 };
-const Yr = [
+const $r = () => /* @__PURE__ */ e.jsx("style", { children: `
+      .forma-text-emoji-grid {
+        max-height: 200px;
+        width: 250px;
+        overflow-y: auto;
+        padding: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+      }
+      .forma-text-emoji-button {
+        padding: 0.25rem 0.5rem;
+        font-size: 1.25rem; /* Replicates Bootstrap's fs-5 */
+        color: #212529;
+        background-color: #f8f9fa; /* Replicates btn-light */
+        border: 1px solid #f8f9fa;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        line-height: 1.5;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+      }
+      .forma-text-emoji-button:hover {
+        color: #000;
+        background-color: #e2e6ea;
+        border-color: #dae0e5;
+      }
+    ` }), Vr = [
   "💻",
   "🖥️",
   "🖱️",
@@ -812,26 +1017,110 @@ const Yr = [
   "🔍",
   "📥",
   "📤"
-], rr = ({ applyStyle: r }) => /* @__PURE__ */ e.jsx(de, { title: "Insert Emoji", icon: /* @__PURE__ */ e.jsx(jt, { size: 16 }), children: /* @__PURE__ */ e.jsx(
-  "div",
-  {
-    className: "p-2 d-flex flex-wrap gap-1",
-    style: { maxHeight: "200px", width: "250px", overflowY: "auto" },
-    children: Yr.map((s) => /* @__PURE__ */ e.jsx(
-      "button",
-      {
-        className: "btn btn-sm btn-light fs-5",
-        onClick: () => r("insertText", s),
-        children: s
-      },
-      s
-    ))
-  }
-) });
-rr.propTypes = {
-  applyStyle: n.func.isRequired
+], Zt = ({ applyStyle: r }) => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+  /* @__PURE__ */ e.jsx($r, {}),
+  /* @__PURE__ */ e.jsx(ge, { title: "Insert Emoji", icon: /* @__PURE__ */ e.jsx(ht, { size: 16 }), children: /* @__PURE__ */ e.jsx("div", { className: "forma-text-emoji-grid", children: Vr.map((a) => /* @__PURE__ */ e.jsx(
+    "button",
+    {
+      className: "forma-text-emoji-button",
+      onClick: () => r("insertText", a),
+      children: a
+    },
+    a
+  )) }) })
+] });
+Zt.propTypes = {
+  applyStyle: o.func.isRequired
 };
-const Wr = [
+const Wr = () => /* @__PURE__ */ e.jsx("style", { children: `
+        .forma-text-classic-toolbar {
+          padding: 0.5rem;
+          border-bottom: 1px solid #dee2e6;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        .forma-text-btn-group {
+          display: flex;
+          align-items: center;
+          gap: 2px;
+        }
+        .forma-text-dropdown-item {
+          display: block;
+          width: 100%;
+          padding: 0.5rem 1rem;
+          font-size: 14px;
+          text-align: left;
+          color: #212529;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          transition: background-color 0.15s ease-in-out;
+        }
+        .forma-text-dropdown-item:hover {
+          background-color: #f8f9fa;
+        }
+        .forma-text-dropdown-item--danger {
+          color: #dc3545;
+          margin-top: 0.5rem;
+          border-top: 1px solid #dc3545;
+        }
+        .forma-text-font-icon {
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .forma-text-row {
+            display: flex;
+            gap: 1rem;
+            position: relative;
+            margin: 1rem 0;
+        }
+        .forma-text-row:hover .forma-text-delete-btn {
+            display: flex;
+        }
+        .forma-text-col {
+            border: 1px dashed #ccc;
+            padding: 1rem;
+            min-height: 100px;
+        }
+        .forma-text-col--1 { flex: 1; }
+        .forma-text-col--2 { flex: 2; }
+
+        .forma-text-delete-btn {
+            display: none;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            z-index: 10;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        @keyframes forma-text-spinner-border {
+          to { transform: rotate(360deg); }
+        }
+        .forma-text-spinner {
+          display: inline-block;
+          width: 1rem;
+          height: 1rem;
+          vertical-align: text-bottom;
+          border: 0.2em solid currentColor;
+          border-right-color: transparent;
+          border-radius: 50%;
+          animation: forma-text-spinner-border .75s linear infinite;
+        }
+        .forma-text-hidden {
+            display: none;
+        }
+      ` }), Yr = [
   "Arial",
   "Georgia",
   "Helvetica",
@@ -846,339 +1135,307 @@ const Wr = [
   "Heading 4": "<h4>",
   "Heading 5": "<h5>",
   Paragraph: "<p>"
-}, Jr = { Single: "1", 1.15: "1.15", 1.5: "1.5", Double: "2" }, Xr = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>', Xe = `<button class="btn btn-danger delete-column-btn" contenteditable="false" title="Delete Columns">${Xr}</button>`, Zr = {
-  "2 Columns (1:1)": `<div class="row">${Xe}<div class="col-6"><p>Column 1</p></div><div class="col-6"><p>Column 2</p></div></div>`,
-  "3 Columns (1:1:1)": `<div class="row">${Xe}<div class="col-4"><p>C1</p></div><div class="col-4"><p>C2</p></div><div class="col-4"><p>C3</p></div></div>`,
-  "2 Columns (1:2)": `<div class="row">${Xe}<div class="col-4"><p>C1</p></div><div class="col-8"><p>C2</p></div></div>`,
-  "2 Columns (2:1)": `<div class="row">${Xe}<div class="col-8"><p>C1</p></div><div class="col-4"><p>C2</p></div></div>`
-}, nr = ({
+}, Xr = { Single: "1", 1.15: "1.15", 1.5: "1.5", Double: "2" }, Qt = ({
   applyStyle: r,
-  applyLineHeight: s,
-  activeStyles: i,
-  onOpenLinkModal: c,
-  onImageUpload: u,
-  onDocxUpload: p,
-  onVideoModalOpen: b,
-  onTableModalOpen: f,
-  onAiRefactor: E,
-  content: _,
-  isGenerating: F,
-  isAiLoadingMinimized: H
+  applyLineHeight: a,
+  activeStyles: s,
+  onOpenLinkModal: d,
+  onImageUpload: m,
+  onDocxUpload: x,
+  onVideoModalOpen: f,
+  onTableModalOpen: c,
+  onAiRefactor: h,
+  content: E,
+  isGenerating: k,
+  isAiLoadingMinimized: L
 }) => {
-  const L = Y(null), $ = Y(null), g = Y(null);
-  return Q(() => {
-    if (L.current && typeof window.bootstrap < "u") {
-      const M = [].slice.call(
-        L.current.querySelectorAll('[data-bs-toggle="tooltip"]')
-      ).map(
-        (D) => new window.bootstrap.Tooltip(D)
-      );
-      return () => M.forEach((D) => D == null ? void 0 : D.dispose());
-    }
-  }, []), /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
-    /* @__PURE__ */ e.jsxs(
-      "div",
-      {
-        ref: L,
-        className: "p-2 border-bottom d-flex flex-wrap align-items-center gap-2",
-        children: [
-          /* @__PURE__ */ e.jsxs("div", { className: "btn-group", role: "group", children: [
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Undo (Ctrl+Z)",
-                onClick: () => r("undo"),
-                children: /* @__PURE__ */ e.jsx(Ct, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Redo (Ctrl+Y)",
-                onClick: () => r("redo"),
-                children: /* @__PURE__ */ e.jsx(wt, { size: 16 })
-              }
-            )
-          ] }),
-          /* @__PURE__ */ e.jsxs("div", { className: "btn-group", children: [
-            /* @__PURE__ */ e.jsx(de, { title: "Headings", icon: /* @__PURE__ */ e.jsx(et, { size: 14 }), children: Object.entries(Kr).map(([x, M]) => /* @__PURE__ */ e.jsx(
+  const A = K(null), q = K(null);
+  return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(Wr, {}),
+    /* @__PURE__ */ e.jsxs("div", { className: "forma-text-classic-toolbar", children: [
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", children: [
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Undo (Ctrl+Z)",
+            onClick: () => r("undo"),
+            children: /* @__PURE__ */ e.jsx(jt, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Redo (Ctrl+Y)",
+            onClick: () => r("redo"),
+            children: /* @__PURE__ */ e.jsx(vt, { size: 16 })
+          }
+        )
+      ] }),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", children: [
+        /* @__PURE__ */ e.jsx(ge, { title: "Headings", icon: /* @__PURE__ */ e.jsx(Qe, { size: 14 }), children: Object.entries(Kr).map(([p, z]) => /* @__PURE__ */ e.jsx(
+          "button",
+          {
+            className: "forma-text-dropdown-item",
+            onClick: () => r("formatBlock", z),
+            children: p
+          },
+          p
+        )) }),
+        /* @__PURE__ */ e.jsx(
+          ge,
+          {
+            title: "Font Family",
+            icon: /* @__PURE__ */ e.jsx("span", { className: "forma-text-font-icon", children: "Aa" }),
+            children: Yr.map((p) => /* @__PURE__ */ e.jsx(
               "button",
               {
-                className: "dropdown-item",
-                onClick: () => r("formatBlock", M),
-                children: x
+                className: "forma-text-dropdown-item",
+                style: { fontFamily: p },
+                onClick: () => r("fontName", p),
+                children: p
               },
-              x
-            )) }),
-            /* @__PURE__ */ e.jsx(
-              de,
-              {
-                title: "Font Family",
-                icon: /* @__PURE__ */ e.jsx("span", { className: "fw-bold small", style: { fontSize: "12px" }, children: "Aa" }),
-                children: Wr.map((x) => /* @__PURE__ */ e.jsx(
-                  "button",
-                  {
-                    className: "dropdown-item",
-                    style: { fontFamily: x },
-                    onClick: () => r("fontName", x),
-                    children: x
-                  },
-                  x
-                ))
-              }
-            ),
-            /* @__PURE__ */ e.jsx(de, { title: "Font Size", icon: /* @__PURE__ */ e.jsx(kt, { size: 14 }), children: Object.entries(Gr).map(([x, M]) => /* @__PURE__ */ e.jsx(
-              "button",
-              {
-                className: "dropdown-item",
-                onClick: () => r("fontSize", M),
-                children: x
-              },
-              x
-            )) }),
-            /* @__PURE__ */ e.jsxs(de, { title: "Line Height", icon: /* @__PURE__ */ e.jsx(yt, { size: 14 }), children: [
-              Object.entries(Jr).map(([x, M]) => /* @__PURE__ */ e.jsx(
-                "button",
-                {
-                  className: "dropdown-item",
-                  style: { fontSize: "14px" },
-                  onClick: () => s(M),
-                  children: x
-                },
-                x
-              )),
-              /* @__PURE__ */ e.jsx(
-                "button",
-                {
-                  className: "dropdown-item text-danger border-top border-danger mt-2",
-                  style: { fontSize: "14px" },
-                  onClick: () => s("normal"),
-                  children: "Remove Height"
-                }
-              )
-            ] })
-          ] }),
-          /* @__PURE__ */ e.jsxs("div", { className: "btn-group", children: [
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Bold (Ctrl+B)",
-                command: "bold",
-                activeStyles: i,
-                onClick: () => r("bold"),
-                children: /* @__PURE__ */ e.jsx(Rt, { size: 14 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Italic (Ctrl+I)",
-                command: "italic",
-                activeStyles: i,
-                onClick: () => r("italic"),
-                children: /* @__PURE__ */ e.jsx(Nt, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Underline (Ctrl+U)",
-                command: "underline",
-                activeStyles: i,
-                onClick: () => r("underline"),
-                children: /* @__PURE__ */ e.jsx(Tt, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Strikethrough",
-                command: "strikeThrough",
-                activeStyles: i,
-                onClick: () => r("strikeThrough"),
-                children: /* @__PURE__ */ e.jsx(Et, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Superscript",
-                command: "superscript",
-                activeStyles: i,
-                onClick: () => r("superscript"),
-                children: /* @__PURE__ */ e.jsx(Ft, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Subscript",
-                command: "subscript",
-                activeStyles: i,
-                onClick: () => r("subscript"),
-                children: /* @__PURE__ */ e.jsx(Ot, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(rr, { applyStyle: r })
-          ] }),
-          /* @__PURE__ */ e.jsxs("div", { className: "btn-group", children: [
-            /* @__PURE__ */ e.jsx(bt, { command: "foreColor", applyStyle: r }),
-            /* @__PURE__ */ e.jsx(bt, { command: "backColor", applyStyle: r })
-          ] }),
-          /* @__PURE__ */ e.jsxs("div", { className: "btn-group", children: [
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Align Left",
-                command: "justifyLeft",
-                activeStyles: i,
-                onClick: () => r("justifyLeft"),
-                children: /* @__PURE__ */ e.jsx(zt, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Align Center",
-                command: "justifyCenter",
-                activeStyles: i,
-                onClick: () => r("justifyCenter"),
-                children: /* @__PURE__ */ e.jsx(Lt, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Align Right",
-                command: "justifyRight",
-                activeStyles: i,
-                onClick: () => r("justifyRight"),
-                children: /* @__PURE__ */ e.jsx(It, { size: 16 })
-              }
-            )
-          ] }),
-          /* @__PURE__ */ e.jsxs("div", { className: "btn-group", children: [
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Ordered List",
-                command: "insertOrderedList",
-                activeStyles: i,
-                onClick: () => r("insertOrderedList"),
-                children: /* @__PURE__ */ e.jsx(At, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Unordered List",
-                command: "insertUnorderedList",
-                activeStyles: i,
-                onClick: () => r("insertUnorderedList"),
-                children: /* @__PURE__ */ e.jsx(St, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(y, { title: "Outdent", onClick: () => r("outdent"), children: /* @__PURE__ */ e.jsx(_t, { size: 16 }) }),
-            /* @__PURE__ */ e.jsx(y, { title: "Indent", onClick: () => r("indent"), children: /* @__PURE__ */ e.jsx(Mt, { size: 16 }) })
-          ] }),
-          /* @__PURE__ */ e.jsxs("div", { className: "btn-group", children: [
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Blockquote",
-                onClick: () => r("formatBlock", "<blockquote>"),
-                children: /* @__PURE__ */ e.jsx(Dt, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Code Block",
-                onClick: () => r("formatBlock", "<pre>"),
-                children: /* @__PURE__ */ e.jsx(qt, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Add/Edit Link (Ctrl+K)",
-                onClick: c,
-                children: /* @__PURE__ */ e.jsx(He, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Horizontal Line",
-                onClick: () => r("insertHorizontalRule"),
-                children: /* @__PURE__ */ e.jsx(Ht, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Clear Formatting",
-                onClick: () => r("removeFormat"),
-                children: /* @__PURE__ */ e.jsx(Pt, { size: 16 })
-              }
-            )
-          ] }),
-          /* @__PURE__ */ e.jsxs("div", { className: "btn-group", children: [
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Insert Image",
-                onClick: () => {
-                  var x;
-                  return (x = $.current) == null ? void 0 : x.click();
-                },
-                children: /* @__PURE__ */ e.jsx(Ut, { size: 16 })
-              }
-            ),
-            /* @__PURE__ */ e.jsx(y, { title: "Insert Video", onClick: b, children: /* @__PURE__ */ e.jsx(tt, { size: 16 }) }),
-            /* @__PURE__ */ e.jsx(y, { title: "Insert Table", onClick: f, children: /* @__PURE__ */ e.jsx(rt, { size: 16 }) }),
-            /* @__PURE__ */ e.jsx(de, { title: "Insert Columns", icon: /* @__PURE__ */ e.jsx($t, { size: 16 }), children: Object.entries(Zr).map(([x, M]) => /* @__PURE__ */ e.jsx(
-              "button",
-              {
-                className: "dropdown-item",
-                style: { fontSize: "14px" },
-                onClick: () => r("insertHTML", M + "<p><br></p>"),
-                children: x
-              },
-              x
-            )) }),
-            /* @__PURE__ */ e.jsx(
-              y,
-              {
-                title: "Import from Word (.docx)",
-                onClick: () => {
-                  var x;
-                  return (x = g.current) == null ? void 0 : x.click();
-                },
-                children: /* @__PURE__ */ e.jsx(Bt, { size: 16 })
-              }
-            )
-          ] }),
-          /* @__PURE__ */ e.jsx("div", { className: "btn-group", children: /* @__PURE__ */ e.jsx(
-            y,
+              p
+            ))
+          }
+        ),
+        /* @__PURE__ */ e.jsx(ge, { title: "Font Size", icon: /* @__PURE__ */ e.jsx(Be, { size: 14 }), children: Object.entries(Gr).map(([p, z]) => /* @__PURE__ */ e.jsx(
+          "button",
+          {
+            className: "forma-text-dropdown-item",
+            onClick: () => r("fontSize", z),
+            children: p
+          },
+          p
+        )) }),
+        /* @__PURE__ */ e.jsxs(ge, { title: "Line Height", icon: /* @__PURE__ */ e.jsx(Ct, { size: 14 }), children: [
+          Object.entries(Xr).map(([p, z]) => /* @__PURE__ */ e.jsx(
+            "button",
             {
-              title: "Improve with AI",
-              onClick: E,
-              disabled: !_ || _ === "" || F,
-              children: F && !H ? /* @__PURE__ */ e.jsx("div", { className: "spinner-border spinner-border-sm", role: "status", children: /* @__PURE__ */ e.jsx("span", { className: "visually-hidden", children: "Loading..." }) }) : /* @__PURE__ */ e.jsx(Pe, { size: 16 })
+              className: "forma-text-dropdown-item",
+              onClick: () => a(z),
+              children: p
+            },
+            p
+          )),
+          /* @__PURE__ */ e.jsx(
+            "button",
+            {
+              className: "forma-text-dropdown-item forma-text-dropdown-item--danger",
+              onClick: () => a("normal"),
+              children: "Remove Height"
             }
-          ) })
-        ]
-      }
-    ),
+          )
+        ] })
+      ] }),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", children: [
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Bold (Ctrl+B)",
+            command: "bold",
+            activeStyles: s,
+            onClick: () => r("bold"),
+            children: /* @__PURE__ */ e.jsx(kt, { size: 14 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Italic (Ctrl+I)",
+            command: "italic",
+            activeStyles: s,
+            onClick: () => r("italic"),
+            children: /* @__PURE__ */ e.jsx(yt, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Underline (Ctrl+U)",
+            command: "underline",
+            activeStyles: s,
+            onClick: () => r("underline"),
+            children: /* @__PURE__ */ e.jsx(wt, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Strikethrough",
+            command: "strikeThrough",
+            activeStyles: s,
+            onClick: () => r("strikeThrough"),
+            children: /* @__PURE__ */ e.jsx(Rt, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Superscript",
+            command: "superscript",
+            activeStyles: s,
+            onClick: () => r("superscript"),
+            children: /* @__PURE__ */ e.jsx(Ft, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Subscript",
+            command: "subscript",
+            activeStyles: s,
+            onClick: () => r("subscript"),
+            children: /* @__PURE__ */ e.jsx(Nt, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(Zt, { applyStyle: r })
+      ] }),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", children: [
+        /* @__PURE__ */ e.jsx(ft, { command: "foreColor", applyStyle: r }),
+        /* @__PURE__ */ e.jsx(ft, { command: "backColor", applyStyle: r })
+      ] }),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", children: [
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Align Left",
+            command: "justifyLeft",
+            activeStyles: s,
+            onClick: () => r("justifyLeft"),
+            children: /* @__PURE__ */ e.jsx(Tt, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Align Center",
+            command: "justifyCenter",
+            activeStyles: s,
+            onClick: () => r("justifyCenter"),
+            children: /* @__PURE__ */ e.jsx(Et, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Align Right",
+            command: "justifyRight",
+            activeStyles: s,
+            onClick: () => r("justifyRight"),
+            children: /* @__PURE__ */ e.jsx(zt, { size: 16 })
+          }
+        )
+      ] }),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", children: [
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Ordered List",
+            command: "insertOrderedList",
+            activeStyles: s,
+            onClick: () => r("insertOrderedList"),
+            children: /* @__PURE__ */ e.jsx(Ot, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Unordered List",
+            command: "insertUnorderedList",
+            activeStyles: s,
+            onClick: () => r("insertUnorderedList"),
+            children: /* @__PURE__ */ e.jsx(St, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(F, { title: "Outdent", onClick: () => r("outdent"), children: /* @__PURE__ */ e.jsx(It, { size: 16 }) }),
+        /* @__PURE__ */ e.jsx(F, { title: "Indent", onClick: () => r("indent"), children: /* @__PURE__ */ e.jsx(Lt, { size: 16 }) })
+      ] }),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", children: [
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Blockquote",
+            onClick: () => r("formatBlock", "<blockquote>"),
+            children: /* @__PURE__ */ e.jsx(At, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Code Block",
+            onClick: () => r("formatBlock", "<pre>"),
+            children: /* @__PURE__ */ e.jsx(_t, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Add/Edit Link (Ctrl+K)",
+            onClick: d,
+            children: /* @__PURE__ */ e.jsx(Pe, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Horizontal Line",
+            onClick: () => r("insertHorizontalRule"),
+            children: /* @__PURE__ */ e.jsx(Dt, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Clear Formatting",
+            onClick: () => r("removeFormat"),
+            children: /* @__PURE__ */ e.jsx(qt, { size: 16 })
+          }
+        )
+      ] }),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", children: [
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Insert Image",
+            onClick: () => {
+              var p;
+              return (p = A.current) == null ? void 0 : p.click();
+            },
+            children: /* @__PURE__ */ e.jsx(Mt, { size: 16 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(F, { title: "Insert Video", onClick: f, children: /* @__PURE__ */ e.jsx(et, { size: 16 }) }),
+        /* @__PURE__ */ e.jsx(F, { title: "Insert Table", onClick: c, children: /* @__PURE__ */ e.jsx(tt, { size: 16 }) }),
+        /* @__PURE__ */ e.jsx(
+          F,
+          {
+            title: "Import from Word (.docx)",
+            onClick: () => {
+              var p;
+              return (p = q.current) == null ? void 0 : p.click();
+            },
+            children: /* @__PURE__ */ e.jsx(Bt, { size: 16 })
+          }
+        )
+      ] }),
+      /* @__PURE__ */ e.jsx("div", { className: "forma-text-btn-group", children: /* @__PURE__ */ e.jsx(
+        F,
+        {
+          title: "Improve with AI",
+          onClick: h,
+          disabled: !E || E === "" || k,
+          children: k && !L ? /* @__PURE__ */ e.jsx("div", { className: "forma-text-spinner", role: "status" }) : /* @__PURE__ */ e.jsx(He, { size: 16 })
+        }
+      ) })
+    ] }),
     /* @__PURE__ */ e.jsx(
       "input",
       {
         type: "file",
         accept: "image/*",
-        ref: $,
-        onChange: u,
-        className: "d-none"
+        ref: A,
+        onChange: m,
+        className: "forma-text-hidden"
       }
     ),
     /* @__PURE__ */ e.jsx(
@@ -1186,213 +1443,221 @@ const Wr = [
       {
         type: "file",
         accept: ".docx",
-        ref: g,
-        onChange: p,
-        className: "d-none"
+        ref: q,
+        onChange: x,
+        className: "forma-text-hidden"
       }
     )
   ] });
 };
-nr.propTypes = {
-  applyStyle: n.func.isRequired,
-  applyLineHeight: n.func.isRequired,
-  activeStyles: n.object.isRequired,
-  onOpenLinkModal: n.func.isRequired,
-  onImageUpload: n.func.isRequired,
-  onDocxUpload: n.func.isRequired,
-  onVideoModalOpen: n.func.isRequired,
-  onTableModalOpen: n.func.isRequired,
-  onAiRefactor: n.func.isRequired,
-  content: n.string,
-  isGenerating: n.bool.isRequired,
-  isAiLoadingMinimized: n.bool.isRequired
+Qt.propTypes = {
+  applyStyle: o.func.isRequired,
+  applyLineHeight: o.func.isRequired,
+  activeStyles: o.object.isRequired,
+  onOpenLinkModal: o.func.isRequired,
+  onImageUpload: o.func.isRequired,
+  onDocxUpload: o.func.isRequired,
+  onVideoModalOpen: o.func.isRequired,
+  onTableModalOpen: o.func.isRequired,
+  onAiRefactor: o.func.isRequired,
+  content: o.string,
+  isGenerating: o.bool.isRequired,
+  isAiLoadingMinimized: o.bool.isRequired
 };
-const R = Fe.memo(
+const N = ze.memo(
   ({
     onClick: r,
-    title: s,
-    command: i,
-    activeStyles: c,
-    disabled: u = !1,
-    children: p,
-    className: b = ""
-  }) => /* @__PURE__ */ e.jsx(
+    title: a,
+    command: s,
+    activeStyles: d,
+    disabled: m = !1,
+    children: x,
+    className: f = ""
+  }) => /* @__PURE__ */ e.jsx("div", { className: "forma-text-tooltip-container", children: /* @__PURE__ */ e.jsxs(
     "button",
     {
       type: "button",
       onClick: r,
-      onMouseDown: (f) => f.preventDefault(),
-      className: `modern-toolbar-button ${c && c.has(i) ? "active" : ""} ${b}`,
-      title: s,
-      disabled: u,
-      children: p
+      onMouseDown: (c) => c.preventDefault(),
+      className: `modern-toolbar-button ${d && d.has(s) ? "active" : ""} ${f}`,
+      disabled: m,
+      children: [
+        x,
+        /* @__PURE__ */ e.jsx("span", { className: "forma-text-tooltip", children: a })
+      ]
     }
-  )
+  ) })
 );
-R.propTypes = {
-  onClick: n.func.isRequired,
-  title: n.string.isRequired,
-  command: n.string,
-  activeStyles: n.object,
-  disabled: n.bool,
-  children: n.node.isRequired,
-  className: n.string
+N.propTypes = {
+  onClick: o.func.isRequired,
+  title: o.string.isRequired,
+  command: o.string,
+  activeStyles: o.object,
+  disabled: o.bool,
+  children: o.node.isRequired,
+  className: o.string
 };
-R.displayName = "ModernToolbarButton";
-const xe = ({ title: r, icon: s, children: i }) => {
-  const [c, u] = T(!1), p = Y(null);
-  return Q(() => {
-    const b = (f) => {
-      p.current && !p.current.contains(f.target) && u(!1);
+N.displayName = "ModernToolbarButton";
+const he = ({ title: r, icon: a, children: s }) => {
+  const [d, m] = w(!1), x = K(null);
+  return se(() => {
+    const f = (c) => {
+      x.current && !x.current.contains(c.target) && m(!1);
     };
-    return document.addEventListener("mousedown", b), () => document.removeEventListener("mousedown", b);
-  }, []), /* @__PURE__ */ e.jsxs("div", { className: "modern-dropdown", ref: p, children: [
+    return document.addEventListener("mousedown", f), () => document.removeEventListener("mousedown", f);
+  }, []), /* @__PURE__ */ e.jsxs("div", { className: "modern-dropdown", ref: x, children: [
     /* @__PURE__ */ e.jsxs(
       "button",
       {
         type: "button",
         title: r,
-        onClick: () => u(!c),
-        onMouseDown: (b) => b.preventDefault(),
+        onClick: () => m(!d),
+        onMouseDown: (f) => f.preventDefault(),
         className: "modern-toolbar-button",
-        "aria-expanded": c,
+        "aria-expanded": d,
         children: [
-          s,
-          /* @__PURE__ */ e.jsx(tr, { size: 14, style: { marginLeft: "4px" } })
+          a,
+          /* @__PURE__ */ e.jsx(Jt, { size: 14, style: { marginLeft: "4px" } })
         ]
       }
     ),
     /* @__PURE__ */ e.jsx(
       "div",
       {
-        className: `modern-dropdown-menu ${c ? "show" : ""}`,
-        onClick: () => u(!1),
-        children: i
+        className: `modern-dropdown-menu ${d ? "show" : ""}`,
+        onClick: () => m(!1),
+        children: s
       }
     )
   ] });
 };
-xe.propTypes = {
-  title: n.string.isRequired,
-  icon: n.node.isRequired,
-  children: n.node.isRequired
+he.propTypes = {
+  title: o.string.isRequired,
+  icon: o.node.isRequired,
+  children: o.node.isRequired
 };
-const Qr = [
+const Jr = [
   "#000000",
+  "#222222",
   "#444444",
   "#666666",
+  "#888888",
   "#999999",
+  "#BBBBBB",
   "#CCCCCC",
+  "#DDDDDD",
+  "#EEEEEE",
   "#FFFFFF",
   "#FF0000",
-  "#FF9900",
-  "#FFFF00",
-  "#00FF00",
-  "#00FFFF",
-  "#0000FF",
-  "#9900FF",
-  "#FF00FF",
   "#CC0000",
+  "#990000",
+  "#660000",
+  "#FF6666",
+  "#FF9900",
+  "#FF6600",
   "#CC6600",
+  "#FFB84D",
+  "#FFFF00",
+  "#FFEE00",
   "#CCCC00",
+  "#999900",
+  "#00FF00",
   "#00CC00",
+  "#009900",
+  "#66FF66",
+  "#33CC33",
+  "#00FFFF",
   "#00CCCC",
+  "#009999",
+  "#66FFFF",
+  "#0000FF",
   "#0000CC",
+  "#000099",
+  "#6666FF",
+  "#3366FF",
+  "#9900FF",
   "#6600CC",
-  "#CC00CC"
-], ht = ({ command: r, applyStyle: s }) => {
-  const i = r === "foreColor" ? "Text Color" : "Highlight Color", c = r === "foreColor" ? /* @__PURE__ */ e.jsx(gt, { size: 26 }) : /* @__PURE__ */ e.jsx(vt, { size: 26 });
-  return /* @__PURE__ */ e.jsx(xe, { title: i, icon: c, children: /* @__PURE__ */ e.jsx("div", { className: "modern-color-picker", children: Qr.map((u) => /* @__PURE__ */ e.jsx(
+  "#9933FF",
+  "#CC99FF",
+  "#FF00FF",
+  "#CC00CC",
+  "#FF66FF",
+  "#FF99FF"
+], pt = ({ command: r, applyStyle: a }) => {
+  const s = r === "foreColor" ? "Text Color" : "Highlight Color", d = r === "foreColor" ? /* @__PURE__ */ e.jsx(bt, { size: 26 }) : /* @__PURE__ */ e.jsx(gt, { size: 26 });
+  return /* @__PURE__ */ e.jsx(he, { title: s, icon: d, children: /* @__PURE__ */ e.jsx("div", { className: "modern-color-picker", children: Jr.map((m) => /* @__PURE__ */ e.jsx(
     "button",
     {
       type: "button",
       className: "modern-color-swatch",
-      style: { backgroundColor: u },
-      onClick: () => s(r, u),
-      "aria-label": u
+      style: { backgroundColor: m },
+      onClick: () => a(r, m),
+      "aria-label": m
     },
-    u
+    m
   )) }) });
 };
-ht.propTypes = {
-  command: n.oneOf(["foreColor", "backColor"]).isRequired,
-  applyStyle: n.func.isRequired
+pt.propTypes = {
+  command: o.oneOf(["foreColor", "backColor"]).isRequired,
+  applyStyle: o.func.isRequired
 };
-const en = [
+const Zr = [
   "💻",
+  "🖥️",
+  "🖱️",
+  "⌨️",
+  "🖨️",
+  "📱",
+  "📲",
+  "🕹️",
+  "🧑‍💻",
+  "👨‍💻",
+  "👩‍💻",
+  "🔧",
+  "🔨",
+  "⚙️",
+  "🧰",
+  "📡",
+  "🌐",
+  "🔌",
+  "💾",
+  "📂",
+  "📁",
+  "🗂️",
+  "📝",
+  "📊",
+  "📈",
+  "📉",
+  "🔒",
+  "🔓",
+  "🛡️",
+  "🐞",
+  "⚡",
   "🚀",
+  "🧪",
   "💡",
   "🤖",
-  "🌐",
-  "⚙️",
-  "🔧",
-  "🔬",
-  "🧪",
-  "📈",
-  "📊",
-  "📝",
-  "✅",
-  "❌",
-  "⚠️",
-  "❓",
-  "❗",
-  "❤️",
-  "👍",
-  "👎",
-  "🎉",
-  "🔥",
-  "💯",
-  "👋"
-], or = ({ applyStyle: r }) => /* @__PURE__ */ e.jsx(xe, { title: "Insert Emoji", icon: /* @__PURE__ */ e.jsx(jt, { size: 26 }), children: /* @__PURE__ */ e.jsx("div", { className: "modern-emoji-picker", children: en.map((s) => /* @__PURE__ */ e.jsx(
+  "🧩",
+  "🧬",
+  "🛠️",
+  "📧",
+  "🔍",
+  "📥",
+  "📤"
+], er = ({ applyStyle: r }) => /* @__PURE__ */ e.jsx(he, { title: "Insert Emoji", icon: /* @__PURE__ */ e.jsx(ht, { size: 26 }), children: /* @__PURE__ */ e.jsx("div", { className: "modern-emoji-picker", children: Zr.map((a) => /* @__PURE__ */ e.jsx(
   "button",
   {
     type: "button",
     className: "modern-emoji",
-    onClick: () => r("insertText", s),
-    children: s
+    onClick: () => r("insertText", a),
+    children: a
   },
-  s
+  a
 )) }) });
-or.propTypes = {
-  applyStyle: n.func.isRequired
+er.propTypes = {
+  applyStyle: o.func.isRequired
 };
-const tn = [
-  "Arial",
-  "Georgia",
-  "Helvetica",
-  "Tahoma",
-  "Times New Roman",
-  "Verdana",
-  "Courier New"
-], rn = {
-  "Heading 1": "<h1>",
-  "Heading 2": "<h2>",
-  "Heading 3": "<h3>",
-  "Heading 4": "<h4>",
-  "Heading 5": "<h5>",
-  Paragraph: "<p>"
-}, nn = { Single: "1", 1.15: "1.15", 1.5: "1.5", Double: "2" }, on = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>', Ze = `<button class="btn btn-danger delete-column-btn" contenteditable="false" title="Delete Columns">${on}</button>`, sn = {
-  "2 Columns (1:1)": `<div class="row">${Ze}<div class="col-6"><p>Column 1</p></div><div class="col-6"><p>Column 2</p></div></div>`,
-  "3 Columns (1:1:1)": `<div class="row">${Ze}<div class="col-4"><p>C1</p></div><div class="col-4"><p>C2</p></div><div class="col-4"><p>C3</p></div></div>`,
-  "2 Columns (1:2)": `<div class="row">${Ze}<div class="col-4"><p>C1</p></div><div class="col-8"><p>C2</p></div></div>`,
-  "2 Columns (2:1)": `<div class="row">${Ze}<div class="col-8"><p>C1</p></div><div class="col-4"><p>C2</p></div></div>`
-}, ir = ({
-  applyStyle: r,
-  applyLineHeight: s,
-  activeStyles: i,
-  onOpenLinkModal: c,
-  onImageUpload: u,
-  onDocxUpload: p,
-  onVideoModalOpen: b,
-  onTableModalOpen: f,
-  onAiRefactor: E,
-  content: _,
-  isGenerating: F,
-  isAiLoadingMinimized: H
-}) => {
-  const L = Y(null), $ = Y(null);
-  return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
-    /* @__PURE__ */ e.jsx("style", { children: `
+const Qr = () => /* @__PURE__ */ e.jsx("style", { children: `
     .modern-toolbar {
   display: flex;
   flex-wrap: wrap;
@@ -1436,11 +1701,6 @@ const tn = [
   cursor: not-allowed;
 }
 
-/*
- * Enhanced styling for the AI Sparkles Button (V2 - No SVG edit required)
- */
-
-/* Keyframes for a more noticeable pulsing glow animation */
 @keyframes pulse-glow {
   0%,
   100% {
@@ -1454,26 +1714,19 @@ const tn = [
   }
 }
 
-/* Base style for the AI button */
 .modern-ai-button {
   border: 1px solid rgba(0, 230, 230, 0.3);
   background: linear-gradient(45deg, #2a2a72, #009ffd);
   overflow: hidden; /* Ensures effects don't bleed out */
 }
 
-/* Target the SVG icon inside the button */
 .modern-ai-button svg {
-  /* Set a single, vibrant color for the icon */
   color: #cceeff;
-
-  /* Apply the new pulse animation */
   animation: pulse-glow 2.5s infinite ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-/* On hover, make the effect more intense and responsive */
 .modern-ai-button:hover:not(:disabled) svg {
-  animation-play-state: paused; /* Pause animation to show a static bright state */
   transform: scale(1.2);
   color: #ffffff; /* Make it pure white on hover */
   filter: drop-shadow(0 0 6px #ffffff)
@@ -1495,7 +1748,7 @@ const tn = [
   }
 }
 
-/* Dropdown Styling */
+
 .modern-dropdown {
   position: relative;
 }
@@ -1524,7 +1777,7 @@ const tn = [
 .modern-dropdown-item {
   display: block;
   width: 100%;
-  padding: 8px 12px;
+  padding: 8px 30px;
   border: none;
   background: none;
   text-align: left;
@@ -1532,7 +1785,9 @@ const tn = [
   cursor: pointer;
   white-space: nowrap;
   transition: background-color 0.2s ease;
+  
 }
+
 
 /* Color Picker */
 .modern-color-picker {
@@ -1614,310 +1869,434 @@ const tn = [
 }
 
 .modern-dropdown-item {
-  font-size: 16px;
+  font-size: 14px;
   color: #3c4043;
 }
 
 .modern-dropdown-item:hover {
   background-color: #f1f3f4;
 }
+ .modern-dropdown-item-remove-line-height{
+  color: #8b0000ff;
+     font-size: 14px;
+    padding-top: 5px;
+    width: 100%;
+  background: #fffafaff;
+  border: none;
+  border-top: 1px solid red;
+  
+  }
 
 .modern-emoji:hover {
   background-color: #f1f3f4;
 }
 
-    ` }),
+.forma-text-toolbar-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6c757d;
+  background-color: transparent;
+  border: 1px solid #6c757d;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+          }
+
+.forma-text-toolbar-button:hover {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.forma-text-toolbar-button--active {
+  color: #fff;
+  background-color: #5a6268;
+  border-color: #545b62;
+}
+
+.forma-text-toolbar-button:disabled {
+  pointer-events: none;
+  opacity: 0.65;
+ }
+
+
+.forma-text-tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.forma-text-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #63b1ffff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  z-index: 10;
+  top: 130%; /* Changed from 'bottom' */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.forma-text-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #63b1ffff transparent;
+}
+
+.forma-text-tooltip-container:hover .forma-text-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+    ` }), eo = [
+  "Arial",
+  "Georgia",
+  "Helvetica",
+  "Tahoma",
+  "Times New Roman",
+  "Verdana",
+  "Courier New"
+], to = { Small: "2", Normal: "3", Large: "5", Huge: "7" }, ro = {
+  "Heading 1": "<h1>",
+  "Heading 2": "<h2>",
+  "Heading 3": "<h3>",
+  "Heading 4": "<h4>",
+  "Heading 5": "<h5>",
+  Paragraph: "<p>"
+}, oo = { Single: "1", 1.15: "1.15", 1.5: "1.5", Double: "2" }, tr = ({
+  applyStyle: r,
+  applyLineHeight: a,
+  activeStyles: s,
+  onOpenLinkModal: d,
+  onImageUpload: m,
+  onDocxUpload: x,
+  onVideoModalOpen: f,
+  onTableModalOpen: c,
+  onAiRefactor: h,
+  content: E,
+  isGenerating: k,
+  isAiLoadingMinimized: L
+}) => {
+  const A = K(null), q = K(null);
+  return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(Qr, {}),
     /* @__PURE__ */ e.jsxs("div", { className: "modern-toolbar", children: [
       /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Undo (Ctrl+Z)",
             onClick: () => r("undo"),
-            children: /* @__PURE__ */ e.jsx(Ct, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(jt, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Redo (Ctrl+Y)",
             onClick: () => r("redo"),
-            children: /* @__PURE__ */ e.jsx(wt, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(vt, { size: 18 })
           }
         )
       ] }),
       /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
       /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
-        /* @__PURE__ */ e.jsx(xe, { title: "Headings", icon: /* @__PURE__ */ e.jsx(et, { size: 26 }), children: Object.entries(rn).map(([g, x]) => /* @__PURE__ */ e.jsx(
+        /* @__PURE__ */ e.jsx(he, { title: "Headings", icon: /* @__PURE__ */ e.jsx(Qe, { size: 26 }), children: Object.entries(ro).map(([p, z]) => /* @__PURE__ */ e.jsx(
           "button",
           {
             className: "modern-dropdown-item",
-            onClick: () => r("formatBlock", x),
-            children: g
+            onClick: () => r("formatBlock", z),
+            children: p
           },
-          g
+          p
         )) }),
-        /* @__PURE__ */ e.jsx(xe, { title: "Font Family", icon: /* @__PURE__ */ e.jsx(kt, { size: 26 }), children: tn.map((g) => /* @__PURE__ */ e.jsx(
+        /* @__PURE__ */ e.jsx(he, { title: "Font Family", icon: /* @__PURE__ */ e.jsx(Be, { size: 26 }), children: eo.map((p) => /* @__PURE__ */ e.jsx(
           "button",
           {
             className: "modern-dropdown-item",
-            style: { fontFamily: g },
-            onClick: () => r("fontName", g),
-            children: g
+            style: { fontFamily: p },
+            onClick: () => r("fontName", p),
+            children: p
           },
-          g
+          p
         )) }),
-        /* @__PURE__ */ e.jsx(xe, { title: "Line Height", icon: /* @__PURE__ */ e.jsx(yt, { size: 26 }), children: Object.entries(nn).map(([g, x]) => /* @__PURE__ */ e.jsx(
+        /* @__PURE__ */ e.jsx(he, { title: "Font Size", icon: /* @__PURE__ */ e.jsx(Be, { size: 14 }), children: Object.entries(to).map(([p, z]) => /* @__PURE__ */ e.jsx(
           "button",
           {
             className: "modern-dropdown-item",
-            onClick: () => s(x),
-            children: g
+            onClick: () => r("fontSize", z),
+            children: p
           },
-          g
-        )) })
+          p
+        )) }),
+        /* @__PURE__ */ e.jsxs(he, { title: "Line Height", icon: /* @__PURE__ */ e.jsx(Ct, { size: 26 }), children: [
+          Object.entries(oo).map(([p, z]) => /* @__PURE__ */ e.jsx(
+            "button",
+            {
+              className: "modern-dropdown-item",
+              onClick: () => a(z),
+              children: p
+            },
+            p
+          )),
+          /* @__PURE__ */ e.jsx(
+            "button",
+            {
+              className: "modern-dropdown-item-remove-line-height",
+              onClick: () => a("normal"),
+              children: "Remove"
+            }
+          )
+        ] })
       ] }),
       /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
       /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Bold (Ctrl+B)",
             command: "bold",
-            activeStyles: i,
+            activeStyles: s,
             onClick: () => r("bold"),
+            children: /* @__PURE__ */ e.jsx(kt, { size: 18 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          N,
+          {
+            title: "Italic (Ctrl+I)",
+            command: "italic",
+            activeStyles: s,
+            onClick: () => r("italic"),
+            children: /* @__PURE__ */ e.jsx(yt, { size: 18 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          N,
+          {
+            title: "Underline (Ctrl+U)",
+            command: "underline",
+            activeStyles: s,
+            onClick: () => r("underline"),
+            children: /* @__PURE__ */ e.jsx(wt, { size: 18 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          N,
+          {
+            title: "Strikethrough",
+            command: "strikeThrough",
+            activeStyles: s,
+            onClick: () => r("strikeThrough"),
             children: /* @__PURE__ */ e.jsx(Rt, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
-          {
-            title: "Italic (Ctrl+I)",
-            command: "italic",
-            activeStyles: i,
-            onClick: () => r("italic"),
-            children: /* @__PURE__ */ e.jsx(Nt, { size: 18 })
-          }
-        ),
-        /* @__PURE__ */ e.jsx(
-          R,
-          {
-            title: "Underline (Ctrl+U)",
-            command: "underline",
-            activeStyles: i,
-            onClick: () => r("underline"),
-            children: /* @__PURE__ */ e.jsx(Tt, { size: 18 })
-          }
-        ),
-        /* @__PURE__ */ e.jsx(
-          R,
-          {
-            title: "Strikethrough",
-            command: "strikeThrough",
-            activeStyles: i,
-            onClick: () => r("strikeThrough"),
-            children: /* @__PURE__ */ e.jsx(Et, { size: 18 })
-          }
-        ),
-        /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Superscript",
             command: "superscript",
-            activeStyles: i,
+            activeStyles: s,
             onClick: () => r("superscript"),
             children: /* @__PURE__ */ e.jsx(Ft, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Subscript",
             command: "subscript",
-            activeStyles: i,
+            activeStyles: s,
             onClick: () => r("subscript"),
-            children: /* @__PURE__ */ e.jsx(Ot, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(Nt, { size: 18 })
           }
         ),
-        /* @__PURE__ */ e.jsx(or, { applyStyle: r })
+        /* @__PURE__ */ e.jsx(er, { applyStyle: r })
       ] }),
       /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
       /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
-        /* @__PURE__ */ e.jsx(ht, { command: "foreColor", applyStyle: r }),
-        /* @__PURE__ */ e.jsx(ht, { command: "backColor", applyStyle: r })
+        /* @__PURE__ */ e.jsx(pt, { command: "foreColor", applyStyle: r }),
+        /* @__PURE__ */ e.jsx(pt, { command: "backColor", applyStyle: r })
       ] }),
       /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
       /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Align Left",
             command: "justifyLeft",
-            activeStyles: i,
+            activeStyles: s,
             onClick: () => r("justifyLeft"),
-            children: /* @__PURE__ */ e.jsx(zt, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(Tt, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Align Center",
             command: "justifyCenter",
-            activeStyles: i,
+            activeStyles: s,
             onClick: () => r("justifyCenter"),
-            children: /* @__PURE__ */ e.jsx(Lt, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(Et, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Align Right",
             command: "justifyRight",
-            activeStyles: i,
+            activeStyles: s,
             onClick: () => r("justifyRight"),
-            children: /* @__PURE__ */ e.jsx(It, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(zt, { size: 18 })
           }
         )
       ] }),
       /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
       /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Ordered List",
             command: "insertOrderedList",
-            activeStyles: i,
+            activeStyles: s,
             onClick: () => r("insertOrderedList"),
-            children: /* @__PURE__ */ e.jsx(At, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(Ot, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Unordered List",
             command: "insertUnorderedList",
-            activeStyles: i,
+            activeStyles: s,
             onClick: () => r("insertUnorderedList"),
             children: /* @__PURE__ */ e.jsx(St, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Outdent",
             onClick: () => r("outdent"),
+            children: /* @__PURE__ */ e.jsx(It, { size: 18 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          N,
+          {
+            title: "Indent",
+            onClick: () => r("indent"),
+            children: /* @__PURE__ */ e.jsx(Lt, { size: 18 })
+          }
+        )
+      ] }),
+      /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
+      /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
+        /* @__PURE__ */ e.jsx(
+          N,
+          {
+            title: "Blockquote",
+            onClick: () => r("formatBlock", "<blockquote>"),
+            children: /* @__PURE__ */ e.jsx(At, { size: 18 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          N,
+          {
+            title: "Code Block",
+            onClick: () => r("formatBlock", "<pre>"),
             children: /* @__PURE__ */ e.jsx(_t, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
-          {
-            title: "Indent",
-            onClick: () => r("indent"),
-            children: /* @__PURE__ */ e.jsx(Mt, { size: 18 })
-          }
-        )
-      ] }),
-      /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
-      /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
-        /* @__PURE__ */ e.jsx(
-          R,
-          {
-            title: "Blockquote",
-            onClick: () => r("formatBlock", "<blockquote>"),
-            children: /* @__PURE__ */ e.jsx(Dt, { size: 18 })
-          }
-        ),
-        /* @__PURE__ */ e.jsx(
-          R,
-          {
-            title: "Code Block",
-            onClick: () => r("formatBlock", "<pre>"),
-            children: /* @__PURE__ */ e.jsx(qt, { size: 18 })
-          }
-        ),
-        /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Add/Edit Link (Ctrl+K)",
-            onClick: c,
-            children: /* @__PURE__ */ e.jsx(He, { size: 18 })
+            onClick: d,
+            children: /* @__PURE__ */ e.jsx(Pe, { size: 18 })
           }
         ),
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Horizontal Line",
             onClick: () => r("insertHorizontalRule"),
-            children: /* @__PURE__ */ e.jsx(Ht, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(Dt, { size: 18 })
           }
         )
       ] }),
       /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
       /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Insert Image",
             onClick: () => {
-              var g;
-              return (g = L.current) == null ? void 0 : g.click();
+              var p;
+              return (p = A.current) == null ? void 0 : p.click();
             },
-            children: /* @__PURE__ */ e.jsx(Ut, { size: 18 })
+            children: /* @__PURE__ */ e.jsx(Mt, { size: 18 })
           }
         ),
-        /* @__PURE__ */ e.jsx(R, { title: "Insert Video", onClick: b, children: /* @__PURE__ */ e.jsx(tt, { size: 20 }) }),
-        /* @__PURE__ */ e.jsx(R, { title: "Insert Table", onClick: f, children: /* @__PURE__ */ e.jsx(rt, { size: 18 }) }),
-        /* @__PURE__ */ e.jsx(xe, { title: "Insert Columns", icon: /* @__PURE__ */ e.jsx($t, { size: 26 }), children: Object.entries(sn).map(([g, x]) => /* @__PURE__ */ e.jsx(
-          "button",
-          {
-            className: "modern-dropdown-item",
-            onClick: () => r("insertHTML", x + "<p><br></p>"),
-            children: g
-          },
-          g
-        )) }),
+        /* @__PURE__ */ e.jsx(N, { title: "Insert Video", onClick: f, children: /* @__PURE__ */ e.jsx(et, { size: 20 }) }),
+        /* @__PURE__ */ e.jsx(N, { title: "Insert Table", onClick: c, children: /* @__PURE__ */ e.jsx(tt, { size: 18 }) }),
         /* @__PURE__ */ e.jsx(
-          R,
+          N,
           {
             title: "Import from Word (.docx)",
             onClick: () => {
-              var g;
-              return (g = $.current) == null ? void 0 : g.click();
+              var p;
+              return (p = q.current) == null ? void 0 : p.click();
             },
             children: /* @__PURE__ */ e.jsx(Bt, { size: 18 })
           }
         )
       ] }),
       /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
-      /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
-        /* @__PURE__ */ e.jsx(
-          R,
-          {
-            title: "Improve with AI",
-            onClick: E,
-            disabled: !_ || _ === "" || F,
-            className: "modern-ai-button",
-            children: F && !H ? /* @__PURE__ */ e.jsx("div", { className: "spinner" }) : /* @__PURE__ */ e.jsx(Pe, { size: 20 })
-          }
-        ),
-        /* @__PURE__ */ e.jsx(
-          R,
-          {
-            title: "Clear Formatting",
-            onClick: () => r("removeFormat"),
-            children: /* @__PURE__ */ e.jsx(Pt, { size: 18 })
-          }
-        )
-      ] })
+      /* @__PURE__ */ e.jsx("div", { className: "toolbar-group", children: /* @__PURE__ */ e.jsx(
+        N,
+        {
+          title: "Clear Formatting",
+          onClick: () => r("removeFormat"),
+          children: /* @__PURE__ */ e.jsx(qt, { size: 18, style: { color: "red" } })
+        }
+      ) }),
+      /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
+      /* @__PURE__ */ e.jsx("div", { className: "toolbar-group", children: /* @__PURE__ */ e.jsx(
+        N,
+        {
+          title: "Improve with AI",
+          onClick: h,
+          disabled: !E || E === "" || k,
+          className: "modern-ai-button",
+          children: k && !L ? /* @__PURE__ */ e.jsx("div", { className: "spinner" }) : /* @__PURE__ */ e.jsx(He, { size: 20 })
+        }
+      ) })
     ] }),
     /* @__PURE__ */ e.jsx(
       "input",
       {
         type: "file",
         accept: "image/*",
-        ref: L,
-        onChange: u,
+        ref: A,
+        onChange: m,
         style: { display: "none" }
       }
     ),
@@ -1926,83 +2305,131 @@ const tn = [
       {
         type: "file",
         accept: ".docx",
-        ref: $,
-        onChange: p,
+        ref: q,
+        onChange: x,
         style: { display: "none" }
       }
     )
   ] });
 };
-ir.propTypes = {
-  applyStyle: n.func.isRequired,
-  applyLineHeight: n.func.isRequired,
-  activeStyles: n.object.isRequired,
-  onOpenLinkModal: n.func.isRequired,
-  onImageUpload: n.func.isRequired,
-  onDocxUpload: n.func.isRequired,
-  onVideoModalOpen: n.func.isRequired,
-  onTableModalOpen: n.func.isRequired,
-  onAiRefactor: n.func.isRequired,
-  content: n.string,
-  isGenerating: n.bool.isRequired,
-  isAiLoadingMinimized: n.bool.isRequired
+tr.propTypes = {
+  applyStyle: o.func.isRequired,
+  applyLineHeight: o.func.isRequired,
+  activeStyles: o.object.isRequired,
+  onOpenLinkModal: o.func.isRequired,
+  onImageUpload: o.func.isRequired,
+  onDocxUpload: o.func.isRequired,
+  onVideoModalOpen: o.func.isRequired,
+  onTableModalOpen: o.func.isRequired,
+  onAiRefactor: o.func.isRequired,
+  content: o.string,
+  isGenerating: o.bool.isRequired,
+  isAiLoadingMinimized: o.bool.isRequired
 };
-const N = Fe.memo(
+const T = ze.memo(
   ({
     onClick: r,
-    title: s,
-    cmd: i,
-    active: c,
-    disabled: u = !1,
-    children: p,
-    className: b = ""
-  }) => /* @__PURE__ */ e.jsx(
-    "button",
-    {
-      type: "button",
-      onClick: r,
-      onMouseDown: (f) => f.preventDefault(),
-      className: `futuristic-button ${c && c.has(i) ? "active" : ""} ${b}`,
-      title: s,
-      disabled: u,
-      children: /* @__PURE__ */ e.jsx("span", { className: "button-content", children: p })
-    }
-  )
+    title: a,
+    cmd: s,
+    active: d,
+    disabled: m = !1,
+    children: x,
+    className: f = ""
+  }) => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx("style", { children: `
+      
+      
+
+.futuristic-forma-text-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #63b1ffff;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  z-index: 10;
+  top: 130%; /* Changed from 'bottom' */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease-in-out;
+}
+
+.futuristic-forma-text-tooltip::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #63b1ffff transparent;
+}
+
+.futuristic-forma-text-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+      
+      ` }),
+    /* @__PURE__ */ e.jsxs(
+      "button",
+      {
+        type: "button",
+        onClick: r,
+        onMouseDown: (c) => c.preventDefault(),
+        className: `futuristic-button ${d && d.has(s) ? "active" : ""} ${f}`,
+        title: a,
+        disabled: m,
+        children: [
+          /* @__PURE__ */ e.jsx("span", { className: "button-content", children: x }),
+          /* @__PURE__ */ e.jsx("span", { className: "futuristic-forma-text-tooltip", children: a })
+        ]
+      }
+    )
+  ] })
 );
-N.propTypes = {
-  onClick: n.func.isRequired,
-  title: n.string.isRequired,
-  cmd: n.string,
-  active: n.object,
-  disabled: n.bool,
-  children: n.node.isRequired,
-  className: n.string
+T.propTypes = {
+  onClick: o.func.isRequired,
+  title: o.string.isRequired,
+  cmd: o.string,
+  active: o.object,
+  disabled: o.bool,
+  children: o.node.isRequired,
+  className: o.string
 };
-N.displayName = "FuturisticToolbarButton";
-const ge = ({ title: r, icon: s, children: i }) => {
-  const [c, u] = T(!1), p = Y(null);
-  return Q(() => {
-    const b = (f) => {
-      p.current && !p.current.contains(f.target) && u(!1);
+T.displayName = "FuturisticToolbarButton";
+const je = ({ title: r, icon: a, children: s }) => {
+  const [d, m] = w(!1), x = K(null);
+  return se(() => {
+    const f = (c) => {
+      x.current && !x.current.contains(c.target) && m(!1);
     };
-    return document.addEventListener("mousedown", b), () => document.removeEventListener("mousedown", b);
-  }, []), /* @__PURE__ */ e.jsxs("div", { className: "futuristic-dropdown", ref: p, children: [
+    return document.addEventListener("mousedown", f), () => document.removeEventListener("mousedown", f);
+  }, []), /* @__PURE__ */ e.jsxs("div", { className: "futuristic-dropdown", ref: x, children: [
     /* @__PURE__ */ e.jsx(
       "button",
       {
         type: "button",
         title: r,
-        onClick: () => u(!c),
-        onMouseDown: (b) => b.preventDefault(),
+        onClick: () => m(!d),
+        onMouseDown: (f) => f.preventDefault(),
         className: "futuristic-button",
-        "aria-expanded": c,
+        "aria-expanded": d,
         children: /* @__PURE__ */ e.jsxs("span", { className: "button-content", children: [
-          s,
+          a,
           /* @__PURE__ */ e.jsx(
-            tr,
+            Jt,
             {
               size: 16,
-              className: `chevron-icon ${c ? "open" : ""}`
+              className: `chevron-icon ${d ? "open" : ""}`
             }
           )
         ] })
@@ -2011,114 +2438,140 @@ const ge = ({ title: r, icon: s, children: i }) => {
     /* @__PURE__ */ e.jsx(
       "div",
       {
-        className: `futuristic-dropdown-menu ${c ? "show" : ""}`,
-        onClick: () => u(!1),
-        children: i
+        className: `futuristic-dropdown-menu ${d ? "show" : ""}`,
+        onClick: () => m(!1),
+        children: s
       }
     )
   ] });
 };
-ge.propTypes = {
-  title: n.string.isRequired,
-  icon: n.node.isRequired,
-  children: n.node.isRequired
+je.propTypes = {
+  title: o.string.isRequired,
+  icon: o.node.isRequired,
+  children: o.node.isRequired
 };
-const an = [
-  "#FF00FF",
-  "#00FFFF",
-  "#FFFF00",
-  "#FF007F",
-  "#00FF7F",
-  "#FFFFFF",
-  "#C0C0C0",
-  "#808080",
-  "#404040",
+const no = [
   "#000000",
+  "#222222",
+  "#444444",
+  "#666666",
+  "#888888",
+  "#999999",
+  "#BBBBBB",
+  "#CCCCCC",
+  "#DDDDDD",
+  "#EEEEEE",
+  "#FFFFFF",
   "#FF0000",
+  "#CC0000",
+  "#990000",
+  "#660000",
+  "#FF6666",
+  "#FF9900",
+  "#FF6600",
+  "#CC6600",
+  "#FFB84D",
+  "#FFFF00",
+  "#FFEE00",
+  "#CCCC00",
+  "#999900",
   "#00FF00",
+  "#00CC00",
+  "#009900",
+  "#66FF66",
+  "#33CC33",
+  "#00FFFF",
+  "#00CCCC",
+  "#009999",
+  "#66FFFF",
   "#0000FF",
-  "#800080",
-  "#FFA500"
-], xt = ({ command: r, applyStyle: s }) => {
-  const i = r === "foreColor" ? "Text Color" : "Highlight Color", c = r === "foreColor" ? /* @__PURE__ */ e.jsx(gt, { size: 18 }) : /* @__PURE__ */ e.jsx(vt, { size: 18 });
-  return /* @__PURE__ */ e.jsx(ge, { title: i, icon: c, children: /* @__PURE__ */ e.jsx("div", { className: "futuristic-color-picker", children: an.map((u) => /* @__PURE__ */ e.jsx(
+  "#0000CC",
+  "#000099",
+  "#6666FF",
+  "#3366FF",
+  "#9900FF",
+  "#6600CC",
+  "#9933FF",
+  "#CC99FF",
+  "#FF00FF",
+  "#CC00CC",
+  "#FF66FF",
+  "#FF99FF"
+], xt = ({ command: r, applyStyle: a }) => {
+  const s = r === "foreColor" ? "Text Color" : "Highlight Color", d = r === "foreColor" ? /* @__PURE__ */ e.jsx(bt, { size: 18 }) : /* @__PURE__ */ e.jsx(gt, { size: 18 });
+  return /* @__PURE__ */ e.jsx(je, { title: s, icon: d, children: /* @__PURE__ */ e.jsx("div", { className: "futuristic-color-picker", children: no.map((m) => /* @__PURE__ */ e.jsx(
     "button",
     {
       type: "button",
       className: "color-swatch-hexagon",
-      onClick: () => s(r, u),
-      "aria-label": u,
-      children: /* @__PURE__ */ e.jsx("div", { className: "hexagon-inner", style: { backgroundColor: u } })
+      onClick: () => a(r, m),
+      "aria-label": m,
+      children: /* @__PURE__ */ e.jsx("div", { className: "hexagon-inner", style: { backgroundColor: m } })
     },
-    u
+    m
   )) }) });
 };
 xt.propTypes = {
-  command: n.oneOf(["foreColor", "backColor"]).isRequired,
-  applyStyle: n.func.isRequired
+  command: o.oneOf(["foreColor", "backColor"]).isRequired,
+  applyStyle: o.func.isRequired
 };
-const ln = [
+const io = [
+  "💻",
+  "🖥️",
+  "🖱️",
+  "⌨️",
+  "🖨️",
+  "📱",
+  "📲",
+  "🕹️",
+  "🧑‍💻",
+  "👨‍💻",
+  "👩‍💻",
+  "🔧",
+  "🔨",
+  "⚙️",
+  "🧰",
+  "📡",
+  "🌐",
+  "🔌",
+  "💾",
+  "📂",
+  "📁",
+  "🗂️",
+  "📝",
+  "📊",
+  "📈",
+  "📉",
+  "🔒",
+  "🔓",
+  "🛡️",
+  "🐞",
+  "⚡",
   "🚀",
+  "🧪",
   "💡",
   "🤖",
-  "⚡",
-  "✨",
-  "🌌",
-  "🛰️",
-  "🛸",
-  "👽",
+  "🧩",
   "🧬",
-  "🧪",
-  "🧑‍🚀"
-], sr = ({ applyStyle: r }) => /* @__PURE__ */ e.jsx(ge, { title: "Insert Emoji", icon: /* @__PURE__ */ e.jsx(jt, { size: 18 }), children: /* @__PURE__ */ e.jsx("div", { className: "futuristic-emoji-picker", children: ln.map((s) => /* @__PURE__ */ e.jsx(
+  "🛠️",
+  "📧",
+  "🔍",
+  "📥",
+  "📤"
+], rr = ({ applyStyle: r }) => /* @__PURE__ */ e.jsx(je, { title: "Insert Emoji", icon: /* @__PURE__ */ e.jsx(ht, { size: 18 }), children: /* @__PURE__ */ e.jsx("div", { className: "futuristic-emoji-picker", children: io.map((a) => /* @__PURE__ */ e.jsx(
   "button",
   {
     type: "button",
     className: "futuristic-emoji",
-    onClick: () => r("insertText", s),
-    children: s
+    onClick: () => r("insertText", a),
+    children: a
   },
-  s
+  a
 )) }) });
-sr.propTypes = {
-  applyStyle: n.func.isRequired
+rr.propTypes = {
+  applyStyle: o.func.isRequired
 };
-const cn = ["Arial", "Georgia", "Verdana", "Courier New"], dn = { H1: "<h1>", H2: "<h2>", H3: "<h3>", Paragraph: "<p>" }, un = { Single: "1", 1.5: "1.5", Double: "2" }, pn = '<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><line x1="10" x2="10" y1="11" y2="17"/><line x1="14" x2="14" y1="11" y2="17"/></svg>', mt = `<button class="btn btn-danger delete-column-btn" contenteditable="false" title="Delete Columns">${pn}</button>`, mn = {
-  "1:1": `<div class="row">${mt}<div class="col-6"><p>C1</p></div><div class="col-6"><p>C2</p></div></div>`,
-  "1:1:1": `<div class="row">${mt}<div class="col-4"><p>C1</p></div><div class="col-4"><p>C2</p></div><div class="col-4"><p>C3</p></div></div>`,
-  "1:2": `<div class="row">${mt}<div class="col-4"><p>C1</p></div><div class="col-8"><p>C2</p></div></div>`
-}, ar = ({
-  applyStyle: r,
-  applyLineHeight: s,
-  activeStyles: i,
-  onOpenLinkModal: c,
-  onImageUpload: u,
-  onDocxUpload: p,
-  onVideoModalOpen: b,
-  onTableModalOpen: f,
-  onAiRefactor: E,
-  content: _,
-  isGenerating: F,
-  isAiLoadingMinimized: H
-}) => {
-  const L = Y(null), $ = Y(null), g = Y(null), [x, M] = T({ x: 50, y: 50 }), [D, I] = T(!1), oe = Y({ x: 0, y: 0 }), Oe = (C) => {
-    C.button === 0 && (I(!0), oe.current = {
-      x: C.clientX - x.x,
-      y: C.clientY - x.y
-    }, C.preventDefault());
-  };
-  return Q(() => {
-    const C = (se) => {
-      D && M({
-        x: se.clientX - oe.current.x,
-        y: se.clientY - oe.current.y
-      });
-    }, P = () => I(!1);
-    return window.addEventListener("mousemove", C), window.addEventListener("mouseup", P), () => {
-      window.removeEventListener("mousemove", C), window.removeEventListener("mouseup", P);
-    };
-  }, [D]), /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
-    /* @__PURE__ */ e.jsx("style", { children: `
+const ao = () => /* @__PURE__ */ e.jsx("style", { children: `
       @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
@@ -2142,12 +2595,11 @@ const cn = ["Arial", "Georgia", "Verdana", "Courier New"], dn = { H1: "<h1>", H2
   --animation-speed: 0.3s;
 }
 
-/* The main floating toolbar */
 .futuristic-toolbar {
   position: fixed;
   display: flex;
   align-items: stretch;
-  padding: 6px;
+  padding: 10px 30px 10px 30px;
   background: var(--bg-color);
   backdrop-filter: blur(12px) saturate(180%);
   border-radius: 12px;
@@ -2171,7 +2623,6 @@ const cn = ["Arial", "Georgia", "Verdana", "Courier New"], dn = { H1: "<h1>", H2
   gap: 4px;
 }
 
-/* Drag Handle */
 .drag-handle {
   display: flex;
   align-items: center;
@@ -2353,76 +2804,116 @@ const cn = ["Arial", "Georgia", "Verdana", "Courier New"], dn = { H1: "<h1>", H2
   transform: scale(1.2);
 }
 
-      ` }),
+      ` }), so = ["Arial", "Georgia", "Verdana", "Courier New"], lo = { H1: "<h1>", H2: "<h2>", H3: "<h3>", Paragraph: "<p>" }, co = { Single: "1", 1.5: "1.5", Double: "2" }, uo = { Small: "2", Normal: "3", Large: "5", Huge: "7" }, or = ({
+  applyStyle: r,
+  applyLineHeight: a,
+  activeStyles: s,
+  onOpenLinkModal: d,
+  onImageUpload: m,
+  onDocxUpload: x,
+  onVideoModalOpen: f,
+  onTableModalOpen: c,
+  onAiRefactor: h,
+  content: E,
+  isGenerating: k,
+  isAiLoadingMinimized: L
+}) => {
+  const A = K(null), q = K(null), p = K(null), [z, B] = w({ x: 50, y: 50 }), [$, O] = w(!1), J = K({ x: 0, y: 0 }), le = (v) => {
+    v.button === 0 && (O(!0), J.current = {
+      x: v.clientX - z.x,
+      y: v.clientY - z.y
+    }, v.preventDefault());
+  };
+  return se(() => {
+    const v = (de) => {
+      $ && B({
+        x: de.clientX - J.current.x,
+        y: de.clientY - J.current.y
+      });
+    }, H = () => O(!1);
+    return window.addEventListener("mousemove", v), window.addEventListener("mouseup", H), () => {
+      window.removeEventListener("mousemove", v), window.removeEventListener("mouseup", H);
+    };
+  }, [$]), /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(ao, {}),
     /* @__PURE__ */ e.jsxs(
       "div",
       {
-        ref: g,
-        className: `futuristic-toolbar ${D ? "is-dragging" : ""}`,
-        style: { top: `${x.y}px`, left: `${x.x}px` },
+        ref: p,
+        className: "futuristic-toolbar ",
+        style: { top: `${z.y}px`, left: `${z.x}px` },
         children: [
           /* @__PURE__ */ e.jsx(
             "div",
             {
               className: "drag-handle",
-              onMouseDown: Oe,
+              onMouseDown: le,
               title: "Drag Toolbar",
-              children: /* @__PURE__ */ e.jsx(Ar, { size: 20 })
+              children: /* @__PURE__ */ e.jsx(zr, { size: 20 })
             }
           ),
           /* @__PURE__ */ e.jsxs("div", { className: "toolbar-content", children: [
             /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Undo",
                   onClick: () => r("undo"),
-                  children: /* @__PURE__ */ e.jsx(Ct, { size: 18 })
+                  children: /* @__PURE__ */ e.jsx(jt, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Redo",
                   onClick: () => r("redo"),
-                  children: /* @__PURE__ */ e.jsx(wt, { size: 18 })
+                  children: /* @__PURE__ */ e.jsx(vt, { size: 18 })
                 }
               )
             ] }),
             /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
             /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
-              /* @__PURE__ */ e.jsx(ge, { title: "Headings", icon: /* @__PURE__ */ e.jsx(et, { size: 18 }), children: Object.entries(dn).map(([C, P]) => /* @__PURE__ */ e.jsx(
+              /* @__PURE__ */ e.jsx(je, { title: "Headings", icon: /* @__PURE__ */ e.jsx(Qe, { size: 18 }), children: Object.entries(lo).map(([v, H]) => /* @__PURE__ */ e.jsx(
                 "button",
                 {
                   className: "futuristic-dropdown-item",
-                  onClick: () => r("formatBlock", P),
-                  children: C
+                  onClick: () => r("formatBlock", H),
+                  children: v
                 },
-                C
+                v
               )) }),
-              /* @__PURE__ */ e.jsx(ge, { title: "Font", icon: /* @__PURE__ */ e.jsx(kt, { size: 18 }), children: cn.map((C) => /* @__PURE__ */ e.jsx(
+              /* @__PURE__ */ e.jsx(je, { title: "Font", icon: /* @__PURE__ */ e.jsx(Be, { size: 18 }), children: so.map((v) => /* @__PURE__ */ e.jsx(
                 "button",
                 {
                   className: "futuristic-dropdown-item",
-                  style: { fontFamily: C },
-                  onClick: () => r("fontName", C),
-                  children: C
+                  style: { fontFamily: v },
+                  onClick: () => r("fontName", v),
+                  children: v
                 },
-                C
+                v
+              )) }),
+              /* @__PURE__ */ e.jsx(je, { title: "Font Size", icon: /* @__PURE__ */ e.jsx(Be, { size: 14 }), children: Object.entries(uo).map(([v, H]) => /* @__PURE__ */ e.jsx(
+                "button",
+                {
+                  className: "forma-text-dropdown-item",
+                  onClick: () => r("fontSize", H),
+                  children: v
+                },
+                v
               )) }),
               /* @__PURE__ */ e.jsx(
-                ge,
+                je,
                 {
                   title: "Line Height",
-                  icon: /* @__PURE__ */ e.jsx(yt, { size: 18 }),
-                  children: Object.entries(un).map(([C, P]) => /* @__PURE__ */ e.jsx(
+                  icon: /* @__PURE__ */ e.jsx(Ct, { size: 18 }),
+                  children: Object.entries(co).map(([v, H]) => /* @__PURE__ */ e.jsx(
                     "button",
                     {
                       className: "futuristic-dropdown-item",
-                      onClick: () => s(P),
-                      children: C
+                      onClick: () => a(H),
+                      children: v
                     },
-                    C
+                    v
                   ))
                 }
               )
@@ -2430,63 +2921,63 @@ const cn = ["Arial", "Georgia", "Verdana", "Courier New"], dn = { H1: "<h1>", H2
             /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
             /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Bold",
                   cmd: "bold",
-                  active: i,
+                  active: s,
                   onClick: () => r("bold"),
+                  children: /* @__PURE__ */ e.jsx(kt, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Italic",
+                  cmd: "italic",
+                  active: s,
+                  onClick: () => r("italic"),
+                  children: /* @__PURE__ */ e.jsx(yt, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Underline",
+                  cmd: "underline",
+                  active: s,
+                  onClick: () => r("underline"),
+                  children: /* @__PURE__ */ e.jsx(wt, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Strikethrough",
+                  cmd: "strikeThrough",
+                  active: s,
+                  onClick: () => r("strikeThrough"),
                   children: /* @__PURE__ */ e.jsx(Rt, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Italic",
-                  cmd: "italic",
-                  active: i,
-                  onClick: () => r("italic"),
-                  children: /* @__PURE__ */ e.jsx(Nt, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Underline",
-                  cmd: "underline",
-                  active: i,
-                  onClick: () => r("underline"),
-                  children: /* @__PURE__ */ e.jsx(Tt, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Strikethrough",
-                  cmd: "strikeThrough",
-                  active: i,
-                  onClick: () => r("strikeThrough"),
-                  children: /* @__PURE__ */ e.jsx(Et, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Superscript",
                   cmd: "superscript",
-                  active: i,
+                  active: s,
                   onClick: () => r("superscript"),
                   children: /* @__PURE__ */ e.jsx(Ft, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Subscript",
                   cmd: "subscript",
-                  active: i,
+                  active: s,
                   onClick: () => r("subscript"),
-                  children: /* @__PURE__ */ e.jsx(Ot, { size: 18 })
+                  children: /* @__PURE__ */ e.jsx(Nt, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
@@ -2507,183 +2998,167 @@ const cn = ["Arial", "Georgia", "Verdana", "Courier New"], dn = { H1: "<h1>", H2
             /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
             /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Align Left",
                   cmd: "justifyLeft",
-                  active: i,
+                  active: s,
                   onClick: () => r("justifyLeft"),
+                  children: /* @__PURE__ */ e.jsx(Tt, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Align Center",
+                  cmd: "justifyCenter",
+                  active: s,
+                  onClick: () => r("justifyCenter"),
+                  children: /* @__PURE__ */ e.jsx(Et, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Align Right",
+                  cmd: "justifyRight",
+                  active: s,
+                  onClick: () => r("justifyRight"),
                   children: /* @__PURE__ */ e.jsx(zt, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Align Center",
-                  cmd: "justifyCenter",
-                  active: i,
-                  onClick: () => r("justifyCenter"),
-                  children: /* @__PURE__ */ e.jsx(Lt, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Align Right",
-                  cmd: "justifyRight",
-                  active: i,
-                  onClick: () => r("justifyRight"),
-                  children: /* @__PURE__ */ e.jsx(It, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Ordered List",
                   cmd: "insertOrderedList",
-                  active: i,
+                  active: s,
                   onClick: () => r("insertOrderedList"),
-                  children: /* @__PURE__ */ e.jsx(At, { size: 18 })
+                  children: /* @__PURE__ */ e.jsx(Ot, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Unordered List",
                   cmd: "insertUnorderedList",
-                  active: i,
+                  active: s,
                   onClick: () => r("insertUnorderedList"),
                   children: /* @__PURE__ */ e.jsx(St, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Outdent",
                   onClick: () => r("outdent"),
+                  children: /* @__PURE__ */ e.jsx(It, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Indent",
+                  onClick: () => r("indent"),
+                  children: /* @__PURE__ */ e.jsx(Lt, { size: 18 })
+                }
+              )
+            ] }),
+            /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
+            /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Add/Edit Link",
+                  onClick: d,
+                  children: /* @__PURE__ */ e.jsx(Pe, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Blockquote",
+                  onClick: () => r("formatBlock", "<blockquote>"),
+                  children: /* @__PURE__ */ e.jsx(At, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Code Block",
+                  onClick: () => r("formatBlock", "<pre>"),
                   children: /* @__PURE__ */ e.jsx(_t, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Indent",
-                  onClick: () => r("indent"),
-                  children: /* @__PURE__ */ e.jsx(Mt, { size: 18 })
-                }
-              )
-            ] }),
-            /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
-            /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
-              /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Add/Edit Link",
-                  onClick: c,
-                  children: /* @__PURE__ */ e.jsx(He, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Blockquote",
-                  onClick: () => r("formatBlock", "<blockquote>"),
-                  children: /* @__PURE__ */ e.jsx(Dt, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Code Block",
-                  onClick: () => r("formatBlock", "<pre>"),
-                  children: /* @__PURE__ */ e.jsx(qt, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Horizontal Line",
                   onClick: () => r("insertHorizontalRule"),
-                  children: /* @__PURE__ */ e.jsx(Ht, { size: 18 })
+                  children: /* @__PURE__ */ e.jsx(Dt, { size: 18 })
                 }
               )
             ] }),
             /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
             /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Insert Image",
                   onClick: () => {
-                    var C;
-                    return (C = L.current) == null ? void 0 : C.click();
+                    var v;
+                    return (v = A.current) == null ? void 0 : v.click();
                   },
-                  children: /* @__PURE__ */ e.jsx(Ut, { size: 18 })
+                  children: /* @__PURE__ */ e.jsx(Mt, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Insert Video",
-                  onClick: b,
+                  onClick: f,
+                  children: /* @__PURE__ */ e.jsx(et, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                T,
+                {
+                  title: "Insert Table",
+                  onClick: c,
                   children: /* @__PURE__ */ e.jsx(tt, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
-                {
-                  title: "Insert Table",
-                  onClick: f,
-                  children: /* @__PURE__ */ e.jsx(rt, { size: 18 })
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                ge,
-                {
-                  title: "Insert Columns",
-                  icon: /* @__PURE__ */ e.jsx($t, { size: 18 }),
-                  children: Object.entries(mn).map(([C, P]) => /* @__PURE__ */ e.jsx(
-                    "button",
-                    {
-                      className: "futuristic-dropdown-item",
-                      onClick: () => r("insertHTML", P + "<p><br></p>"),
-                      children: C
-                    },
-                    C
-                  ))
-                }
-              ),
-              /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Import from Word",
                   onClick: () => {
-                    var C;
-                    return (C = $.current) == null ? void 0 : C.click();
+                    var v;
+                    return (v = q.current) == null ? void 0 : v.click();
                   },
                   children: /* @__PURE__ */ e.jsx(Bt, { size: 18 })
                 }
               ),
-              /* @__PURE__ */ e.jsx(sr, { applyStyle: r })
+              /* @__PURE__ */ e.jsx(rr, { applyStyle: r })
             ] }),
             /* @__PURE__ */ e.jsx("div", { className: "toolbar-separator" }),
             /* @__PURE__ */ e.jsxs("div", { className: "toolbar-group", children: [
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Improve with AI",
-                  onClick: E,
-                  disabled: !_ || F,
+                  onClick: h,
+                  disabled: !E || k,
                   className: "ai-button",
-                  children: F ? /* @__PURE__ */ e.jsx("div", { className: "spinner" }) : /* @__PURE__ */ e.jsx(Pe, { size: 18 })
+                  children: k ? /* @__PURE__ */ e.jsx("div", { className: "spinner" }) : /* @__PURE__ */ e.jsx(He, { size: 18 })
                 }
               ),
               /* @__PURE__ */ e.jsx(
-                N,
+                T,
                 {
                   title: "Clear Formatting",
                   onClick: () => r("removeFormat"),
-                  children: /* @__PURE__ */ e.jsx(Pt, { size: 18 })
+                  children: /* @__PURE__ */ e.jsx(qt, { size: 18 })
                 }
               )
             ] })
@@ -2696,8 +3171,8 @@ const cn = ["Arial", "Georgia", "Verdana", "Courier New"], dn = { H1: "<h1>", H2
       {
         type: "file",
         accept: "image/*",
-        ref: L,
-        onChange: u,
+        ref: A,
+        onChange: m,
         style: { display: "none" }
       }
     ),
@@ -2706,847 +3181,1650 @@ const cn = ["Arial", "Georgia", "Verdana", "Courier New"], dn = { H1: "<h1>", H2
       {
         type: "file",
         accept: ".docx",
-        ref: $,
-        onChange: p,
+        ref: q,
+        onChange: x,
         style: { display: "none" }
       }
     )
   ] });
 };
-ar.propTypes = {
-  applyStyle: n.func.isRequired,
-  activeStyles: n.object.isRequired,
-  applyLineHeight: n.func.isRequired,
-  onOpenLinkModal: n.func.isRequired,
-  onImageUpload: n.func.isRequired,
-  onDocxUpload: n.func.isRequired,
-  onVideoModalOpen: n.func.isRequired,
-  onTableModalOpen: n.func.isRequired,
-  onAiRefactor: n.func.isRequired,
-  content: n.string,
-  isGenerating: n.bool.isRequired,
-  isAiLoadingMinimized: n.bool.isRequired
+or.propTypes = {
+  applyStyle: o.func.isRequired,
+  activeStyles: o.object.isRequired,
+  applyLineHeight: o.func.isRequired,
+  onOpenLinkModal: o.func.isRequired,
+  onImageUpload: o.func.isRequired,
+  onDocxUpload: o.func.isRequired,
+  onVideoModalOpen: o.func.isRequired,
+  onTableModalOpen: o.func.isRequired,
+  onAiRefactor: o.func.isRequired,
+  content: o.string,
+  isGenerating: o.bool.isRequired,
+  isAiLoadingMinimized: o.bool.isRequired
 };
-const lr = ({ theme: r, ...s }) => r === "modern" ? /* @__PURE__ */ e.jsx(ir, { ...s }) : r === "futuristic" ? /* @__PURE__ */ e.jsx(ar, { ...s }) : /* @__PURE__ */ e.jsx(nr, { ...s });
-lr.propTypes = {
-  theme: n.oneOf(["classic", "modern", "futuristic"])
+const nr = ({ theme: r, ...a }) => r === "modern" ? /* @__PURE__ */ e.jsx(tr, { ...a }) : r === "futuristic" ? /* @__PURE__ */ e.jsx(or, { ...a }) : /* @__PURE__ */ e.jsx(Qt, { ...a });
+nr.propTypes = {
+  theme: o.oneOf(["classic", "modern", "futuristic"])
 };
-const cr = ({
+const mo = () => /* @__PURE__ */ e.jsx("style", { children: `
+            .forma-text-source-view {
+              min-height: 60vh;
+              max-height: 75vh;
+              resize: none;
+              display: block;
+              width: 98%;
+              height: 100%;
+            margin: auto;
+              font-family: monospace;
+              font-size: 0.875em;
+              color: #f8f9fa;
+              background-color: #212529;
+              border: none;
+              border-radius: 0;
+              outline: none;
+                   white-space: pre-wrap;
+              word-wrap: break-word;
+            overflow-x: hidden;
+            }
+            .forma-text-editor-content {
+              min-height: 60vh;
+              height: 100%;
+              padding: 1rem;
+              border: none;
+              border-radius: 0;
+              outline: none;
+              white-space: pre-wrap;
+              word-wrap: break-word;
+            }
+          ` }), ir = ({
   editorRef: r,
-  content: s,
-  showSource: i,
-  onContentChange: c,
-  onKeyDown: u,
-  textContentClass: p
-}) => i ? /* @__PURE__ */ e.jsx(
-  "textarea",
-  {
-    value: s || "",
-    onChange: c,
-    className: "form-control rounded-0 border-0 h-100 p-3 font-monospace small bg-dark text-light",
-    style: { minHeight: "60vh", resize: "none" }
-  }
-) : /* @__PURE__ */ e.jsx(
-  "div",
-  {
-    ref: r,
-    contentEditable: !0,
-    suppressContentEditableWarning: !0,
-    className: `editor-content form-control rounded-0 border-0 h-100 p-3 ${p}`,
-    style: { minHeight: "60vh" },
-    onInput: c,
-    onKeyDown: u
-  }
-);
-cr.propTypes = {
-  editorRef: n.object.isRequired,
-  content: n.string,
-  showSource: n.bool.isRequired,
-  onContentChange: n.func.isRequired,
-  onKeyDown: n.func.isRequired,
-  textContentClass: n.string
-};
-const Ue = ({ children: r, onClose: s, title: i, icon: c, size: u = "modal-dialog-centered" }) => /* @__PURE__ */ e.jsx("div", { className: "modal fade show", style: { display: "block", backgroundColor: "rgba(0,0,0,0.5)" }, onClick: s, children: /* @__PURE__ */ e.jsx("div", { className: `modal-dialog ${u}`, onClick: (p) => p.stopPropagation(), children: /* @__PURE__ */ e.jsxs("div", { className: "modal-content border-0 shadow-lg", children: [
-  /* @__PURE__ */ e.jsxs("div", { className: "modal-header bg-light border-0", children: [
-    /* @__PURE__ */ e.jsxs("h5", { className: "modal-title d-flex align-items-center gap-2", children: [
-      c,
-      i
-    ] }),
-    /* @__PURE__ */ e.jsx("button", { type: "button", className: "btn-close", onClick: s })
-  ] }),
-  r
-] }) }) });
-Ue.propTypes = {
-  children: n.node.isRequired,
-  onClose: n.func.isRequired,
-  title: n.string.isRequired,
-  icon: n.node,
-  size: n.string
-};
-const dr = ({ isOpen: r, onClose: s, onApply: i, initialData: c, isEditing: u }) => {
-  const [p, b] = T({ text: "", href: "" });
-  return Q(() => {
-    r && b(c);
-  }, [r, c]), r ? /* @__PURE__ */ e.jsxs(
-    Ue,
+  content: a,
+  showSource: s,
+  onContentChange: d,
+  onKeyDown: m,
+  textContentClass: x
+}) => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+  /* @__PURE__ */ e.jsx(mo, {}),
+  s ? /* @__PURE__ */ e.jsx(
+    "textarea",
     {
-      onClose: s,
-      title: u ? "Edit Link" : "Add Link",
-      icon: /* @__PURE__ */ e.jsx(He, { size: 20, className: "text-primary" }),
-      children: [
-        /* @__PURE__ */ e.jsxs("div", { className: "modal-body p-4", children: [
-          /* @__PURE__ */ e.jsxs("div", { className: "mb-3", children: [
-            /* @__PURE__ */ e.jsx("label", { className: "form-label fw-semibold", children: "Link Text" }),
-            /* @__PURE__ */ e.jsxs("div", { className: "input-group", children: [
-              /* @__PURE__ */ e.jsx("span", { className: "input-group-text", children: /* @__PURE__ */ e.jsx(et, { size: 16 }) }),
-              /* @__PURE__ */ e.jsx(
-                "input",
-                {
-                  type: "text",
-                  className: "form-control",
-                  value: p.text,
-                  onChange: (f) => b({ ...p, text: f.target.value })
-                }
-              )
+      value: a || "",
+      onChange: d,
+      className: "forma-text-source-view"
+    }
+  ) : /* @__PURE__ */ e.jsx(
+    "div",
+    {
+      ref: r,
+      contentEditable: !0,
+      suppressContentEditableWarning: !0,
+      className: `forma-text-editor-content ${x}`,
+      onInput: d,
+      onKeyDown: m
+    }
+  )
+] });
+ir.propTypes = {
+  editorRef: o.object.isRequired,
+  content: o.string,
+  showSource: o.bool.isRequired,
+  onContentChange: o.func.isRequired,
+  onKeyDown: o.func.isRequired,
+  textContentClass: o.string
+};
+const fo = () => /* @__PURE__ */ e.jsx("style", { children: `
+        .forma-text-modal-overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 1050;
+        }
+        .forma-text-modal-dialog {
+          background-color: #fff;
+          border-radius: 0.5rem;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          width: 90%; /* More responsive on small screens */
+          max-width: var(--forma-text-modal-width, 500px); /* Use CSS variable */
+          display: flex;
+          flex-direction: column;
+          max-height: 90vh;
+        }
+        .forma-text-modal-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          border-bottom: 1px solid #dee2e6;
+          background-color: #f8f9fa;
+          border-top-left-radius: 0.5rem;
+          border-top-right-radius: 0.5rem;
+        }
+        .forma-text-modal-title {
+          margin: 0;
+          font-size: 1.25rem;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        .forma-text-modal-close-button {
+          background: transparent;
+          border: none;
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #000;
+          opacity: 0.5;
+          cursor: pointer;
+          padding: 0.5rem;
+          line-height: 1;
+          transition: opacity 0.15s ease-in-out;
+        }
+        .forma-text-modal-close-button:hover {
+          opacity: 0.75;
+        }
+        .forma-text-modal-content {
+          overflow-y: auto;
+        }
+      ` }), Ue = ({ children: r, onClose: a, title: s, icon: d, size: m = "500px" }) => {
+  const x = {
+    "--forma-text-modal-width": m
+  };
+  return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(fo, {}),
+    /* @__PURE__ */ e.jsx("div", { className: "forma-text-modal-overlay", onClick: a, children: /* @__PURE__ */ e.jsxs(
+      "div",
+      {
+        className: "forma-text-modal-dialog",
+        style: x,
+        onClick: (f) => f.stopPropagation(),
+        children: [
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-modal-header", children: [
+            /* @__PURE__ */ e.jsxs("h5", { className: "forma-text-modal-title", children: [
+              d,
+              s
+            ] }),
+            /* @__PURE__ */ e.jsx("button", { className: "forma-text-modal-close-button", onClick: a, children: "×" })
+          ] }),
+          /* @__PURE__ */ e.jsx("div", { className: "forma-text-modal-content", children: r })
+        ]
+      }
+    ) })
+  ] });
+};
+Ue.propTypes = {
+  children: o.node.isRequired,
+  onClose: o.func.isRequired,
+  title: o.string.isRequired,
+  icon: o.node,
+  size: o.string
+};
+const po = () => /* @__PURE__ */ e.jsx("style", { children: `
+        .forma-text-link-modal-body {
+          padding: 1.5rem;
+        }
+        .forma-text-link-form-group {
+          margin-bottom: 1rem;
+        }
+        .forma-text-link-label {
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+          display: block;
+        }
+        .forma-text-link-input-group {
+          display: flex;
+          align-items: center;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+        }
+        .forma-text-link-input-icon {
+          padding: 0.5rem 0.75rem;
+          background-color: #e9ecef;
+          border-right: 1px solid #ced4da;
+        }
+        .forma-text-link-input {
+          flex: 1;
+          border: none;
+          padding: 0.5rem 0.75rem;
+          font-size: 1rem;
+          outline: none;
+          border-radius: 0 0.25rem 0.25rem 0;
+        }
+        .forma-text-link-modal-footer {
+          display: flex;
+          justify-content: flex-end;
+          padding: 1rem;
+          background-color: #f8f9fa;
+          border-top: 1px solid #dee2e6;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+        }
+        .forma-text-link-button {
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          font-size: 14px;
+          margin-left: 0.5rem;
+          transition: background-color 0.15s ease-in-out;
+        }
+        .forma-text-link-button--secondary {
+          background-color: #6c757d;
+          color: white;
+        }
+        .forma-text-link-button--secondary:hover {
+          background-color: #5a6268;
+        }
+        .forma-text-link-button--primary {
+          background-color: #4285f4;
+          color: white;
+        }
+        .forma-text-link-button--primary:hover {
+          background-color: #357ae8;
+        }
+      ` }), ar = ({ isOpen: r, onClose: a, onApply: s, initialData: d, isEditing: m }) => {
+  const [x, f] = w({ text: "", href: "" });
+  return se(() => {
+    r && f(d);
+  }, [r, d]), r ? /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(po, {}),
+    /* @__PURE__ */ e.jsxs(
+      Ue,
+      {
+        onClose: a,
+        title: m ? "Edit Link" : "Add Link",
+        icon: /* @__PURE__ */ e.jsx(Pe, { size: 20 }),
+        children: [
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-link-modal-body", children: [
+            /* @__PURE__ */ e.jsxs("div", { className: "forma-text-link-form-group", children: [
+              /* @__PURE__ */ e.jsx("label", { className: "forma-text-link-label", children: "Link Text" }),
+              /* @__PURE__ */ e.jsxs("div", { className: "forma-text-link-input-group", children: [
+                /* @__PURE__ */ e.jsx("span", { className: "forma-text-link-input-icon", children: /* @__PURE__ */ e.jsx(Qe, { size: 16 }) }),
+                /* @__PURE__ */ e.jsx(
+                  "input",
+                  {
+                    type: "text",
+                    className: "forma-text-link-input",
+                    value: x.text,
+                    onChange: (c) => f({ ...x, text: c.target.value })
+                  }
+                )
+              ] })
+            ] }),
+            /* @__PURE__ */ e.jsxs("div", { className: "forma-text-link-form-group", children: [
+              /* @__PURE__ */ e.jsx("label", { className: "forma-text-link-label", children: "Link URL" }),
+              /* @__PURE__ */ e.jsxs("div", { className: "forma-text-link-input-group", children: [
+                /* @__PURE__ */ e.jsx("span", { className: "forma-text-link-input-icon", children: /* @__PURE__ */ e.jsx(Or, { size: 16 }) }),
+                /* @__PURE__ */ e.jsx(
+                  "input",
+                  {
+                    type: "url",
+                    className: "forma-text-link-input",
+                    value: x.href,
+                    onChange: (c) => f({ ...x, href: c.target.value }),
+                    placeholder: "https://example.com",
+                    autoFocus: !0
+                  }
+                )
+              ] })
             ] })
           ] }),
-          /* @__PURE__ */ e.jsxs("div", { children: [
-            /* @__PURE__ */ e.jsx("label", { className: "form-label fw-semibold", children: "Link URL" }),
-            /* @__PURE__ */ e.jsxs("div", { className: "input-group", children: [
-              /* @__PURE__ */ e.jsx("span", { className: "input-group-text", children: /* @__PURE__ */ e.jsx(Sr, { size: 16 }) }),
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-link-modal-footer", children: [
+            /* @__PURE__ */ e.jsx(
+              "button",
+              {
+                type: "button",
+                className: "forma-text-link-button forma-text-link-button--secondary",
+                onClick: a,
+                children: "Cancel"
+              }
+            ),
+            /* @__PURE__ */ e.jsx(
+              "button",
+              {
+                type: "button",
+                className: "forma-text-link-button forma-text-link-button--primary",
+                onClick: () => s(x),
+                children: "Apply Link"
+              }
+            )
+          ] })
+        ]
+      }
+    )
+  ] }) : null;
+};
+ar.propTypes = {
+  isOpen: o.bool.isRequired,
+  onClose: o.func.isRequired,
+  onApply: o.func.isRequired,
+  initialData: o.shape({
+    text: o.string,
+    href: o.string
+  }).isRequired,
+  isEditing: o.bool.isRequired
+};
+const xo = () => /* @__PURE__ */ e.jsx("style", { children: `
+        .forma-text-video-modal-body {
+          padding: 1.5rem;
+        }
+        .forma-text-video-label {
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+          display: block;
+        }
+        .forma-text-video-input-group {
+          display: flex;
+          align-items: center;
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          margin-bottom: 0.5rem;
+        }
+        .forma-text-video-input-icon {
+          padding: 0.5rem 0.75rem;
+          background-color: #e9ecef;
+          border-right: 1px solid #ced4da;
+        }
+        .forma-text-video-input {
+          flex: 1;
+          border: none;
+          padding: 0.5rem 0.75rem;
+          font-size: 1rem;
+          outline: none;
+          border-radius: 0 0.25rem 0.25rem 0;
+        }
+        .forma-text-video-form-text {
+          font-size: 14px;
+          color: #6c757d;
+        }
+        .forma-text-video-modal-footer {
+          display: flex;
+          justify-content: flex-end;
+          padding: 1rem;
+          background-color: #f8f9fa;
+          border-top: 1px solid #dee2e6;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+        }
+        .forma-text-video-button {
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          font-size: 14px;
+          margin-left: 0.5rem;
+          transition: background-color 0.15s ease-in-out;
+        }
+        .forma-text-video-button--secondary {
+          background-color: #6c757d;
+          color: white;
+        }
+        .forma-text-video-button--secondary:hover {
+          background-color: #5a6268;
+        }
+        .forma-text-video-button--primary {
+          background-color: #4285f4;
+          color: white;
+        }
+        .forma-text-video-button--primary:hover {
+          background-color: #357ae8;
+        }
+      ` }), sr = ({ isOpen: r, onClose: a, onInsert: s }) => {
+  const [d, m] = w(""), x = () => {
+    s(d), m("");
+  };
+  return r ? /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(xo, {}),
+    /* @__PURE__ */ e.jsxs(
+      Ue,
+      {
+        onClose: a,
+        title: "Insert Video",
+        icon: /* @__PURE__ */ e.jsx(et, { size: 20 }),
+        children: [
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-video-modal-body", children: [
+            /* @__PURE__ */ e.jsx("label", { className: "forma-text-video-label", children: "Video URL" }),
+            /* @__PURE__ */ e.jsxs("div", { className: "forma-text-video-input-group", children: [
+              /* @__PURE__ */ e.jsx("span", { className: "forma-text-video-input-icon", children: /* @__PURE__ */ e.jsx(Pe, { size: 16 }) }),
               /* @__PURE__ */ e.jsx(
                 "input",
                 {
                   type: "url",
-                  className: "form-control",
-                  value: p.href,
-                  onChange: (f) => b({ ...p, href: f.target.value }),
-                  placeholder: "https://example.com",
+                  className: "forma-text-video-input",
+                  value: d,
+                  onChange: (f) => m(f.target.value),
+                  placeholder: "e.g., https://www.youtube.com/watch?v=...",
                   autoFocus: !0
                 }
               )
-            ] })
-          ] })
-        ] }),
-        /* @__PURE__ */ e.jsxs("div", { className: "modal-footer border-0 bg-light", children: [
-          /* @__PURE__ */ e.jsx(
-            "button",
-            {
-              type: "button",
-              className: "btn editor-secondary",
-              onClick: s,
-              children: "Cancel"
-            }
-          ),
-          /* @__PURE__ */ e.jsx(
-            "button",
-            {
-              type: "button",
-              className: "btn editor-primary",
-              onClick: () => i(p),
-              children: "Apply Link"
-            }
-          )
-        ] })
-      ]
-    }
-  ) : null;
-};
-dr.propTypes = {
-  isOpen: n.bool.isRequired,
-  onClose: n.func.isRequired,
-  onApply: n.func.isRequired,
-  initialData: n.shape({
-    text: n.string,
-    href: n.string
-  }).isRequired,
-  isEditing: n.bool.isRequired
-};
-const ur = ({ isOpen: r, onClose: s, onInsert: i }) => {
-  const [c, u] = T("");
-  if (!r) return null;
-  const p = () => {
-    i(c), u("");
-  };
-  return /* @__PURE__ */ e.jsxs(
-    Ue,
-    {
-      onClose: s,
-      title: "Insert Video",
-      icon: /* @__PURE__ */ e.jsx(tt, { size: 20, className: "text-primary" }),
-      children: [
-        /* @__PURE__ */ e.jsxs("div", { className: "modal-body p-4", children: [
-          /* @__PURE__ */ e.jsx("label", { className: "form-label fw-semibold", children: "Video URL" }),
-          /* @__PURE__ */ e.jsxs("div", { className: "input-group", children: [
-            /* @__PURE__ */ e.jsx("span", { className: "input-group-text", children: /* @__PURE__ */ e.jsx(He, { size: 16 }) }),
-            /* @__PURE__ */ e.jsx(
-              "input",
-              {
-                type: "url",
-                className: "form-control",
-                value: c,
-                onChange: (b) => u(b.target.value),
-                placeholder: "e.g., https://www.youtube.com/watch?v=...",
-                autoFocus: !0
-              }
-            )
+            ] }),
+            /* @__PURE__ */ e.jsx("div", { className: "forma-text-video-form-text", children: "Supports YouTube and Vimeo links." })
           ] }),
-          /* @__PURE__ */ e.jsx("div", { className: "form-text video-modal-title", children: "Supports YouTube and Vimeo links." })
-        ] }),
-        /* @__PURE__ */ e.jsxs("div", { className: "modal-footer border-0 bg-light", children: [
-          /* @__PURE__ */ e.jsx(
-            "button",
-            {
-              type: "button",
-              className: "btn editor-secondary",
-              onClick: s,
-              children: "Cancel"
-            }
-          ),
-          /* @__PURE__ */ e.jsx(
-            "button",
-            {
-              type: "button",
-              className: "btn editor-primary",
-              onClick: p,
-              children: "Insert Video"
-            }
-          )
-        ] })
-      ]
-    }
-  );
-};
-ur.propTypes = {
-  isOpen: n.bool.isRequired,
-  onClose: n.func.isRequired,
-  onInsert: n.func.isRequired
-};
-const pr = ({ isOpen: r, onClose: s, onCreate: i }) => {
-  const [c, u] = T({ rows: 3, cols: 3 });
-  return r ? /* @__PURE__ */ e.jsxs(
-    Ue,
-    {
-      onClose: s,
-      title: "Create Table",
-      icon: /* @__PURE__ */ e.jsx(rt, { size: 20, className: "text-primary" }),
-      children: [
-        /* @__PURE__ */ e.jsxs("div", { className: "modal-body p-4", children: [
-          /* @__PURE__ */ e.jsxs("div", { className: "mb-3", children: [
-            /* @__PURE__ */ e.jsx("label", { className: "form-label fw-semibold", children: "Rows" }),
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-video-modal-footer", children: [
             /* @__PURE__ */ e.jsx(
-              "input",
+              "button",
               {
-                type: "number",
-                className: "form-control",
-                value: c.rows,
-                min: "1",
-                onChange: (p) => u({
-                  ...c,
-                  rows: parseInt(p.target.value, 10) || 1
-                })
+                type: "button",
+                className: "forma-text-video-button forma-text-video-button--secondary",
+                onClick: a,
+                children: "Cancel"
               }
-            )
-          ] }),
-          /* @__PURE__ */ e.jsxs("div", { children: [
-            /* @__PURE__ */ e.jsx("label", { className: "form-label fw-semibold", children: "Columns" }),
+            ),
             /* @__PURE__ */ e.jsx(
-              "input",
+              "button",
               {
-                type: "number",
-                className: "form-control",
-                value: c.cols,
-                min: "1",
-                onChange: (p) => u({
-                  ...c,
-                  cols: parseInt(p.target.value, 10) || 1
-                })
+                type: "button",
+                className: "forma-text-video-button forma-text-video-button--primary",
+                onClick: x,
+                children: "Insert Video"
               }
             )
           ] })
-        ] }),
-        /* @__PURE__ */ e.jsxs("div", { className: "modal-footer border-0 bg-light", children: [
-          /* @__PURE__ */ e.jsx(
-            "button",
-            {
-              type: "button",
-              className: "btn editor-secondary",
-              onClick: s,
-              children: "Cancel"
-            }
-          ),
-          /* @__PURE__ */ e.jsx(
-            "button",
-            {
-              type: "button",
-              className: "btn editor-primary",
-              onClick: () => i(c),
-              children: "Create"
-            }
-          )
-        ] })
-      ]
-    }
-  ) : null;
-};
-pr.propTypes = {
-  isOpen: n.bool.isRequired,
-  onClose: n.func.isRequired,
-  onCreate: n.func.isRequired
-};
-const mr = ({ status: r, isMinimized: s, onMinimizeToggle: i }) => s ? /* @__PURE__ */ e.jsxs("div", { className: "ai-loading-popup-minimized", children: [
-  /* @__PURE__ */ e.jsx("div", { className: "spinner-border spinner-border-sm text-primary", role: "status" }),
-  /* @__PURE__ */ e.jsx("span", { className: "ms-2 small", children: "AI is working..." }),
-  /* @__PURE__ */ e.jsx("button", { onClick: i, className: "btn btn-sm btn-light ms-auto", children: /* @__PURE__ */ e.jsx(_r, { size: 14 }) })
-] }) : /* @__PURE__ */ e.jsxs("div", { className: "ai-loading-popup", children: [
-  /* @__PURE__ */ e.jsxs("div", { className: "d-flex justify-content-between align-items-center mb-3", children: [
-    /* @__PURE__ */ e.jsxs("h6", { className: "mb-0 d-flex align-items-center gap-2", children: [
-      /* @__PURE__ */ e.jsx(Pe, { size: 18, className: "text-primary" }),
-      "AI Assistant"
-    ] }),
-    /* @__PURE__ */ e.jsx("button", { onClick: i, className: "btn btn-sm btn-light", children: /* @__PURE__ */ e.jsx(nt, { size: 14 }) })
-  ] }),
-  /* @__PURE__ */ e.jsxs("div", { className: "d-flex align-items-center", children: [
-    /* @__PURE__ */ e.jsx("div", { className: "spinner-border text-primary me-3", role: "status", children: /* @__PURE__ */ e.jsx("span", { className: "visually-hidden", children: "Loading..." }) }),
-    /* @__PURE__ */ e.jsxs("div", { children: [
-      /* @__PURE__ */ e.jsx("p", { className: "mb-0 fw-bold", children: "Working on it..." }),
-      /* @__PURE__ */ e.jsx("p", { className: "mb-0 text-muted small", children: r })
-    ] })
-  ] })
-] });
-mr.propTypes = {
-  status: n.string.isRequired,
-  isMinimized: n.bool.isRequired,
-  onMinimizeToggle: n.func.isRequired
-};
-const fr = ({ isOpen: r, onClose: s, onApply: i, originalContent: c, suggestion: u, highlightedDiff: p }) => r ? /* @__PURE__ */ e.jsxs(Ue, { onClose: s, title: "AI Content Suggestion", icon: /* @__PURE__ */ e.jsx(Pe, { size: 20, className: "text-primary" }), size: "modal-xl", children: [
-  /* @__PURE__ */ e.jsxs("div", { className: "modal-body p-4", children: [
-    /* @__PURE__ */ e.jsxs("ul", { className: "nav nav-tabs mb-3", role: "tablist", children: [
-      /* @__PURE__ */ e.jsx("li", { className: "nav-item", role: "presentation", children: /* @__PURE__ */ e.jsx(
-        "button",
-        {
-          className: "nav-link active",
-          id: "preview-tab",
-          "data-bs-toggle": "tab",
-          "data-bs-target": "#preview-pane",
-          type: "button",
-          role: "tab",
-          "aria-controls": "preview-pane",
-          "aria-selected": "true",
-          children: "Preview Changes"
-        }
-      ) }),
-      /* @__PURE__ */ e.jsx("li", { className: "nav-item", role: "presentation", children: /* @__PURE__ */ e.jsx(
-        "button",
-        {
-          className: "nav-link",
-          id: "diff-tab",
-          "data-bs-toggle": "tab",
-          "data-bs-target": "#diff-pane",
-          type: "button",
-          role: "tab",
-          "aria-controls": "diff-pane",
-          "aria-selected": "false",
-          children: "Highlight Changes"
-        }
-      ) })
-    ] }),
-    /* @__PURE__ */ e.jsxs("div", { className: "tab-content", children: [
-      /* @__PURE__ */ e.jsx("div", { className: "tab-pane fade show active", id: "preview-pane", role: "tabpanel", "aria-labelledby": "preview-tab", children: /* @__PURE__ */ e.jsxs("div", { className: "row", children: [
-        /* @__PURE__ */ e.jsxs("div", { className: "col-md-6", children: [
-          /* @__PURE__ */ e.jsx("h6", { className: "mb-2 text-muted", children: "Original Content" }),
-          /* @__PURE__ */ e.jsx("div", { className: "ai-preview-pane", dangerouslySetInnerHTML: { __html: c } })
-        ] }),
-        /* @__PURE__ */ e.jsxs("div", { className: "col-md-6", children: [
-          /* @__PURE__ */ e.jsx("h6", { className: "mb-2 text-success", children: "AI Suggestion" }),
-          /* @__PURE__ */ e.jsx("div", { className: "ai-preview-pane", dangerouslySetInnerHTML: { __html: u } })
-        ] })
-      ] }) }),
-      /* @__PURE__ */ e.jsxs("div", { className: "tab-pane fade", id: "diff-pane", role: "tabpanel", "aria-labelledby": "diff-tab", children: [
-        /* @__PURE__ */ e.jsx("h6", { className: "mb-2 text-primary", children: "Highlighted Differences" }),
-        /* @__PURE__ */ e.jsxs("p", { className: "small text-muted", children: [
-          /* @__PURE__ */ e.jsx("span", { className: "px-2 py-1 me-2 rounded", style: { backgroundColor: "#d4edda" }, children: "Added content" }),
-          /* @__PURE__ */ e.jsx("span", { className: "px-2 py-1 rounded", style: { backgroundColor: "#f8d7da" }, children: "Removed content" })
-        ] }),
-        /* @__PURE__ */ e.jsx("div", { className: "ai-preview-pane", dangerouslySetInnerHTML: { __html: p } })
-      ] })
-    ] })
-  ] }),
-  /* @__PURE__ */ e.jsxs("div", { className: "modal-footer border-0 bg-light", children: [
-    /* @__PURE__ */ e.jsx("button", { type: "button", className: "btn editor-secondary", onClick: s, children: "Cancel" }),
-    /* @__PURE__ */ e.jsx("button", { type: "button", className: "btn editor-primary", onClick: i, children: "Apply Suggestion" })
-  ] })
-] }) : null;
-fr.propTypes = {
-  isOpen: n.bool.isRequired,
-  onClose: n.func.isRequired,
-  onApply: n.func.isRequired,
-  originalContent: n.string,
-  suggestion: n.string,
-  highlightedDiff: n.string
-};
-const Qe = Fe.memo(
-  ({ onClick: r, title: s, command: i, activeStyles: c, disabled: u = !1, children: p }) => /* @__PURE__ */ e.jsx(
-    "button",
-    {
-      type: "button",
-      onClick: r,
-      onMouseDown: (b) => b.preventDefault(),
-      className: `btn btn-outline-secondary ${c && c.has(i) ? "active" : ""}`,
-      "data-bs-toggle": "tooltip",
-      "data-bs-placement": "bottom",
-      title: s,
-      disabled: u,
-      children: p
-    }
-  )
-);
-Qe.propTypes = {
-  onClick: n.func.isRequired,
-  title: n.string.isRequired,
-  command: n.string,
-  activeStyles: n.object,
-  disabled: n.bool,
-  children: n.node.isRequired
-};
-Qe.displayName = "StatusToolbarButton";
-const br = ({
-  wordCount: r,
-  charCount: s,
-  onToggleSource: i,
-  showSource: c,
-  onToggleFullScreen: u,
-  isFullScreen: p,
-  trialExpiresIn: b
-}) => /* @__PURE__ */ e.jsxs("div", { className: "flex-shrink-0 p-2 border-top bg-light d-flex justify-content-between align-items-center small text-muted", children: [
-  /* @__PURE__ */ e.jsxs("div", { children: [
-    /* @__PURE__ */ e.jsxs("span", { className: "footer-text-area", children: [
-      "Words: ",
-      r
-    ] }),
-    /* @__PURE__ */ e.jsx("span", { className: "mx-2", children: "|" }),
-    /* @__PURE__ */ e.jsxs("span", { className: "footer-text-area", children: [
-      "Characters: ",
-      s
-    ] })
-  ] }),
-  /* @__PURE__ */ e.jsxs("div", { className: "btn-group", children: [
-    /* @__PURE__ */ e.jsx(Qe, { title: "View HTML Source", onClick: i, children: /* @__PURE__ */ e.jsx(Vt, { size: 16 }) }),
-    /* @__PURE__ */ e.jsx(
-      Qe,
-      {
-        title: p ? "Exit Full Screen" : "Full Screen",
-        onClick: u,
-        children: p ? /* @__PURE__ */ e.jsx(nt, { size: 16 }) : /* @__PURE__ */ e.jsx(Yt, { size: 16 })
+        ]
       }
     )
+  ] }) : null;
+};
+sr.propTypes = {
+  isOpen: o.bool.isRequired,
+  onClose: o.func.isRequired,
+  onInsert: o.func.isRequired
+};
+const bo = () => /* @__PURE__ */ e.jsx("style", { children: `
+        .forma-text-table-modal-body {
+          padding: 1.5rem;
+        }
+        .forma-text-table-form-group {
+          margin-bottom: 1rem;
+        }
+        .forma-text-table-label {
+          margin-bottom: 0.5rem;
+          font-weight: 600;
+          display: block;
+        }
+        .forma-text-table-input {
+          width: 100%; /* Changed to 100% for better responsiveness */
+          box-sizing: border-box; /* Ensures padding doesn't affect width */
+          border: 1px solid #ced4da;
+          border-radius: 0.25rem;
+          padding: 0.5rem 0.75rem;
+          font-size: 1rem;
+          outline: none;
+        }
+        .forma-text-table-modal-footer {
+          display: flex;
+          justify-content: flex-end;
+          padding: 1rem;
+          background-color: #f8f9fa;
+          border-top: 1px solid #dee2e6;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+        }
+        .forma-text-table-button {
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          font-size: 14px;
+          margin-left: 0.5rem;
+          transition: background-color 0.15s ease-in-out;
+        }
+        .forma-text-table-button--secondary {
+          background-color: #6c757d;
+          color: white;
+        }
+        .forma-text-table-button--secondary:hover {
+          background-color: #5a6268;
+        }
+        .forma-text-table-button--primary {
+          background-color: #4285f4;
+          color: white;
+        }
+        .forma-text-table-button--primary:hover {
+          background-color: #357ae8;
+        }
+      ` }), lr = ({ isOpen: r, onClose: a, onCreate: s }) => {
+  const [d, m] = w({ rows: 3, cols: 3 });
+  return r ? /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(bo, {}),
+    /* @__PURE__ */ e.jsxs(
+      Ue,
+      {
+        onClose: a,
+        title: "Create Table",
+        icon: /* @__PURE__ */ e.jsx(tt, { size: 20 }),
+        children: [
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-table-modal-body", children: [
+            /* @__PURE__ */ e.jsxs("div", { className: "forma-text-table-form-group", children: [
+              /* @__PURE__ */ e.jsx("label", { className: "forma-text-table-label", children: "Rows" }),
+              /* @__PURE__ */ e.jsx(
+                "input",
+                {
+                  type: "number",
+                  className: "forma-text-table-input",
+                  value: d.rows,
+                  min: "1",
+                  onChange: (x) => m({
+                    ...d,
+                    rows: parseInt(x.target.value, 10) || 1
+                  })
+                }
+              )
+            ] }),
+            /* @__PURE__ */ e.jsxs("div", { className: "forma-text-table-form-group", children: [
+              /* @__PURE__ */ e.jsx("label", { className: "forma-text-table-label", children: "Columns" }),
+              /* @__PURE__ */ e.jsx(
+                "input",
+                {
+                  type: "number",
+                  className: "forma-text-table-input",
+                  value: d.cols,
+                  min: "1",
+                  onChange: (x) => m({
+                    ...d,
+                    cols: parseInt(x.target.value, 10) || 1
+                  })
+                }
+              )
+            ] })
+          ] }),
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-table-modal-footer", children: [
+            /* @__PURE__ */ e.jsx(
+              "button",
+              {
+                type: "button",
+                className: "forma-text-table-button forma-text-table-button--secondary",
+                onClick: a,
+                children: "Cancel"
+              }
+            ),
+            /* @__PURE__ */ e.jsx(
+              "button",
+              {
+                type: "button",
+                className: "forma-text-table-button forma-text-table-button--primary",
+                onClick: () => s(d),
+                children: "Create"
+              }
+            )
+          ] })
+        ]
+      }
+    )
+  ] }) : null;
+};
+lr.propTypes = {
+  isOpen: o.bool.isRequired,
+  onClose: o.func.isRequired,
+  onCreate: o.func.isRequired
+};
+const go = () => /* @__PURE__ */ e.jsx("style", { children: `
+        /* Base styles for the popup container */
+        .forma-text-ai-popup, .forma-text-ai-popup-minimized {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1100;
+          background-color: white;
+          border-radius: 0.5rem;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Full-size popup */
+        .forma-text-ai-popup {
+          width: 350px;
+          padding: 1rem;
+        }
+        .forma-text-ai-popup-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+        }
+        .forma-text-ai-popup-title {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 1rem; /* h6 default */
+          font-weight: 500; /* h6 default */
+        }
+        .forma-text-ai-popup-body {
+          display: flex;
+          align-items: center;
+        }
+        .forma-text-popup-text-main {
+          margin: 0;
+          font-weight: 700;
+        }
+        .forma-text-popup-text-status {
+          margin: 0;
+          color: #6c757d;
+          font-size: 0.875em;
+        }
+        .forma-text-icon--primary {
+          color: #0d6efd;
+        }
+        
+        /* Minimized popup */
+        .forma-text-ai-popup-minimized {
+          padding: 0.5rem 1rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        .forma-text-minimized-text {
+            font-size: 0.875em;
+        }
+        
+        /* Shared minimize/toggle button */
+        .forma-text-ai-popup-btn {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0.25rem 0.5rem;
+          font-size: 0.875rem;
+          color: #212529;
+          background-color: #f8f9fa;
+          border: 1px solid #f8f9fa;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          transition: background-color 0.15s ease-in-out;
+        }
+        .forma-text-ai-popup-btn:hover {
+            background-color: #e2e6ea;
+        }
+        .forma-text-ai-popup-btn--auto-margin {
+            margin-left: auto;
+        }
+
+        /* Spinner animation and styles */
+        @keyframes forma-text-spinner-border {
+          to { transform: rotate(360deg); }
+        }
+        .forma-text-spinner {
+          display: inline-block;
+          vertical-align: text-bottom;
+          border: 0.25em solid currentColor;
+          border-right-color: transparent;
+          border-radius: 50%;
+          animation: forma-text-spinner-border .75s linear infinite;
+          width: 2rem;
+          height: 2rem;
+          margin-right: 1rem;
+        }
+        .forma-text-spinner--sm {
+          width: 1rem;
+          height: 1rem;
+          border-width: 0.2em;
+          margin-right: 0;
+        }
+      ` }), dr = ({ status: r, isMinimized: a, onMinimizeToggle: s }) => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+  /* @__PURE__ */ e.jsx(go, {}),
+  a ? /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-popup-minimized", children: [
+    /* @__PURE__ */ e.jsx(
+      "div",
+      {
+        className: "forma-text-spinner forma-text-spinner--sm forma-text-icon--primary",
+        role: "status"
+      }
+    ),
+    /* @__PURE__ */ e.jsx("span", { className: "forma-text-minimized-text", children: "AI is working..." }),
+    /* @__PURE__ */ e.jsx(
+      "button",
+      {
+        onClick: s,
+        className: "forma-text-ai-popup-btn forma-text-ai-popup-btn--auto-margin",
+        children: /* @__PURE__ */ e.jsx(Sr, { size: 14 })
+      }
+    )
+  ] }) : /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-popup", children: [
+    /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-popup-header", children: [
+      /* @__PURE__ */ e.jsxs("h6", { className: "forma-text-ai-popup-title", children: [
+        /* @__PURE__ */ e.jsx(He, { size: 18, className: "forma-text-icon--primary" }),
+        "AI Assistant"
+      ] }),
+      /* @__PURE__ */ e.jsx(
+        "button",
+        {
+          onClick: s,
+          className: "forma-text-ai-popup-btn",
+          children: /* @__PURE__ */ e.jsx(rt, { size: 14 })
+        }
+      )
+    ] }),
+    /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-popup-body", children: [
+      /* @__PURE__ */ e.jsx(
+        "div",
+        {
+          className: "forma-text-spinner forma-text-icon--primary",
+          role: "status"
+        }
+      ),
+      /* @__PURE__ */ e.jsxs("div", { children: [
+        /* @__PURE__ */ e.jsx("p", { className: "forma-text-popup-text-main", children: "Working on it..." }),
+        /* @__PURE__ */ e.jsx("p", { className: "forma-text-popup-text-status", children: r })
+      ] })
+    ] })
   ] })
 ] });
-br.propTypes = {
-  wordCount: n.number.isRequired,
-  charCount: n.number.isRequired,
-  onToggleSource: n.func.isRequired,
-  showSource: n.bool.isRequired,
-  onToggleFullScreen: n.func.isRequired,
-  isFullScreen: n.bool.isRequired,
-  isPremium: n.bool
+dr.propTypes = {
+  status: o.string.isRequired,
+  isMinimized: o.bool.isRequired,
+  onMinimizeToggle: o.func.isRequired
 };
-const hr = ({
-  wordCount: r,
-  charCount: s,
-  onToggleSource: i,
-  isFullScreen: c,
-  onToggleFullScreen: u
+const ho = () => /* @__PURE__ */ e.jsx("style", { children: `
+        .forma-text-ai-modal-body {
+          padding: 1.5rem;
+        }
+        .forma-text-ai-modal-tab-container {
+          display: flex;
+          border-bottom: 1px solid #dee2e6;
+          margin-bottom: 1rem;
+        button{
+           font-size: 0.89rem}
+        }
+        .forma-text-ai-modal-tab-button {
+          padding: 0.75rem 1rem;
+          border: none;
+          background: none;
+          cursor: pointer;
+          margin-bottom: -1px; /* Aligns with the container's bottom border */
+          border-bottom: 2px solid transparent;
+        }
+        .forma-text-ai-modal-tab-button--active {
+          color: #0d6efd;
+          border-bottom-color: #0d6efd;
+        }
+        .forma-text-ai-modal-tab-content {
+          display: flex;
+          gap: 1rem;
+        }
+        .forma-text-ai-modal-pane {
+          width: 50%;
+        }
+        .forma-text-ai-modal-pane-title {
+          margin: 1rem 0 0.8rem 0.5rem;
+          color: #6c757d;
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+        .forma-text-ai-modal-pane-title--suggestion {
+            color: #198754;
+        }
+        .forma-text-ai-modal-pane-title--diff {
+            color: #0d6efd;
+        }
+        .forma-text-ai-modal-preview-pane {
+          height: 300px;
+          overflow-y: auto;
+          border: 1px solid #dee2e6;
+          padding: 1rem;
+          border-radius: 0.25rem;
+          background-color: #fff;
+        }
+        .forma-text-ai-modal-diff-legend {
+          display: flex;
+          gap: 1rem;
+          font-size: 14px;
+          color: #6c757d;
+          margin-bottom: 1rem;
+        }
+        .forma-text-ai-modal-legend-added {
+          background-color: #d4edda;
+          padding: 0.25rem 0.5rem;
+          border-radius: 0.25rem;
+        }
+        .forma-text-ai-modal-legend-removed {
+          background-color: #f8d7da;
+          padding: 0.25rem 0.5rem;
+          border-radius: 0.25rem;
+        }
+        .forma-text-ai-modal-footer {
+          display: flex;
+          justify-content: flex-end;
+          padding: 1rem;
+          background-color: #f8f9fa;
+          border-top: 1px solid #dee2e6;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+        }
+        .forma-text-ai-modal-button {
+          padding: 0.5rem 1rem;
+          border: none;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          font-size: 14px;
+          margin-left: 0.5rem;
+          transition: background-color 0.15s ease-in-out;
+        }
+        .forma-text-ai-modal-button--secondary {
+          background-color: #6c757d;
+          color: white;
+        }
+        .forma-text-ai-modal-button--secondary:hover {
+          background-color: #5a6268;
+        }
+        .forma-text-ai-modal-button--primary {
+          background-color: #4285f4;
+          color: white;
+        }
+        .forma-text-ai-modal-button--primary:hover {
+          background-color: #357ae8;
+        }
+      ` }), cr = ({
+  isOpen: r,
+  onClose: a,
+  onApply: s,
+  originalContent: d,
+  suggestion: m,
+  highlightedDiff: x
 }) => {
-  const [p, b] = T(!1);
-  return Q(() => {
-    const f = setTimeout(() => b(!0), 100);
-    return () => clearTimeout(f);
-  }, []), /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
-    /* @__PURE__ */ e.jsx("style", { children: `
-      /* FUTURISTIC STATUS BAR V2 STYLES */
-
-.futuristic-statusbar-v2 {
-  position: fixed;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 95%;
-
-  z-index: 1999;
-  font-family: "Orbitron", "Segoe UI", sans-serif;
-
-  /* Glassmorphism & Base Style */
-  background: rgba(15, 15, 25, 0.5);
-  backdrop-filter: blur(16px) saturate(200%);
-  color: var(--text-color, #e0e0e0);
-  border: 1px solid var(--border-color, rgba(138, 43, 226, 0.4));
-  border-radius: 12px;
-  overflow: hidden;
-
-  /* Boot-up Animation */
-  opacity: 0;
-  transform: translateX(-50%) translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.futuristic-statusbar-v2.is-booted {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
-
-/* Animated Grid Background */
-.grid-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: linear-gradient(
-      var(--glow-color, #00ffff) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to right, var(--glow-color, #00ffff) 1px, transparent 1px);
-  background-size: 40px 40px;
-  opacity: 0.05;
-  animation: move-grid 20s linear infinite;
-  z-index: 1;
-}
-
-@keyframes move-grid {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 40px 40px;
-  }
-}
-
-/* Main Content Wrapper */
-.statusbar-content {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 25px;
-  z-index: 2;
-}
-
-/* Decorative Corner Brackets */
-.corner-bracket {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-style: solid;
-  border-color: var(--glow-color, #00ffff);
-  opacity: 0;
-  transition: opacity 1s ease 0.5s; /* Fade in after boot */
-}
-.futuristic-statusbar-v2.is-booted .corner-bracket {
-  opacity: 0.5;
-}
-.corner-bracket.top-left {
-  top: -2px;
-  left: -2px;
-  border-width: 2px 0 0 2px;
-  border-radius: 8px 0 0 0;
-}
-.corner-bracket.top-right {
-  top: -2px;
-  right: -2px;
-  border-width: 2px 2px 0 0;
-  border-radius: 0 8px 0 0;
-}
-.corner-bracket.bottom-left {
-  bottom: -2px;
-  left: -2px;
-  border-width: 0 0 2px 2px;
-  border-radius: 0 0 0 8px;
-}
-.corner-bracket.bottom-right {
-  bottom: -2px;
-  right: -2px;
-  border-width: 0 2px 2px 0;
-  border-radius: 0 0 8px 0;
-}
-
-/* Data Readout Styling */
-.status-group-v2 {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.data-readout {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #aab5c3;
-}
-
-.data-icon {
-  color: var(--glow-color, #00ffff);
-  filter: drop-shadow(0 0 3px var(--glow-color, #00ffff));
-}
-
-.data-label {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  opacity: 0.6;
-}
-
-.data-value {
-  font-family: "Roboto Mono", monospace;
-  font-size: 16px;
-  font-weight: 700;
-  color: white;
-  text-shadow: 0 0 5px var(--glow-color, #00ffff);
-}
-
-/* Action Button Styling */
-.action-button {
-  background: transparent;
-  border: 1px solid transparent;
-  color: #aab5c3;
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.action-button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 50%;
-  border: 1px solid var(--border-color, rgba(138, 43, 226, 0.4));
-  transition: all 0.3s ease;
-}
-
-.action-button:hover {
-  color: white;
-}
-
-.action-button:hover::before {
-  transform: scale(1.2);
-  opacity: 0;
-}
-
-.action-button:active {
-  transform: scale(0.9);
-}
-
-      ` }),
-    /* @__PURE__ */ e.jsxs("div", { className: `futuristic-statusbar-v2 ${p ? "is-booted" : ""}`, children: [
-      /* @__PURE__ */ e.jsx("div", { className: "corner-bracket top-left" }),
-      /* @__PURE__ */ e.jsx("div", { className: "corner-bracket top-right" }),
-      /* @__PURE__ */ e.jsx("div", { className: "corner-bracket bottom-left" }),
-      /* @__PURE__ */ e.jsx("div", { className: "corner-bracket bottom-right" }),
-      /* @__PURE__ */ e.jsx("div", { className: "grid-background" }),
-      /* @__PURE__ */ e.jsxs("div", { className: "statusbar-content", children: [
-        /* @__PURE__ */ e.jsxs("div", { className: "status-group-v2", children: [
-          /* @__PURE__ */ e.jsxs("div", { className: "data-readout", title: "Word Count", children: [
-            /* @__PURE__ */ e.jsx(Mr, { size: 16, className: "data-icon" }),
-            /* @__PURE__ */ e.jsx("span", { className: "data-label", children: "WORDS" }),
-            /* @__PURE__ */ e.jsx("span", { className: "data-value", children: r.toString().padStart(4, "0") })
+  const [f, c] = w("preview");
+  if (!r) return null;
+  const h = (E) => {
+    let k = "forma-text-ai-modal-tab-button";
+    return f === E && (k += " forma-text-ai-modal-tab-button--active"), k;
+  };
+  return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx(ho, {}),
+    /* @__PURE__ */ e.jsxs(
+      Ue,
+      {
+        onClose: a,
+        title: "AI Content Suggestion",
+        icon: /* @__PURE__ */ e.jsx(He, { size: 20 }),
+        size: "1200px",
+        children: [
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-modal-body", children: [
+            /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-modal-tab-container", children: [
+              /* @__PURE__ */ e.jsx(
+                "button",
+                {
+                  className: h("preview"),
+                  onClick: () => c("preview"),
+                  children: "Preview Changes"
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                "button",
+                {
+                  className: h("diff"),
+                  onClick: () => c("diff"),
+                  children: "Highlight Changes"
+                }
+              )
+            ] }),
+            f === "preview" && /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-modal-tab-content", children: [
+              /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-modal-pane", children: [
+                /* @__PURE__ */ e.jsx("h6", { className: "forma-text-ai-modal-pane-title", children: "Original Content" }),
+                /* @__PURE__ */ e.jsx(
+                  "div",
+                  {
+                    className: "forma-text-ai-modal-preview-pane",
+                    dangerouslySetInnerHTML: { __html: d }
+                  }
+                )
+              ] }),
+              /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-modal-pane", children: [
+                /* @__PURE__ */ e.jsx("h6", { className: "forma-text-ai-modal-pane-title forma-text-ai-modal-pane-title--suggestion", children: "AI Suggestion" }),
+                /* @__PURE__ */ e.jsx(
+                  "div",
+                  {
+                    className: "forma-text-ai-modal-preview-pane",
+                    dangerouslySetInnerHTML: { __html: m }
+                  }
+                )
+              ] })
+            ] }),
+            f === "diff" && /* @__PURE__ */ e.jsxs("div", { children: [
+              /* @__PURE__ */ e.jsx("h6", { className: "forma-text-ai-modal-pane-title forma-text-ai-modal-pane-title--diff", children: "Highlighted Differences" }),
+              /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-modal-diff-legend", children: [
+                /* @__PURE__ */ e.jsx("span", { className: "forma-text-ai-modal-legend-added", children: "Added content" }),
+                /* @__PURE__ */ e.jsx("span", { className: "forma-text-ai-modal-legend-removed", children: "Removed content" })
+              ] }),
+              /* @__PURE__ */ e.jsx(
+                "div",
+                {
+                  className: "forma-text-ai-modal-preview-pane",
+                  dangerouslySetInnerHTML: { __html: x }
+                }
+              )
+            ] })
           ] }),
-          /* @__PURE__ */ e.jsxs("div", { className: "data-readout", title: "Character Count", children: [
-            /* @__PURE__ */ e.jsx(Dr, { size: 16, className: "data-icon" }),
-            /* @__PURE__ */ e.jsx("span", { className: "data-label", children: "CHARS" }),
-            /* @__PURE__ */ e.jsx("span", { className: "data-value", children: s.toString().padStart(5, "0") })
+          /* @__PURE__ */ e.jsxs("div", { className: "forma-text-ai-modal-footer", children: [
+            /* @__PURE__ */ e.jsx(
+              "button",
+              {
+                type: "button",
+                className: "forma-text-ai-modal-button forma-text-ai-modal-button--secondary",
+                onClick: a,
+                children: "Cancel"
+              }
+            ),
+            /* @__PURE__ */ e.jsx(
+              "button",
+              {
+                type: "button",
+                className: "forma-text-ai-modal-button forma-text-ai-modal-button--primary",
+                onClick: s,
+                children: "Apply Suggestion"
+              }
+            )
           ] })
+        ]
+      }
+    )
+  ] });
+};
+cr.propTypes = {
+  isOpen: o.bool.isRequired,
+  onClose: o.func.isRequired,
+  onApply: o.func.isRequired,
+  originalContent: o.string,
+  suggestion: o.string,
+  highlightedDiff: o.string
+};
+const Ze = ze.memo(
+  ({ onClick: r, title: a, command: s, activeStyles: d, disabled: m = !1, children: x }) => {
+    const f = {
+      color: "#fff",
+      backgroundColor: "#6c757d",
+      borderColor: "#6c757d"
+    }, c = d && d.has(s) ? f : {};
+    return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+      /* @__PURE__ */ e.jsx("style", { children: `
+          .forma-text-statusbar-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid #6c757d;
+            background-color: transparent;
+            color: #6c757d;
+            border-radius: 0.25rem;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+          }
+          .forma-text-statusbar-button:hover {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+          }
+          .forma-text-statusbar-button:disabled {
+            pointer-events: none;
+            opacity: 0.65;
+          }
+        ` }),
+      /* @__PURE__ */ e.jsx(
+        "button",
+        {
+          type: "button",
+          onClick: r,
+          onMouseDown: (h) => h.preventDefault(),
+          className: "forma-text-statusbar-button",
+          title: a,
+          disabled: m,
+          style: c,
+          children: x
+        }
+      )
+    ] });
+  }
+);
+Ze.propTypes = {
+  onClick: o.func.isRequired,
+  title: o.string.isRequired,
+  command: o.string,
+  activeStyles: o.object,
+  disabled: o.bool,
+  children: o.node.isRequired
+};
+Ze.displayName = "FormaTextStatusbarButton";
+const ur = ({
+  wordCount: r,
+  charCount: a,
+  onToggleSource: s,
+  isFullScreen: d,
+  onToggleFullScreen: m
+}) => {
+  const x = {
+    flexShrink: 0,
+    padding: "0.5rem",
+    borderTop: "1px solid #dee2e6",
+    backgroundColor: "#f8f9fa",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    fontSize: "0.875em",
+    color: "#6c757d"
+  }, f = {
+    fontSize: "14px",
+    fontWeight: 600
+  }, c = {
+    margin: "0 0.5rem"
+  }, h = {
+    display: "inline-flex",
+    verticalAlign: "middle",
+    gap: "4px"
+    // Adds space between buttons
+  };
+  return /* @__PURE__ */ e.jsx(e.Fragment, { children: /* @__PURE__ */ e.jsxs("div", { className: "forma-text-classic-statusbar", style: x, children: [
+    /* @__PURE__ */ e.jsxs("div", { children: [
+      /* @__PURE__ */ e.jsxs(
+        "span",
+        {
+          className: "forma-text-footer-text-areas",
+          style: f,
+          children: [
+            "Words: ",
+            r
+          ]
+        }
+      ),
+      /* @__PURE__ */ e.jsx("span", { style: c, children: "|" }),
+      /* @__PURE__ */ e.jsxs("span", { className: "forma-text-footer-text-area", style: f, children: [
+        "Characters: ",
+        a
+      ] })
+    ] }),
+    /* @__PURE__ */ e.jsxs("div", { className: "forma-text-btn-group", style: h, children: [
+      /* @__PURE__ */ e.jsx(Ze, { title: "View HTML Source", onClick: s, children: /* @__PURE__ */ e.jsx(Pt, { size: 16 }) }),
+      /* @__PURE__ */ e.jsx(
+        Ze,
+        {
+          title: d ? "Exit Full Screen" : "Full Screen",
+          onClick: m,
+          children: d ? /* @__PURE__ */ e.jsx(rt, { size: 16 }) : /* @__PURE__ */ e.jsx(Ht, { size: 16 })
+        }
+      )
+    ] })
+  ] }) });
+};
+ur.propTypes = {
+  wordCount: o.number.isRequired,
+  charCount: o.number.isRequired,
+  onToggleSource: o.func.isRequired,
+  showSource: o.bool.isRequired,
+  onToggleFullScreen: o.func.isRequired,
+  isFullScreen: o.bool.isRequired
+};
+const mr = ({
+  wordCount: r,
+  charCount: a,
+  onToggleSource: s,
+  isFullScreen: d,
+  onToggleFullScreen: m
+}) => {
+  const [x, f] = w(!1);
+  se(() => {
+    const v = setTimeout(() => f(!0), 100);
+    return () => clearTimeout(v);
+  }, []);
+  const c = "#00ffff", h = "rgba(138, 43, 226, 0.4)", k = {
+    position: "fixed",
+    bottom: "0px",
+    left: "50%",
+    width: "100%",
+    zIndex: 1999,
+    fontFamily: '"Orbitron", "Segoe UI", sans-serif',
+    background: "rgba(15, 15, 25, 0.5)",
+    backdropFilter: "blur(16px) saturate(200%)",
+    color: "#e0e0e0",
+    border: `1px solid ${h}`,
+    overflow: "hidden",
+    opacity: x ? 1 : 0,
+    transform: x ? "translateX(-50%) translateY(0)" : "translateX(-50%) translateY(20px)",
+    transition: "opacity 0.8s ease-out, transform 0.8s ease-out"
+  }, L = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundImage: `linear-gradient(${c} 1px, transparent 1px), linear-gradient(to right, ${c} 1px, transparent 1px)`,
+    backgroundSize: "40px 40px",
+    opacity: 0.05,
+    animation: "forma-text-move-grid 20s linear infinite",
+    zIndex: 1
+  }, A = {
+    position: "relative",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 25px",
+    zIndex: 2
+  }, q = {
+    position: "absolute",
+    width: "20px",
+    height: "20px",
+    borderStyle: "solid",
+    borderColor: c,
+    opacity: x ? 0.5 : 0,
+    transition: "opacity 1s ease 0.5s"
+  }, p = {
+    topLeft: {
+      ...q,
+      top: "-2px",
+      left: "-2px",
+      borderWidth: "2px 0 0 2px",
+      borderRadius: "8px 0 0 0"
+    },
+    topRight: {
+      ...q,
+      top: "-2px",
+      right: "-2px",
+      borderWidth: "2px 2px 0 0",
+      borderRadius: "0 8px 0 0"
+    },
+    bottomLeft: {
+      ...q,
+      bottom: "-2px",
+      left: "-2px",
+      borderWidth: "0 0 2px 2px",
+      borderRadius: "0 0 0 8px"
+    },
+    bottomRight: {
+      ...q,
+      bottom: "-2px",
+      right: "-2px",
+      borderWidth: "0 2px 2px 0",
+      borderRadius: "0 0 8px 0"
+    }
+  }, z = {
+    display: "flex",
+    alignItems: "center",
+    gap: "24px"
+  }, B = {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+    color: "#aab5c3"
+  }, $ = {
+    color: c,
+    filter: `drop-shadow(0 0 3px ${c})`
+  }, O = {
+    fontSize: "12px",
+    fontWeight: 600,
+    letterSpacing: "1px",
+    opacity: 0.6
+  }, J = {
+    fontFamily: '"Roboto Mono", monospace',
+    fontSize: "16px",
+    fontWeight: 700,
+    color: "white"
+  }, le = {
+    background: "transparent",
+    border: "1px solid transparent",
+    color: "#aab5c3",
+    width: "36px",
+    height: "36px",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: "50%",
+    cursor: "pointer",
+    position: "relative",
+    transition: "all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)"
+  };
+  return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx("style", { children: `
+    /* Styles that cannot be inlined: animations, pseudo-elements, and pseudo-classes */
+        @keyframes forma-text-move-grid {
+          from { background-position: 0 0; }
+          to { background-position: 40px 40px; }
+        }
+
+        .forma-text-action-button::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 50%;
+          border: 1px solid ${h};
+          transition: all 0.3s ease;
+        }
+
+        .forma-text-action-button:hover {
+          color: white;
+        }
+
+        .forma-text-action-button:hover::before {
+          transform: scale(1.2);
+          opacity: 0;
+        }
+
+        .forma-text-action-button:active {
+          transform: scale(0.9);
+        }
+   ` }),
+    /* @__PURE__ */ e.jsxs("div", { className: "forma-text-futuristic-statusbar", style: k, children: [
+      /* @__PURE__ */ e.jsx(
+        "div",
+        {
+          className: "forma-text-corner-bracket",
+          style: p.topLeft
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "div",
+        {
+          className: "forma-text-corner-bracket",
+          style: p.topRight
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "div",
+        {
+          className: "forma-text-corner-bracket",
+          style: p.bottomLeft
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "div",
+        {
+          className: "forma-text-corner-bracket",
+          style: p.bottomRight
+        }
+      ),
+      /* @__PURE__ */ e.jsx(
+        "div",
+        {
+          className: "forma-text-grid-background",
+          style: L
+        }
+      ),
+      /* @__PURE__ */ e.jsxs(
+        "div",
+        {
+          className: "forma-text-statusbar-content",
+          style: A,
+          children: [
+            /* @__PURE__ */ e.jsxs("div", { className: "forma-text-status-group", style: z, children: [
+              /* @__PURE__ */ e.jsxs(
+                "div",
+                {
+                  className: "forma-text-data-readout",
+                  title: "Word Count",
+                  style: B,
+                  children: [
+                    /* @__PURE__ */ e.jsx(Ir, { size: 16, style: $ }),
+                    /* @__PURE__ */ e.jsx("span", { style: O, children: "WORDS" }),
+                    /* @__PURE__ */ e.jsx("span", { style: J, children: r.toString().padStart(4, "0") })
+                  ]
+                }
+              ),
+              /* @__PURE__ */ e.jsxs(
+                "div",
+                {
+                  className: "forma-text-data-readout",
+                  title: "Character Count",
+                  style: B,
+                  children: [
+                    /* @__PURE__ */ e.jsx(Lr, { size: 16, style: $ }),
+                    /* @__PURE__ */ e.jsx("span", { style: O, children: "CHARS" }),
+                    /* @__PURE__ */ e.jsx("span", { style: J, children: a.toString().padStart(5, "0") })
+                  ]
+                }
+              )
+            ] }),
+            /* @__PURE__ */ e.jsxs("div", { className: "forma-text-status-group", style: z, children: [
+              /* @__PURE__ */ e.jsx(
+                "button",
+                {
+                  className: "forma-text-action-button",
+                  title: "View HTML Source",
+                  onClick: s,
+                  style: le,
+                  children: /* @__PURE__ */ e.jsx(Pt, { size: 18 })
+                }
+              ),
+              /* @__PURE__ */ e.jsx(
+                "button",
+                {
+                  className: "forma-text-action-button",
+                  title: d ? "Exit Full Screen" : "Full Screen",
+                  onClick: m,
+                  style: le,
+                  children: d ? /* @__PURE__ */ e.jsx(rt, { size: 18 }) : /* @__PURE__ */ e.jsx(Ht, { size: 18 })
+                }
+              )
+            ] })
+          ]
+        }
+      )
+    ] })
+  ] });
+};
+mr.propTypes = {
+  wordCount: o.number.isRequired,
+  charCount: o.number.isRequired,
+  onToggleSource: o.func.isRequired,
+  onToggleFullScreen: o.func.isRequired,
+  isFullScreen: o.bool.isRequired
+};
+const fr = ({
+  wordCount: r,
+  charCount: a,
+  onToggleSource: s,
+  isFullScreen: d,
+  onToggleFullScreen: m,
+  theme: x = "light"
+  // Receive the theme prop, default to 'light'
+}) => {
+  const f = {
+    light: {
+      barBg: "#f8f9fa",
+      barBorder: "#e0e0e0",
+      barColor: "#5f6368",
+      btnHoverBg: "#f1f3f4",
+      btnHoverColor: "#202124"
+    },
+    dark: {
+      barBg: "#2c2d2f",
+      barBorder: "#3c4043",
+      barColor: "#bdc1c6",
+      btnHoverBg: "#3c4043",
+      btnHoverColor: "#e8eaed"
+    }
+  }, c = f[x] || f.light, h = {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "6px 16px",
+    borderTop: `1px solid ${c.barBorder}`,
+    backgroundColor: c.barBg,
+    color: c.barColor,
+    transition: "background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease"
+  }, E = {
+    display: "flex",
+    alignItems: "center",
+    gap: "12px"
+  }, k = {
+    opacity: 0.5
+  }, L = {
+    background: "none",
+    border: "none",
+    borderRadius: "6px",
+    padding: "6px",
+    cursor: "pointer",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    color: c.barColor,
+    // Inherit color from the bar
+    transition: "background-color 0.2s ease, color 0.2s ease"
+  };
+  return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
+    /* @__PURE__ */ e.jsx("style", { children: `
+          .forma-text-statusbar-button:hover {
+            background-color: ${c.btnHoverBg};
+            color: ${c.btnHoverColor};
+          }
+
+          .forma-text-statusbar-item{
+          font-size: 14px;
+          font-weight: 800;
+          font-style: italic;
+          }
+        ` }),
+    /* @__PURE__ */ e.jsxs("div", { className: "forma-text-modern-statusbar", style: h, children: [
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-statusbar-segment", style: E, children: [
+        /* @__PURE__ */ e.jsxs("span", { className: "forma-text-statusbar-item", children: [
+          "Words: ",
+          r
         ] }),
-        /* @__PURE__ */ e.jsxs("div", { className: "status-group-v2", children: [
-          /* @__PURE__ */ e.jsx(
-            "button",
-            {
-              className: "action-button",
-              title: "View HTML Source",
-              onClick: i,
-              children: /* @__PURE__ */ e.jsx(Vt, { size: 18 })
-            }
-          ),
-          /* @__PURE__ */ e.jsx(
-            "button",
-            {
-              className: "action-button",
-              title: c ? "Exit Full Screen" : "Full Screen",
-              onClick: u,
-              children: c ? /* @__PURE__ */ e.jsx(nt, { size: 18 }) : /* @__PURE__ */ e.jsx(Yt, { size: 18 })
-            }
-          )
+        /* @__PURE__ */ e.jsx("span", { className: "forma-text-statusbar-divider", style: k, children: "|" }),
+        /* @__PURE__ */ e.jsxs("span", { className: "forma-text-statusbar-item", children: [
+          "Characters: ",
+          a
         ] })
+      ] }),
+      /* @__PURE__ */ e.jsxs("div", { className: "forma-text-statusbar-segment", style: E, children: [
+        /* @__PURE__ */ e.jsx(
+          "button",
+          {
+            className: "forma-text-statusbar-button",
+            title: "View HTML Source",
+            onClick: s,
+            style: L,
+            children: /* @__PURE__ */ e.jsx(Pt, { size: 18 })
+          }
+        ),
+        /* @__PURE__ */ e.jsx(
+          "button",
+          {
+            className: "forma-text-statusbar-button",
+            title: d ? "Exit Full Screen" : "Full Screen",
+            onClick: m,
+            style: L,
+            children: d ? /* @__PURE__ */ e.jsx(rt, { size: 18 }) : /* @__PURE__ */ e.jsx(Ht, { size: 18 })
+          }
+        )
       ] })
     ] })
   ] });
 };
-hr.propTypes = {
-  wordCount: n.number.isRequired,
-  charCount: n.number.isRequired,
-  onToggleSource: n.func.isRequired,
-  onToggleFullScreen: n.func.isRequired,
-  isFullScreen: n.bool.isRequired
+fr.propTypes = {
+  wordCount: o.number.isRequired,
+  charCount: o.number.isRequired,
+  onToggleSource: o.func.isRequired,
+  onToggleFullScreen: o.func.isRequired,
+  isFullScreen: o.bool.isRequired,
+  theme: o.string
 };
-const xr = ({
-  wordCount: r,
-  charCount: s,
-  onToggleSource: i,
-  isFullScreen: c,
-  onToggleFullScreen: u
-}) => /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
-  /* @__PURE__ */ e.jsx("style", { children: `
-    /* MODERN STATUS BAR STYLES */
+const pr = ({ theme: r, ...a }) => r === "modern" ? /* @__PURE__ */ e.jsx(fr, { ...a }) : r === "futuristic" ? /* @__PURE__ */ e.jsx(mr, { ...a }) : /* @__PURE__ */ e.jsx(ur, { ...a });
+pr.propTypes = {
+  theme: o.oneOf(["classic", "modern", "futuristic"])
+};
+const jo = () => /* @__PURE__ */ e.jsx("style", { children: `
+.forma-text-editor-container {
+  overflow: hidden !important;
+}
 
-.modern-statusbar {
+.forma-text-editor-content:focus {
+box-shadow: none;
+}
+.forma-text-modal .forma-text-editor-secondary {
+background-color: #6c757d;
+color: white;
+font-size: 14px;
+border-radius: 0px;
+}
+.forma-text-modal .forma-text-editor-primary {
+background-color: #4285f4;
+color: white;
+font-size: 14px;
+border-radius: 0px;
+}
+.forma-text-editor-content .forma-text-row {
+position: relative;
+margin: 1rem 0;
+}
+.forma-text-editor-content .forma-text-row:hover .forma-text-delete-column-btn {
+display: flex;
+}
+.forma-text-delete-column-btn {
+display: none;
+position: absolute;
+top: -10px;
+right: -10px;
+z-index: 10;
+border-radius: 50%;
+width: 24px;
+height: 24px;
+padding: 0;
+align-items: center;
+justify-content: center;
+}
+.forma-text-editor-content .forma-text-row > [class^="col-"] {
+border: 1px dashed #ccc;
+padding: 1rem;
+min-height: 100px;
+}
+.forma-text-editor-content blockquote {
+border-left: 4px solid #ccc;
+margin-left: 0;
+padding-left: 1rem;
+color: #6c757d;
+}
+.forma-text-editor-content pre {
+background-color: #f8f9fa;
+border: 1px solid #dee2e6;
+padding: 1rem;
+border-radius: 0.25rem;
+white-space: pre-wrap;
+word-break: break-all;
+}
+.forma-text-color-swatch {
+width: 24px;
+height: 24px;
+border-radius: 50%;
+cursor: pointer;
+border: 1px solid #ddd;
+transition: transform 0.1s ease-in-out;
+padding: 0;
+}
+.forma-text-color-swatch:hover {
+transform: scale(1.1);
+}
+.forma-text-btn-group .forma-text-btn {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.forma-text-image-wrapper {
+position: relative;
+display: inline-block;
+}
+.forma-text-image-wrapper.selected {
+outline: 2px solid #0d6efd;
+}
+.forma-text-resize-handle {
+position: absolute;
+width: 12px;
+height: 12px;
+background-color: #0d6efd;
+border: 2px solid #fff;
+border-radius: 50%;
+z-index: 10;
+}
+.forma-text-resize-handle.bottom-right {
+bottom: -6px;
+right: -6px;
+cursor: nwse-resize;
+}
+.forma-text-image-toolbar,
+.forma-text-table-toolbar {
+  position: absolute;
+  z-index: 10;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 16px;
-  font-size: 13px;
-  transition: background-color 0.3s ease, border-color 0.3s ease,
-    color 0.3s ease;
-  border-top: 1px solid;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 5px;
 }
 
-.statusbar-segment {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
 
-.statusbar-divider {
-  opacity: 0.5;
-}
 
-.statusbar-button {
-  background: none;
-  border: none;
-  border-radius: 6px;
-  padding: 6px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.2s ease, color 0.2s ease;
+.forma-text-video-wrapper {
+position: relative;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+max-width: 100%;
+background: #000;
+border-radius: 0.25rem;
+margin: 1rem 0;
 }
-
-/* --- Light Theme --- */
-.theme-light .modern-statusbar {
-  background-color: #f8f9fa;
-  border-color: #e0e0e0;
-  color: #5f6368;
+.forma-text-video-wrapper iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
-
-.theme-light .statusbar-button {
-  color: #5f6368;
+.forma-text-video-modal-title {
+font-size: 14px;
 }
-
-.theme-light .statusbar-button:hover {
-  background-color: #f1f3f4;
-  color: #202124;
+.forma-text-footer-text-area {
+font-size: 18px;
+font-weight: 600;
 }
-
-/* --- Dark Theme --- */
-.theme-dark .modern-statusbar {
-  background-color: #2c2d2f;
-  border-color: #3c4043;
-  color: #bdc1c6;
+.forma-text-ai-preview-pane {
+height: 400px;
+overflow-y: auto;
+border: 1px solid #dee2e6;
+padding: 1rem;
+border-radius: 0.25rem;
+background-color: #fff;
 }
-
-.theme-dark .statusbar-button {
-  color: #bdc1c6;
+.forma-text-ai-loading-popup {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1100;
+width: 350px;
+background-color: white;
+border-radius: 0.5rem;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+padding: 1rem;
 }
-
-.theme-dark .statusbar-button:hover {
-  background-color: #3c4043;
-  color: #e8eaed;
+.forma-text-ai-loading-popup-minimized {
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 1100;
+background-color: white;
+border-radius: 0.5rem;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+padding: 0.5rem 1rem;
+display: flex;
+align-items: center;
 }
-
-    ` }),
-  /* @__PURE__ */ e.jsxs("div", { className: "modern-statusbar", children: [
-    /* @__PURE__ */ e.jsxs("div", { className: "statusbar-segment", children: [
-      /* @__PURE__ */ e.jsxs("span", { className: "statusbar-item", children: [
-        "Words: ",
-        r
-      ] }),
-      /* @__PURE__ */ e.jsx("span", { className: "statusbar-divider", children: "|" }),
-      /* @__PURE__ */ e.jsxs("span", { className: "statusbar-item", children: [
-        "Characters: ",
-        s
-      ] })
-    ] }),
-    /* @__PURE__ */ e.jsxs("div", { className: "statusbar-segment", children: [
-      /* @__PURE__ */ e.jsx(
-        "button",
-        {
-          className: "statusbar-button",
-          title: "View HTML Source",
-          onClick: i,
-          children: /* @__PURE__ */ e.jsx(Vt, { size: 18 })
-        }
-      ),
-      /* @__PURE__ */ e.jsx(
-        "button",
-        {
-          className: "statusbar-button",
-          title: c ? "Exit Full Screen" : "Full Screen",
-          onClick: u,
-          children: c ? /* @__PURE__ */ e.jsx(nt, { size: 18 }) : /* @__PURE__ */ e.jsx(Yt, { size: 18 })
-        }
-      )
-    ] })
-  ] })
-] });
-xr.propTypes = {
-  wordCount: n.number.isRequired,
-  charCount: n.number.isRequired,
-  onToggleSource: n.func.isRequired,
-  onToggleFullScreen: n.func.isRequired,
-  isFullScreen: n.bool.isRequired
-};
-const gr = ({ theme: r, ...s }) => r === "modern" ? /* @__PURE__ */ e.jsx(xr, { ...s }) : r === "futuristic" ? /* @__PURE__ */ e.jsx(hr, { ...s }) : /* @__PURE__ */ e.jsx(br, { ...s });
-gr.propTypes = {
-  theme: n.oneOf(["classic", "modern", "futuristic"])
-};
-function fn({
+` });
+function vo({
   content: r = "",
-  setContent: s = "",
-  geminiApiKey: i = "",
-  parentEditorClass: c = "",
-  toolBarClass: u = "",
-  textContentClass: p = "",
-  theme: b = ""
+  setContent: a = "",
+  geminiApiKey: s = "",
+  parentEditorClass: d = "",
+  toolBarClass: m = "",
+  textContentClass: x = "",
+  theme: f = ""
 }) {
-  const f = Y(null), E = Y(null), _ = Y(!1), [F, H] = T(/* @__PURE__ */ new Set()), [L, $] = T({ words: 0, chars: 0 }), [g, x] = T(!1), [M, D] = T(!1), [I, oe] = T(!1), [Oe, C] = T({ text: "", href: "" }), [P, se] = T(null), [ot, ve] = T(!1), [it, ze] = T(!1), [$e, G] = T(!1), [ee, te] = T(""), [Be, je] = T(""), [Ce, Le] = T(!1), [Ve, we] = T(""), [ke, Ie] = T(!1), [ae, Ae] = T(null), [ue, pe] = T(null), [Se, _e] = T(0), J = V(() => {
-    const a = window.getSelection();
-    if (a.rangeCount > 0) {
-      const l = a.getRangeAt(0);
-      f.current && f.current.contains(l.commonAncestorContainer) && (E.current = l);
+  const c = K(null), h = K(null), E = K(!1), [k, L] = w(/* @__PURE__ */ new Set()), [A, q] = w({ words: 0, chars: 0 }), [p, z] = w(!1), [B, $] = w(!1), [O, J] = w(!1), [le, v] = w({ text: "", href: "" }), [H, de] = w(null), [ot, ve] = w(!1), [nt, Oe] = w(!1), [$e, X] = w(!1), [re, oe] = w(""), [Ve, Ce] = w(""), [ke, Se] = w(!1), [We, ye] = w(""), [we, Ie] = w(!1), [ce, Le] = w(null), [ue, me] = w(null), [Ae, _e] = w(0), ee = Y(() => {
+    const i = window.getSelection();
+    if (i.rangeCount > 0) {
+      const l = i.getRangeAt(0);
+      c.current && c.current.contains(l.commonAncestorContainer) && (h.current = l);
     }
-  }, []), re = V(() => {
-    if (E.current) {
-      const a = window.getSelection();
-      a.removeAllRanges(), a.addRange(E.current);
+  }, []), ne = Y(() => {
+    if (h.current) {
+      const i = window.getSelection();
+      i.removeAllRanges(), i.addRange(h.current);
     }
-  }, []), q = V(() => {
-    f.current && (_.current = !0, s(f.current.innerHTML));
-  }, []), st = V(
-    (a) => {
-      const l = g ? a.target.value : a.currentTarget.innerHTML;
-      _.current = !0, s(l);
+  }, []), P = Y(() => {
+    c.current && (E.current = !0, a(c.current.innerHTML));
+  }, []), it = Y(
+    (i) => {
+      const l = p ? i.target.value : i.currentTarget.innerHTML;
+      E.current = !0, a(l);
     },
-    [g]
-  ), ye = V(() => {
-    const a = /* @__PURE__ */ new Set();
+    [p]
+  ), Re = Y(() => {
+    const i = /* @__PURE__ */ new Set();
     [
       "bold",
       "italic",
@@ -3559,206 +4837,213 @@ function fn({
       "insertUnorderedList",
       "superscript",
       "subscript"
-    ].forEach((m) => {
-      document.queryCommandState(m) && a.add(m);
-    }), H(a);
-  }, []), U = V(
-    (a, l = null) => {
-      var m;
-      (m = f.current) == null || m.focus(), re(), document.execCommand(a, !1, l), q(), ye();
+    ].forEach((b) => {
+      document.queryCommandState(b) && i.add(b);
+    }), L(i);
+  }, []), U = Y(
+    (i, l = null) => {
+      var b;
+      (b = c.current) == null || b.focus(), ne(), document.execCommand(i, !1, l), P(), Re();
     },
-    [re, q, ye]
-  ), me = V(
-    (a) => {
-      var O;
-      (O = f.current) == null || O.focus(), re();
+    [ne, P, Re]
+  ), fe = Y(
+    (i) => {
+      var Z;
+      (Z = c.current) == null || Z.focus(), ne();
       const l = window.getSelection();
       if (!l.rangeCount) return;
-      let m = l.getRangeAt(0).commonAncestorContainer;
-      for (; m && m !== f.current; ) {
-        if (m.nodeType === Node.ELEMENT_NODE && window.getComputedStyle(m).display.match(/block|table|list-item/)) {
-          m.style.lineHeight = a;
-          break;
+      const b = (_) => {
+        let V = _.nodeType === Node.ELEMENT_NODE ? _ : _.parentNode;
+        for (; V && V !== c.current; ) {
+          if (window.getComputedStyle(V).display.match(/block|table|list-item/))
+            return V;
+          V = V.parentNode;
         }
-        m = m.parentNode;
+        return null;
+      }, I = l.getRangeAt(0), S = b(I.startContainer), ie = b(I.endContainer);
+      if (S) {
+        let _ = S;
+        for (; _ && (_.style.lineHeight = i, _ !== ie); )
+          _ = _.nextElementSibling;
       }
-      q();
+      P();
     },
-    [re, q]
+    [ne, P]
   );
-  Q(() => {
-    if (_.current) {
-      _.current = !1;
+  se(() => {
+    if (E.current) {
+      E.current = !1;
       return;
     }
-    f.current && !g && r !== f.current.innerHTML && (f.current.innerHTML = r || "");
-  }, [r, g]), Q(() => {
-    const a = document.createElement("div");
-    a.innerHTML = r || "";
-    const l = a.textContent || "", m = l.trim().split(/\s+/).filter(Boolean).length;
-    $({ words: m, chars: l.length });
+    c.current && !p && r !== c.current.innerHTML && (c.current.innerHTML = r || "");
+  }, [r, p]), se(() => {
+    const i = document.createElement("div");
+    i.innerHTML = r || "";
+    const l = i.textContent || "", b = l.trim().split(/\s+/).filter(Boolean).length;
+    q({ words: b, chars: l.length });
   }, [r]);
-  const Re = V(() => {
-    const a = window.getSelection();
-    if (a.rangeCount > 0) {
-      const l = a.getRangeAt(0);
-      f.current && f.current.contains(l.commonAncestorContainer) && (J(), ye());
+  const Fe = Y(() => {
+    const i = window.getSelection();
+    if (i.rangeCount > 0) {
+      const l = i.getRangeAt(0);
+      c.current && c.current.contains(l.commonAncestorContainer) && (ee(), Re());
     }
-  }, [J, ye]);
-  Q(() => (document.addEventListener("selectionchange", Re), () => document.removeEventListener("selectionchange", Re)), [Re]);
-  const Ye = V(
-    (a) => {
-      if (a.ctrlKey || a.metaKey) {
+  }, [ee, Re]);
+  se(() => (document.addEventListener("selectionchange", Fe), () => document.removeEventListener("selectionchange", Fe)), [Fe]);
+  const Ye = Y(
+    (i) => {
+      if (i.ctrlKey || i.metaKey) {
         const l = {
           b: "bold",
           i: "italic",
           u: "underline",
-          k: () => fe(),
+          k: () => pe(),
           z: "undo",
           y: "redo"
         };
-        l[a.key] && (a.preventDefault(), typeof l[a.key] == "function" ? l[a.key]() : U(l[a.key]));
+        l[i.key] && (i.preventDefault(), typeof l[i.key] == "function" ? l[i.key]() : U(l[i.key]));
       }
     },
     [U]
-  ), fe = V(() => {
-    var m;
-    J();
-    const a = window.getSelection(), l = (m = a.anchorNode) == null ? void 0 : m.parentElement.closest("a");
-    (l == null ? void 0 : l.tagName) === "A" ? (C({
+  ), pe = Y(() => {
+    var b;
+    ee();
+    const i = window.getSelection(), l = (b = i.anchorNode) == null ? void 0 : b.parentElement.closest("a");
+    (l == null ? void 0 : l.tagName) === "A" ? (v({
       text: l.textContent,
       href: l.href
-    }), se(l)) : (C({ text: a.toString(), href: "" }), se(null)), oe(!0);
-  }, [J]), at = V(
-    (a) => {
-      if (oe(!1), re(), f.current.focus(), P)
-        P.href = a.href, P.textContent = a.text;
+    }), de(l)) : (v({ text: i.toString(), href: "" }), de(null)), J(!0);
+  }, [ee]), at = Y(
+    (i) => {
+      if (J(!1), ne(), c.current.focus(), H)
+        H.href = i.href, H.textContent = i.text;
       else {
-        const l = `<a href="${a.href}" target="_blank" rel="noopener noreferrer">${a.text}</a>`;
+        const l = `<a href="${i.href}" target="_blank" rel="noopener noreferrer">${i.text}</a>`;
         U("insertHTML", l);
       }
-      se(null), q();
+      de(null), P();
     },
-    [P, re, U, q]
-  ), lt = V(
-    (a) => {
-      const l = a.target.files[0];
+    [H, ne, U, P]
+  ), st = Y(
+    (i) => {
+      const l = i.target.files[0];
       if (!l) return;
-      const m = new FileReader();
-      m.onload = (O) => {
-        const A = `<span class="image-wrapper d-inline-block"><img src="${O.target.result}" class="img-fluid rounded" style="width: 250px; height: auto;" /></span>`;
-        U("insertHTML", A);
-      }, m.readAsDataURL(l), a.target.value = "";
+      const b = new FileReader();
+      b.onload = (I) => {
+        const S = `<span class="forma-text-image-wrapper" style="display: inline-block;"><img src="${I.target.result}" class="forma-text-img-fluid" style="max-width: 100%; height: auto; border-radius: 0.25rem; width: 250px;" /></span>`;
+        U("insertHTML", S);
+      }, b.readAsDataURL(l), i.target.value = "";
     },
     [U]
-  ), Me = V((a) => {
-    const l = a.target.files[0];
+  ), De = Y((i) => {
+    const l = i.target.files[0];
     if (!l) return;
-    const m = new FileReader();
-    m.onload = (O) => {
-      Fr.convertToHtml({ arrayBuffer: O.target.result }).then((A) => s(A.value)).catch(
-        (A) => console.error("Error converting .docx to HTML:", A)
+    const b = new FileReader();
+    b.onload = (I) => {
+      Rr.convertToHtml({ arrayBuffer: I.target.result }).then((S) => a(S.value)).catch(
+        (S) => console.error("Error converting .docx to HTML:", S)
       );
-    }, m.readAsArrayBuffer(l), a.target.value = "";
-  }, []), ct = (a) => {
-    let l = "", m;
-    return a.includes("youtube.com/watch?v=") ? (m = a.split("v=")[1].split("&")[0], l = `https://www.youtube.com/embed/${m}`) : a.includes("youtu.be/") ? (m = a.split("youtu.be/")[1].split("?")[0], l = `https://www.youtube.com/embed/${m}`) : a.includes("vimeo.com/") && (m = a.split("vimeo.com/")[1].split("?")[0], l = `https://player.vimeo.com/video/${m}`), l;
-  }, dt = V(
-    (a) => {
-      if (ve(!1), !a) return;
-      const l = ct(a);
+    }, b.readAsArrayBuffer(l), i.target.value = "";
+  }, []), lt = (i) => {
+    let l = "", b;
+    return i.includes("youtube.com/watch?v=") ? (b = i.split("v=")[1].split("&")[0], l = `https://www.youtube.com/embed/${b}`) : i.includes("youtu.be/") ? (b = i.split("youtu.be/")[1].split("?")[0], l = `https://www.youtube.com/embed/${b}`) : i.includes("vimeo.com/") && (b = i.split("vimeo.com/")[1].split("?")[0], l = `https://player.vimeo.com/video/${b}`), l;
+  }, dt = Y(
+    (i) => {
+      if (ve(!1), !i) return;
+      const l = lt(i);
       if (!l) {
         console.warn(
           "Invalid video URL. Please use a valid YouTube or Vimeo link."
         );
         return;
       }
-      re(), f.current.focus();
-      const m = `<div class="video-wrapper"><iframe src="${l}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p><br></p>`;
-      U("insertHTML", m), q();
+      ne(), c.current.focus();
+      const b = `<div class="forma-text-video-wrapper"><iframe src="${l}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><p><br></p>`;
+      U("insertHTML", b), P();
     },
-    [re, U, q]
-  ), We = V(
-    (a) => {
-      ze(!1);
-      let l = '<table class="table table-bordered"><tbody>';
-      for (let m = 0; m < a.rows; m++) {
+    [ne, U, P]
+  ), Ge = Y(
+    (i) => {
+      Oe(!1);
+      let l = '<table class="forma-text-table" style="width: 100%; border-collapse: collapse; border: 1px solid #dee2e6;"><tbody>';
+      for (let b = 0; b < i.rows; b++) {
         l += "<tr>";
-        for (let O = 0; O < a.cols; O++) l += "<td><br></td>";
+        for (let I = 0; I < i.cols; I++)
+          l += '<td style="border: 1px solid #dee2e6; padding: 0.75rem;"><br></td>';
         l += "</tr>";
       }
       l += "</tbody></table><p><br></p>", U("insertHTML", l);
     },
     [U]
-  ), Ge = (a, l) => {
-    const m = new Or(), O = m.diff_main(a, l);
-    m.diff_cleanupSemantic(O);
-    let A = "";
-    for (const [le, ie] of O) {
-      const X = ie.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\n/g, "&para;<br>");
-      switch (le) {
-        case Ir:
-          A += `<ins style="background-color: #d4edda; text-decoration: none;">${X}</ins>`;
+  ), Ke = (i, l) => {
+    const b = new Fr(), I = b.diff_main(i, l);
+    b.diff_cleanupSemantic(I);
+    let S = "";
+    for (const [ie, Z] of I) {
+      const _ = Z.replace(/&/g, "&").replace(/</g, "<").replace(/>/g, ">").replace(/\n/g, "¶<br>");
+      switch (ie) {
+        case Er:
+          S += `<ins style="background-color: #d4edda; text-decoration: none;">${_}</ins>`;
           break;
-        case Lr:
-          A += `<del style="background-color: #f8d7da; text-decoration: none;">${X}</del>`;
+        case Tr:
+          S += `<del style="background-color: #f8d7da; text-decoration: none;">${_}</del>`;
           break;
-        case zr:
-          A += `<span>${X}</span>`;
+        case Nr:
+          S += `<span>${_}</span>`;
           break;
       }
     }
-    return A;
-  }, Ke = async () => {
-    var A, le, ie, X, ce;
-    if (!r || r === "" || Ce) return;
-    Le(!0), te(""), Ie(!1);
-    const a = [
+    return S;
+  }, Xe = async () => {
+    var S, ie, Z, _, V;
+    if (!r || r === "" || ke) return;
+    Se(!0), oe(""), Ie(!1);
+    const i = [
       "Analyzing...",
       "Generating suggestions...",
       "Optimizing flow...",
       "Finalizing..."
     ];
     let l = 0;
-    we(a[l]);
-    const m = setInterval(() => {
-      l = (l + 1) % a.length, we(a[l]);
-    }, 2e3), O = `
+    ye(i[l]);
+    const b = setInterval(() => {
+      l = (l + 1) % i.length, ye(i[l]);
+    }, 2e3), I = `
 <TASK>
 You are a world-class content editor and a senior SEO strategist with elite proficiency in **English, Japanese, Hindi, French, Spanish, Sinhalese,Arabic and Chinese **. Your task is to reformat, stylish, and enhance the provided HTML content.
 </TASK>
 
 <LANGUAGE_PROTOCOL>
-1.  **Identify the Language:** Your first step is to determine if the content's primary language is one of the following:**English, Japanese, Hindi, French, Spanish, Sinhalese,Arabic and Chinese **.
-    * **CRITICAL CLARIFICATION:** To do this, analyze **only the human-readable text**. You **must ignore all HTML tags** (e.g., \`<p>\`, \`<div>\`) during this language identification step.
-2.  **Lock the Language:** All subsequent tasks **must** be performed exclusively in the single language you have identified.
-3.  **No Translation:** You **must not** translate the content.
+1. **Identify the Language:** Your first step is to determine if the content's primary language is one of the following:**English, Japanese, Hindi, French, Spanish, Sinhalese,Arabic and Chinese **.
+  * **CRITICAL CLARIFICATION:** To do this, analyze **only the human-readable text**. You **must ignore all HTML tags** (e.g., \`<p>\`, \`<div>\`) during this language identification step.
+2. **Lock the Language:** All subsequent tasks **must** be performed exclusively in the single language you have identified.
+3. **No Translation:** You **must not** translate the content.
 </LANGUAGE_PROTOCOL>
 
 <INSTRUCTIONS>
-1.  **IMPROVE READABILITY & PROFESSIONALISM (in the identified language):**
-    * Correct all grammar, spelling, and punctuation errors.
-    * **Style tags appropriately using inline CSS. Ensure a clear visual hierarchy (e.g., "<h1 style="font-size: 2em;">", "<h2 style="font-size: 1.5em;">", "<p style="font-size: 1em;">").**
-    * Add proper spaces and line heigh and font height for text
-    * Maintain a professional and authoritative yet accessible tone.
+1. **IMPROVE READABILITY & PROFESSIONALISM (in the identified language):**
+  * Correct all grammar, spelling, and punctuation errors.
+  * **Style tags appropriately using inline CSS. Ensure a clear visual hierarchy (e.g., "<h1 style="font-size: 2em;">", "<h2 style="font-size: 1.5em;">", "<p style="font-size: 1em;">").**
+  * Add proper spaces and line heigh and font height for text
+  * Maintain a professional and authoritative yet accessible tone.
 
-2.  **ENHANCE SEO & STRUCTURE (in the identified language):**
-    * Ensure there is one single, compelling \`<h1>\` tag that captures the main topic.
-    * Structure the content logically using \`<h2>\` for main sections and \`<h3>\` for sub-sections.
-    * Where appropriate, convert lists or series of items into bulleted (\`<ul>\`) or numbered (\`<ol>\`) lists for better scannability.
-    * Use \`<strong>\` for important keywords or phrases instead of \`<b>\`. Use \`<em>\` for emphasis instead of \`<i>\`.
+2. **ENHANCE SEO & STRUCTURE (in the identified language):**
+  * Ensure there is one single, compelling \`<h1>\` tag that captures the main topic.
+  * Structure the content logically using \`<h2>\` for main sections and \`<h3>\` for sub-sections.
+  * Where appropriate, convert lists or series of items into bulleted (\`<ul>\`) or numbered (\`<ol>\`) lists for better scannability.
+  * Use \`<strong>\` for important keywords or phrases instead of \`<b>\`. Use \`<em>\` for emphasis instead of \`<i>\`.
 
-3.  **CORE CONTENT REQUIREMENTS:**
-    * Preserve the original core message, facts, and meaning.
-    * Use **inline CSS** for any styling (e.g., \`<p style="color: #333;">\`).
+3. **CORE CONTENT REQUIREMENTS:**
+  * Preserve the original core message, facts, and meaning.
+  * Use **inline CSS** for any styling (e.g., \`<p style="color: #333;">\`).
 </INSTRUCTIONS>
 
 <ABSOLUTE_OUTPUT_FORMAT>
--   **CRITICAL:** Your entire response must be **RAW HTML code ONLY**.
--   **DO NOT** under any circumstances wrap your response in markdown fences like \`\`\`html or \`\`\`.
--   **DO NOT** include any commentary, notes, or explanations before or after the code.
--   **DO NOT** include \`<html>\`, \`<head>\`, \`<body>\`, \`<title>\`, \`<meta>\`, or \`<script>\` tags.
--   Your response must start directly with the first HTML tag (e.g., \`<h1>\`) and end with the last closing tag.
+-  **CRITICAL:** Your entire response must be **RAW HTML code ONLY**.
+-  **DO NOT** under any circumstances wrap your response in markdown fences like \`\`\`html or \`\`\`.
+-  **DO NOT** include any commentary, notes, or explanations before or after the code.
+-  **DO NOT** include \`<html>\`, \`<head>\`, \`<body>\`, \`<title>\`, \`<meta>\`, or \`<script>\` tags.
+-  Your response must start directly with the first HTML tag (e.g., \`<h1>\`) and end with the last closing tag.
 </ABSOLUTE_OUTPUT_FORMAT>
 
 <CONTENT_TO_IMPROVE>
@@ -3766,387 +5051,308 @@ ${r}
 </CONTENT_TO_IMPROVE>
 `;
     try {
-      const Z = {
-        contents: [{ role: "user", parts: [{ text: O }] }]
-      }, ne = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${i}`, be = await fetch(ne, {
+      const te = {
+        contents: [{ role: "user", parts: [{ text: I }] }]
+      }, ae = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${s}`, xe = await fetch(ae, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(Z)
+        body: JSON.stringify(te)
       });
-      if (!be.ok) throw new Error(`API call failed: ${be.status}`);
-      const Te = (ce = (X = (ie = (le = (A = (await be.json()).candidates) == null ? void 0 : A[0]) == null ? void 0 : le.content) == null ? void 0 : ie.parts) == null ? void 0 : X[0]) == null ? void 0 : ce.text;
+      if (!xe.ok) throw new Error(`API call failed: ${xe.status}`);
+      const Te = (V = (_ = (Z = (ie = (S = (await xe.json()).candidates) == null ? void 0 : S[0]) == null ? void 0 : ie.content) == null ? void 0 : Z.parts) == null ? void 0 : _[0]) == null ? void 0 : V.text;
       if (Te)
-        te(Te), je(Ge(r, Te)), G(!0);
+        oe(Te), Ce(Ke(r, Te)), X(!0);
       else
         throw new Error("Invalid AI response format");
-    } catch (Z) {
-      console.error("Error calling Gemini API:", Z), te(`<p>Sorry, an error occurred. ${Z.message}</p>`), je(`<p>Error: ${Z.message}</p>`), G(!0);
+    } catch (te) {
+      console.error("Error calling Gemini API:", te), oe(`<p>Sorry, an error occurred. ${te.message}</p>`), Ce(`<p>Error: ${te.message}</p>`), X(!0);
     } finally {
-      clearInterval(m), Le(!1), we("");
+      clearInterval(b), Se(!1), ye("");
     }
-  }, ut = () => {
-    s(ee), G(!1), te(""), je("");
+  }, ct = () => {
+    a(re), X(!1), oe(""), Ce("");
   };
-  Q(() => {
-    const a = f.current;
-    if (!a) return;
-    const l = (m) => {
-      if (m.target.closest(".delete-column-btn")) {
-        m.target.closest(".row").remove(), q();
+  se(() => {
+    const i = c.current;
+    if (!i) return;
+    const l = (b) => {
+      if (b.target.closest(".forma-text-delete-column-btn")) {
+        b.target.closest(".forma-text-row").remove(), P();
         return;
       }
-      const O = m.target.closest("img"), A = m.target.closest("table");
-      Ae(O), pe(A), O && pe(null), A && Ae(null);
+      const I = b.target.closest("img"), S = b.target.closest("table");
+      Le(I), me(S), I && me(null), S && Le(null);
     };
-    return a.addEventListener("click", l), () => a.removeEventListener("click", l);
-  }, [q]);
-  const Ne = (a, l) => {
-    a && (a.classList.remove(
-      "d-block",
-      "mx-auto",
-      "float-start",
-      "float-end",
-      "me-3",
-      "mb-3",
-      "ms-3"
-    ), l === "center" ? a.classList.add("d-block", "mx-auto") : l === "left" ? a.classList.add("float-start", "me-3", "mb-3") : l === "right" && a.classList.add("float-end", "ms-3", "mb-3"), q());
+    return i.addEventListener("click", l), () => i.removeEventListener("click", l);
+  }, [P]);
+  const Ne = (i, l) => {
+    i && (i.style.display = "inline-block", i.style.margin = "0", i.style.float = "none", l === "center" ? (i.style.display = "block", i.style.margin = "0 auto") : l === "left" ? (i.style.float = "left", i.style.marginRight = "1rem", i.style.marginBottom = "1rem") : l === "right" && (i.style.float = "right", i.style.marginLeft = "1rem", i.style.marginBottom = "1rem"), P());
   };
   return /* @__PURE__ */ e.jsxs(e.Fragment, { children: [
-    /* @__PURE__ */ e.jsx("style", { children: `
-.editor-content:focus {
-  box-shadow: none;
-}
-.modal .editor-secondary {
-  background-color: #6c757d;
-  color: white;
-  font-size: 14px;
-  border-radius: 0px;
-}
-.modal .editor-primary {
-  background-color: #4285f4;
-  color: white;
-  font-size: 14px;
-  border-radius: 0px;
-}
-.editor-content .row {
-  position: relative;
-  margin: 1rem 0;
-}
-.editor-content .row:hover .delete-column-btn {
-  display: flex;
-}
-.delete-column-btn {
-  display: none;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  z-index: 10;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-}
-.editor-content .row > [class^="col-"] {
-  border: 1px dashed #ccc;
-  padding: 1rem;
-  min-height: 100px;
-}
-.editor-content blockquote {
-  border-left: 4px solid #ccc;
-  margin-left: 0;
-  padding-left: 1rem;
-  color: #6c757d;
-}
-.editor-content pre {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  padding: 1rem;
-  border-radius: 0.25rem;
-  white-space: pre-wrap;
-  word-break: break-all;
-}
-.color-swatch {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  cursor: pointer;
-  border: 1px solid #ddd;
-  transition: transform 0.1s ease-in-out;
-  padding: 0;
-}
-.color-swatch:hover {
-  transform: scale(1.1);
-}
-.btn-group .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.image-wrapper {
-  position: relative;
-  display: inline-block;
-}
-.image-wrapper.selected {
-  outline: 2px solid #0d6efd;
-}
-.resize-handle {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  background-color: #0d6efd;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  z-index: 10;
-}
-.resize-handle.bottom-right {
-  bottom: -6px;
-  right: -6px;
-  cursor: nwse-resize;
-}
-.image-toolbar,
-.table-toolbar {
-  position: absolute;
-  z-index: 10;
-  display: flex;
-  gap: 4px;
-  padding: 4px;
-  border-radius: 5px;
-}
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  background: #000;
-  border-radius: 0.25rem;
-  margin: 1rem 0;
-}
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.video-modal-title {
-  font-size: 14px;
-}
-.footer-text-area {
-  font-size: 14px;
-  font-weight: 600;
-}
-.ai-preview-pane {
-  height: 400px;
-  overflow-y: auto;
-  border: 1px solid #dee2e6;
-  padding: 1rem;
-  border-radius: 0.25rem;
-  background-color: #fff;
-}
-.ai-loading-popup {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1100;
-  width: 350px;
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-}
-.ai-loading-popup-minimized {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1100;
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  padding: 0.5rem 1rem;
-  display: flex;
-  align-items: center;
-}
-` }),
+    /* @__PURE__ */ e.jsx(jo, {}),
     /* @__PURE__ */ e.jsxs(
       "div",
       {
-        className: `d-flex flex-column border rounded-3 shadow-sm ${M ? "position-fixed top-0 start-0 w-100 h-100 bg-white" : "position-relative "}  ${c}`,
-        style: { zIndex: M ? 1050 : "auto" },
+        className: `forma-text-editor-container ${d}`,
+        style: {
+          display: "flex",
+          flexDirection: "column",
+          border: "1px solid #dee2e6",
+          borderRadius: "0.375rem",
+          boxShadow: "0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)",
+          position: B ? "fixed" : "relative",
+          top: B ? 0 : "auto",
+          left: B ? 0 : "auto",
+          width: B ? "100%" : "auto",
+          height: B ? "100%" : "auto",
+          minHeight: B ? "100%" : "60vh",
+          maxHeight: B ? "100%" : "95vh",
+          backgroundColor: B ? "white" : "transparent",
+          zIndex: B ? 1050 : "auto",
+          overflowX: "hidden"
+        },
         children: [
-          /* @__PURE__ */ e.jsx("div", { className: `flex-shrink-0 border-bottom ${u}`, children: /* @__PURE__ */ e.jsx(
-            lr,
+          /* @__PURE__ */ e.jsx(
+            "div",
             {
-              theme: b,
-              applyStyle: U,
-              applyLineHeight: me,
-              activeStyles: F,
-              onOpenLinkModal: fe,
-              onImageUpload: lt,
-              onDocxUpload: Me,
-              onVideoModalOpen: () => {
-                J(), ve(!0);
+              className: `forma-text-toolbar-container ${m}`,
+              style: {
+                flexShrink: 0,
+                borderBottom: "1px solid #dee2e6"
               },
-              onTableModalOpen: () => {
-                J(), ze(!0);
-              },
-              onAiRefactor: Ke,
-              content: r,
-              isGenerating: Ce,
-              isAiLoadingMinimized: ke
-            }
-          ) }),
-          /* @__PURE__ */ e.jsxs("div", { className: "flex-grow-1 overflow-auto position-relative pt-3", children: [
-            /* @__PURE__ */ e.jsx(
-              cr,
-              {
-                editorRef: f,
-                content: r,
-                showSource: g,
-                onContentChange: st,
-                onKeyDown: Ye,
-                textContentClass: p
-              }
-            ),
-            ae && !g && (() => {
-              const a = f.current.getBoundingClientRect(), l = ae.getBoundingClientRect(), m = ae.parentElement;
-              return /* @__PURE__ */ e.jsxs(
-                "div",
+              children: /* @__PURE__ */ e.jsx(
+                nr,
                 {
-                  className: "image-wrapper selected",
-                  style: {
-                    position: "absolute",
-                    top: l.top - a.top + f.current.scrollTop,
-                    left: l.left - a.left + f.current.scrollLeft,
-                    width: l.width,
-                    height: l.height,
-                    pointerEvents: "none"
+                  theme: f,
+                  applyStyle: U,
+                  applyLineHeight: fe,
+                  activeStyles: k,
+                  onOpenLinkModal: pe,
+                  onImageUpload: st,
+                  onDocxUpload: De,
+                  onVideoModalOpen: () => {
+                    ee(), ve(!0);
                   },
-                  children: [
-                    /* @__PURE__ */ e.jsxs(
-                      "div",
-                      {
-                        className: "image-toolbar",
-                        style: { pointerEvents: "auto" },
-                        children: [
-                          /* @__PURE__ */ e.jsx(
-                            "button",
-                            {
-                              className: "btn btn-sm btn-dark",
-                              onClick: () => Ne(m, "left"),
-                              children: /* @__PURE__ */ e.jsx(qr, { size: 14 })
-                            }
-                          ),
-                          /* @__PURE__ */ e.jsx(
-                            "button",
-                            {
-                              className: "btn btn-sm btn-dark",
-                              onClick: () => Ne(m, "center"),
-                              children: /* @__PURE__ */ e.jsx(Hr, { size: 14 })
-                            }
-                          ),
-                          /* @__PURE__ */ e.jsx(
-                            "button",
-                            {
-                              className: "btn btn-sm btn-dark",
-                              onClick: () => Ne(m, "right"),
-                              children: /* @__PURE__ */ e.jsx(Pr, { size: 14 })
-                            }
-                          ),
-                          /* @__PURE__ */ e.jsx(
-                            "button",
-                            {
-                              className: "btn btn-sm btn-danger",
-                              onClick: () => {
-                                m.remove(), q(), Ae(null);
-                              },
-                              children: /* @__PURE__ */ e.jsx(Zt, { size: 14 })
-                            }
-                          )
-                        ]
-                      }
-                    ),
-                    /* @__PURE__ */ e.jsx(
-                      "div",
-                      {
-                        className: "resize-handle bottom-right",
-                        style: { pointerEvents: "auto" },
-                        onMouseDown: (O) => {
-                          O.preventDefault();
-                          const A = O.clientX, le = ae.offsetWidth, ie = (ce) => {
-                            const Z = le + (ce.clientX - A);
-                            Z > 20 && (ae.style.width = `${Z}px`, ae.style.height = "auto", _e((ne) => ne + 1));
-                          }, X = () => {
-                            document.removeEventListener("mousemove", ie), document.removeEventListener("mouseup", X), q();
-                          };
-                          document.addEventListener("mousemove", ie), document.addEventListener("mouseup", X);
-                        }
-                      }
-                    )
-                  ]
+                  onTableModalOpen: () => {
+                    ee(), Oe(!0);
+                  },
+                  onAiRefactor: Xe,
+                  content: r,
+                  isGenerating: ke,
+                  isAiLoadingMinimized: we
                 }
-              );
-            })(),
-            ue && !g && (() => {
-              const a = f.current.getBoundingClientRect(), l = ue.getBoundingClientRect();
-              return /* @__PURE__ */ e.jsx(
-                "div",
-                {
-                  className: "table-toolbar mt-5",
-                  style: {
-                    position: "absolute",
-                    top: l.top - a.top + f.current.scrollTop - 60,
-                    right: l.left - a.left + f.current.scrollLeft,
-                    pointerEvents: "auto"
-                  },
-                  children: /* @__PURE__ */ e.jsx(
-                    "button",
+              )
+            }
+          ),
+          /* @__PURE__ */ e.jsxs(
+            "div",
+            {
+              className: "forma-text-editor-area",
+              style: {
+                flexGrow: 1,
+                overflow: "auto",
+                position: "relative",
+                paddingTop: "1rem"
+              },
+              children: [
+                /* @__PURE__ */ e.jsx(
+                  ir,
+                  {
+                    editorRef: c,
+                    content: r,
+                    showSource: p,
+                    onContentChange: it,
+                    onKeyDown: Ye,
+                    textContentClass: x
+                  }
+                ),
+                ce && !p && (() => {
+                  const i = c.current.getBoundingClientRect(), l = ce.getBoundingClientRect(), b = ce.parentElement;
+                  return /* @__PURE__ */ e.jsxs(
+                    "div",
                     {
-                      className: "btn btn-sm btn-danger d-flex align-items-center rounded-5  p-1",
-                      onClick: () => {
-                        ue.remove(), q(), pe(null);
+                      className: "forma-text-image-wrapper forma-text-selected",
+                      style: {
+                        position: "absolute",
+                        top: l.top - i.top + c.current.scrollTop,
+                        left: l.left - i.left + c.current.scrollLeft,
+                        width: l.width,
+                        height: l.height,
+                        pointerEvents: "none"
                       },
-                      children: /* @__PURE__ */ e.jsx(Zt, { size: 14 })
+                      children: [
+                        /* @__PURE__ */ e.jsxs(
+                          "div",
+                          {
+                            className: "forma-text-image-toolbar",
+                            style: { pointerEvents: "auto" },
+                            children: [
+                              /* @__PURE__ */ e.jsx(
+                                "button",
+                                {
+                                  className: "forma-text-btn",
+                                  style: {
+                                    backgroundColor: "#212529",
+                                    color: "white",
+                                    border: "none",
+                                    padding: "0.25rem 0.5rem",
+                                    fontSize: "0.875rem",
+                                    borderRadius: "0.25rem"
+                                  },
+                                  onClick: () => Ne(b, "left"),
+                                  children: /* @__PURE__ */ e.jsx(Ar, { size: 14 })
+                                }
+                              ),
+                              /* @__PURE__ */ e.jsx(
+                                "button",
+                                {
+                                  className: "forma-text-btn",
+                                  style: {
+                                    backgroundColor: "#212529",
+                                    color: "white",
+                                    border: "none",
+                                    padding: "0.25rem 0.5rem",
+                                    fontSize: "0.875rem",
+                                    borderRadius: "0.25rem"
+                                  },
+                                  onClick: () => Ne(b, "center"),
+                                  children: /* @__PURE__ */ e.jsx(_r, { size: 14 })
+                                }
+                              ),
+                              /* @__PURE__ */ e.jsx(
+                                "button",
+                                {
+                                  className: "forma-text-btn",
+                                  style: {
+                                    backgroundColor: "#212529",
+                                    color: "white",
+                                    border: "none",
+                                    padding: "0.25rem 0.5rem",
+                                    fontSize: "0.875rem",
+                                    borderRadius: "0.25rem"
+                                  },
+                                  onClick: () => Ne(b, "right"),
+                                  children: /* @__PURE__ */ e.jsx(Dr, { size: 14 })
+                                }
+                              ),
+                              /* @__PURE__ */ e.jsx(
+                                "button",
+                                {
+                                  className: "forma-text-btn",
+                                  style: {
+                                    backgroundColor: "#dc3545",
+                                    color: "white",
+                                    border: "none",
+                                    padding: "0.25rem 0.5rem",
+                                    fontSize: "0.875rem",
+                                    borderRadius: "0.25rem"
+                                  },
+                                  onClick: () => {
+                                    b.remove(), P(), Le(null);
+                                  },
+                                  children: /* @__PURE__ */ e.jsx(Gt, { size: 14 })
+                                }
+                              )
+                            ]
+                          }
+                        ),
+                        /* @__PURE__ */ e.jsx(
+                          "div",
+                          {
+                            className: "forma-text-resize-handle bottom-right",
+                            style: { pointerEvents: "auto" },
+                            onMouseDown: (I) => {
+                              I.preventDefault();
+                              const S = I.clientX, ie = ce.offsetWidth, Z = (V) => {
+                                const te = ie + (V.clientX - S);
+                                te > 20 && (ce.style.width = `${te}px`, ce.style.height = "auto", _e((ae) => ae + 1));
+                              }, _ = () => {
+                                document.removeEventListener("mousemove", Z), document.removeEventListener("mouseup", _), P();
+                              };
+                              document.addEventListener("mousemove", Z), document.addEventListener("mouseup", _);
+                            }
+                          }
+                        )
+                      ]
                     }
-                  )
-                }
-              );
-            })()
-          ] }),
-          /* @__PURE__ */ e.jsx(
-            gr,
-            {
-              theme: b,
-              wordCount: L.words,
-              charCount: L.chars,
-              onToggleSource: () => x(!g),
-              showSource: g,
-              onToggleFullScreen: () => D(!M),
-              isFullScreen: M
+                  );
+                })(),
+                ue && !p && (() => {
+                  const i = c.current.getBoundingClientRect(), l = ue.getBoundingClientRect();
+                  return /* @__PURE__ */ e.jsx(
+                    "div",
+                    {
+                      className: "forma-text-table-toolbar",
+                      style: {
+                        position: "absolute",
+                        // Position the button slightly above the table's top edge
+                        top: `${l.top - i.top + c.current.scrollTop - 15}px`,
+                        // Position the button's left edge at the table's right edge
+                        left: `${l.left - i.left + c.current.scrollLeft + l.width}px`,
+                        // Then, pull the button back to the left by its own width to align it perfectly
+                        transform: "translateX(-100%)",
+                        pointerEvents: "auto"
+                      },
+                      children: /* @__PURE__ */ e.jsx(
+                        "button",
+                        {
+                          className: "forma-text-btn",
+                          style: {
+                            backgroundColor: "#dc3545",
+                            color: "white",
+                            border: "none",
+                            padding: "0.4rem",
+                            fontSize: "0.875rem",
+                            borderRadius: "50%",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            margin: "0.25rem"
+                          },
+                          onClick: () => {
+                            ue.remove(), P(), me(null);
+                          },
+                          children: /* @__PURE__ */ e.jsx(Gt, { size: 14 })
+                        }
+                      )
+                    }
+                  );
+                })()
+              ]
             }
           ),
-          Ce && /* @__PURE__ */ e.jsx(
-            mr,
+          /* @__PURE__ */ e.jsx(
+            pr,
             {
-              status: Ve,
-              isMinimized: ke,
-              onMinimizeToggle: () => Ie(!ke)
+              theme: f,
+              wordCount: A.words,
+              charCount: A.chars,
+              onToggleSource: () => z(!p),
+              showSource: p,
+              onToggleFullScreen: () => $(!B),
+              isFullScreen: B
             }
           ),
-          /* @__PURE__ */ e.jsx(
+          ke && /* @__PURE__ */ e.jsx(
             dr,
             {
-              isOpen: I,
-              onClose: () => oe(!1),
-              onApply: at,
-              initialData: Oe,
-              isEditing: !!P
+              status: We,
+              isMinimized: we,
+              onMinimizeToggle: () => Ie(!we)
             }
           ),
           /* @__PURE__ */ e.jsx(
-            ur,
+            ar,
+            {
+              isOpen: O,
+              onClose: () => J(!1),
+              onApply: at,
+              initialData: le,
+              isEditing: !!H
+            }
+          ),
+          /* @__PURE__ */ e.jsx(
+            sr,
             {
               isOpen: ot,
               onClose: () => ve(!1),
@@ -4154,22 +5360,22 @@ ${r}
             }
           ),
           /* @__PURE__ */ e.jsx(
-            pr,
+            lr,
             {
-              isOpen: it,
-              onClose: () => ze(!1),
-              onCreate: We
+              isOpen: nt,
+              onClose: () => Oe(!1),
+              onCreate: Ge
             }
           ),
           /* @__PURE__ */ e.jsx(
-            fr,
+            cr,
             {
               isOpen: $e,
-              onClose: () => G(!1),
-              onApply: ut,
+              onClose: () => X(!1),
+              onApply: ct,
               originalContent: r,
-              suggestion: ee,
-              highlightedDiff: Be
+              suggestion: re,
+              highlightedDiff: Ve
             }
           )
         ]
@@ -4177,17 +5383,16 @@ ${r}
     )
   ] });
 }
-fn.propTypes = {
-  content: n.string,
-  setContent: n.func,
-  geminiApiKey: n.string,
-  parentEditorClass: n.string,
-  toolBarClass: n.string,
-  textContentClass: n.string,
-  theme: n.string
+vo.propTypes = {
+  content: o.string,
+  setContent: o.func,
+  geminiApiKey: o.string,
+  parentEditorClass: o.string,
+  toolBarClass: o.string,
+  textContentClass: o.string,
+  theme: o.string
 };
-Ur();
 export {
-  fn as default
+  vo as default
 };
 //# sourceMappingURL=forma-text.js.map
