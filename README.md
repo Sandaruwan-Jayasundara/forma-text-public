@@ -122,17 +122,23 @@ For production or extended access and features, contact us at: [https://exivio.n
 ---
 ## 📄 Application Preview
 
-### Classic
+### Classic Theme
+---
 ![Classic](https://github.com/Sandaruwan-Jayasundara/public-assets/blob/main/classic.png)
 
 
 ### Modern Theme
+---
 ![Modern](https://github.com/Sandaruwan-Jayasundara/public-assets/blob/main/modern.png)
 
 
 ### Futuristic Theme
-![Futuristic](https://github.com/Sandaruwan-Jayasundara/public-assets/blob/main/futuristic.mp4)
+---
+![Futuristic](https://github.com/Sandaruwan-Jayasundara/public-assets/blob/main/futuristic.gif)
 
 ---
 
+## 📄 License
 
+This project is licensed under the **MIT License**.\
+See the [LICENSE](https://github.com/Sandaruwan-Jayasundara/forma-text-public/blob/main/LICENSE) file for more details.
