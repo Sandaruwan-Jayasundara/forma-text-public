@@ -1,6 +1,7 @@
+// index.d.ts
 import * as React from 'react';
 
-interface FormaTextProps {
+export interface FormaTextProps {
   content?: string;
   setContent?: (value: string) => void;
   geminiApiKey?: string;
