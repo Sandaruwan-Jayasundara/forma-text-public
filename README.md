@@ -1,4 +1,4 @@
-# FormaText Editor Documentation
+# FormaText Editor
 ![npm](https://img.shields.io/npm/v/forma-text)
 ![AI Powered by Gemini](https://img.shields.io/badge/AI%20Powered%20by-Gemini-blue?logo=google)
 
@@ -12,9 +12,6 @@
 npm install forma-text
 ```
 
-<sub>**Fully compatible with React 18**</sub>
-
----
 
 
 
@@ -34,7 +31,8 @@ function App() {
       content={content}
       setContent={setContent}
       geminiApiKey="YOUR_GEMINI_API_KEY"
-      theme="classic" // Options: "classic", "modern", "futuristic"
+      theme="modern" // Options: "classic", "modern", "futuristic"
+      premiumApiKey="API_KEY" //Optional
     />
   );
 }
@@ -59,20 +57,36 @@ FormaText comes with **three beautifully designed themes**, allowing you to tail
 |                |                                                                                                        |
 | **Futuristic** | ![Futuristic Theme](https://github.com/Sandaruwan-Jayasundara/public-assets/blob/main/futuristic.jpg) |
 
+
 > ✨ Each theme is crafted with unique UI elements, and toolbar styles for different user preferences.
 
 
 ---
-
 ### 🤖 AI Features
-  - Refactor code blocks within the editor
-  - Improve SEO automatically
-  - Reorganize and optimize content using SEO best practices
-  - Rewrite enhance content
--   Rich text formatting and real-time preview
--   Support English, Japanese, Hindi, French, Spanish, Sinhalese, Arabic and Chinese languages
--   Display diff tracking to compare content versions
 
+---
+
+### 🔒 Basic AI Features
+- Refactor code blocks within the editor
+- Improve **basic SEO** automatically
+- Rewrite and enhance content for readability
+- Rich text formatting with real-time preview
+- Display **diff tracking** to compare content versions
+
+---
+
+### 🔑 Premium AI Features
+- Advanced refactoring with AI-powered suggestions
+- Improve **advanced SEO** and **GEO** automatically
+- Reorganize and optimize content using **advanced SEO best practices**
+- Rewrite and enhance content for better engagement
+- Structure content logically with headings and subheadings
+- Apply **inline CSS styling** for better visual hierarchy
+- Rich text formatting and real-time preview
+- Support for multiple languages: **English, Japanese, Hindi, French, Spanish, Sinhalese, Arabic, Chinese**
+- Display **diff tracking** to compare content versions
+
+---
 
 ### ✅ Standard Features
 
@@ -87,10 +101,6 @@ FormaText comes with **three beautifully designed themes**, allowing you to tail
 - **Undo/Redo**: Full undo and redo support.
 - **Emoji Picker**: Rich emoji selection.
 - **Clear Formatting**: Remove all styles from selected text.
-
-
-### 🔒 Premium Features
-
 - **AI-Powered Refactoring** _(with **`geminiApiKey`**)_:
   - Improve clarity, grammar, and flow using Google Gemini AI.
   - Get intelligent suggestions with a highlighted diff view.
@@ -105,7 +115,13 @@ FormaText comes with **three beautifully designed themes**, allowing you to tail
 - **Full-Screen Mode**: Distraction-free editing.
 - **Source View**: View and edit raw HTML.
 
-For production or extended access and features, contact us at: [https://exivio.net/contact](https://exivio.net/contact)
+---
+
+## Premium Access
+
+We provide **premium keys for special purposes**.  
+For production use or extended access and features, please contact us at: [Contact](https://exivio.net/contact)
+
 
 ## ⚙️ Component Props
 
@@ -118,8 +134,10 @@ For production or extended access and features, contact us at: [https://exivio.n
 | `toolBarClass`      | string   | `""`    | Custom CSS class for the toolbar.               |
 | `textContentClass`  | string   | `""`    | Custom CSS class for the content area.          |
 | `theme`             | string   | `""`    | Editor themes (classic, modern, futuristic)     |
+| `premiumApiKey`     | string   | `""`    | Premium Api key for Advance Gen AI    |
 
 ---
+
 ## 📄 Application Preview
 
 ### Classic Theme
@@ -137,6 +155,7 @@ For production or extended access and features, contact us at: [https://exivio.n
 ![Futuristic](https://github.com/Sandaruwan-Jayasundara/public-assets/blob/main/futuristic.gif)
 
 ---
+
 
 ## 📄 License
 
