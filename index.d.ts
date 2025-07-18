@@ -9,6 +9,7 @@ export interface FormaTextProps {
   toolBarClass?: string;
   textContentClass?: string;
   theme?: string;
+  premiumApiKey?: string;
 }
 
 declare const FormaText: React.FC<FormaTextProps>;
